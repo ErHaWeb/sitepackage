@@ -1,0 +1,9 @@
+services:
+  # general settings
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: false
+
+  TYPO3\CMS\Core\:
+    resource: '../Classes/*'

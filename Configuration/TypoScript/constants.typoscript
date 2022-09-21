@@ -1,0 +1,4 @@
+/**
+* Import all .typoscript files from directory "Constants"
+*/
+@import './Constants/*.typoscript'

@@ -1,0 +1,22 @@
+TYPO3:
+  CMS:
+    Form:
+      prototypes:
+        standard:
+          formElementsDefinition:
+            Form:
+              renderingOptions:
+                translation:
+                  translationFiles:
+                    110: 'EXT:sitepackage/Resources/Private/Language/locallang.xlf'
+                templateRootPaths:
+                  20: 'EXT:sitepackage/Resources/Private/Templates/Form/Frontend/'
+                partialRootPaths:
+                  20: 'EXT:sitepackage/Resources/Private/Partials/Form/Frontend/'
+                layoutRootPaths:
+                  20: 'EXT:sitepackage/Resources/Private/Layouts/Form/Frontend/'
+            persistenceManager:
+              allowSaveToExtensionPaths: true
+              allowDeleteFromExtensionPaths: false
+              allowedExtensionPaths:
+                10: 'EXT:sitepackage/Resources/Private/Forms/'

@@ -1,0 +1,15 @@
+<xliff version="1.0" xmlns:t3="http://typo3.org/schemas/xliff">
+    <file source-language="en" target-language="de" datatype="plaintext" original="messages" date="2011-10-18T18:20:51Z" product-name="sitepackage">
+        <header/>
+        <body>
+            <trans-unit id="pages.PageTSconfig.sitepackage_title" xml:space="preserve">
+                <source>Static page TSconfig for Sitepackage</source>
+                <target>Statisches Page TSconfig für das Sitepackage</target>
+            </trans-unit>
+            <trans-unit id="sys_template.TypoScript.sitepackage_title" xml:space="preserve">
+                <source>Static TypoScript for Sitepackage</source>
+                <target>Statisches TypoScript für das Sitepackage</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

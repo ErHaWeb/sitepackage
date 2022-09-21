@@ -1,0 +1,15 @@
+
+renderingOptions:
+  submitButtonLabel: Absenden
+type: Form
+identifier: sitepackageForm
+label: 'Sitepackage Form'
+prototypeName: standard
+renderables:
+  -
+    renderingOptions:
+      previousButtonLabel: 'Vorherige Seite'
+      nextButtonLabel: 'Nächster Schritt'
+    type: Page
+    identifier: page-1
+    label: Step

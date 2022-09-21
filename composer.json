@@ -1,0 +1,53 @@
+{
+  "name": "vendorname/sitepackage",
+  "type": "typo3-cms-extension",
+  "description": "Sitepackage for TYPO3 11",
+  "license": "GPL-2.0-or-later",
+  "require": {
+    "php": ">=7.4.1",
+    "ext-pdo": "*",
+    "typo3/minimal": "^11.4"
+  },
+  "authors": [
+    {
+      "name": "Author Name",
+      "role": "Developer",
+      "email": "email@author.name.com",
+      "homepage": "author.name.com"
+    }
+  ],
+  "keywords": [
+    "TYPO3 CMS",
+    "Sitepackage"
+  ],
+  "support": {
+    "issues": "https://github.com/vendorname/my-extensions/issues"
+  },
+  "funding": [
+    {
+      "type": "other",
+      "url:": "myfundpage.org/vendorname"
+    }
+  ],
+  "homepage": "https://typo3.org",
+  "require-dev": {
+    "roave/security-advisories": "dev-latest",
+    "helhum/typo3-console": "^7.0.2",
+    "typo3/cms-belog": "^11.5",
+    "typo3/cms-lowlevel": "^11.5",
+    "typo3/cms-scheduler": "^11.5",
+    "typo3/cms-setup": "^11.5"
+  },
+  "extra": {
+    "typo3/cms": {
+      "extension-key": "sitepackage"
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "VendorName\\Sitepackage\\": "Classes"
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
