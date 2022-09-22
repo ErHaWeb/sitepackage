@@ -1,0 +1,26 @@
+# https://docs.typo3.org/m/typo3/reference-tsconfig/main/en-us/UserTsconfig/AdmPanel.html
+
+admPanel {
+    enable {
+        # all = 1
+        # cache = 1
+        # debug = 1
+        # edit = 1
+        # info = 1
+        # preview = 1
+        # publish = 1
+        # tsdebug = 1
+    }
+
+    # hide = 0
+
+    override {
+        # preview.showFluidDebug = 1
+        # preview.showHiddenPages = 1
+        # preview.showHiddenRecords = 1
+        # preview.simulateDate = 000000001
+        # preview.simulateUserGroup = 1
+        # cache.noCache = 1
+        # tsdebug.forceTemplateParsing = 1
+    }
+}

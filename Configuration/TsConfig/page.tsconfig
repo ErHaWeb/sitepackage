@@ -1,4 +1,3 @@
-/**
-* Import all .tsconfig files from directory "Page"
-*/
+# Import all .tsconfig files from directory "Page"
+
 @import './Page/*.tsconfig'

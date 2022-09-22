@@ -1,0 +1,79 @@
+# https://docs.typo3.org/m/typo3/reference-tsconfig/main/en-us/UserTsconfig/Options.html
+
+options {
+    # additionalPreviewLanguages = 1
+    # alertPopups = 255
+
+    bookmarkGroups {
+
+    }
+
+    # clearCache.all = 0
+    # clearCache.pages = 0
+    # clipboardNumberPads = 0
+
+    contextMenu {
+
+    }
+
+    # createFoldersInEB = 0
+    # dashboard.dashboardPresetsForNewUsers := addToList(customDashboard)
+    # defaultUploadFolder = 2:user_folders/my_folder/
+
+    disableDelete {
+
+    }
+
+    # dontMountAdminMounts = 0
+    # enableBookmarks = 0
+
+    file_list {
+        # enableClipBoard = selectable
+        # displayColumnSelector = 1
+        # enableDisplayThumbnails = selectable
+        # filesPerPage = 40
+        # primaryActions = view,metadata,translations,delete
+        # thumbnail.height = 64
+        # thumbnail.width = 64
+        # uploader.defaultAction = Cancel
+    }
+
+    folderTree {
+        # altElementBrowserMountPoints = _temp_/, 2:/templates, 1:/files/images
+        # hideCreateFolder = 0
+        # uploadFieldsInLinkBrowser = 3
+    }
+
+    hideModules {
+
+    }
+
+    # hideRecords.pages = 12,45
+    # impexp.enableExportForNonAdminUser = 0
+    # impexp.enableImportForNonAdminUser = 0
+    # mayNotCreateEditBookmarks = 0
+    # noThumbsInEB = 0
+    # overridePageModule = web_txtemplavoilaM1
+
+    pageTree {
+        # altElementBrowserMountPoints = 34,123
+        # altElementBrowserMountPoints.append = 1
+        backgroundColor {
+            # 151 = rgba(0, 255, 0, 0.1)
+        }
+
+        # doktypesToShowInNewPageDragArea = 1,6,4,7,3,254,255,199
+        # excludeDoktypes = 254,1
+        # showDomainNameWithTitle = 0
+        # showNavTitle = 0
+        # showPageIdWithTitle = 0
+        # showPathAboveMounts = 0
+    }
+
+    # passwordReset = 1
+    # saveClipboard = 1
+    # saveDocNew = 1
+    # saveDocView = 1
+    # showDuplicate = 0
+    # showHistory = 1
+}

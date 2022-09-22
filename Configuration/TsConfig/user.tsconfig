@@ -1,4 +1,3 @@
-/**
-* Import all .tsconfig files from directory "User"
-*/
+# Import all .tsconfig files from directory "User"
+
 @import './User/*.tsconfig'
