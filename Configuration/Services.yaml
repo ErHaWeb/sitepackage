@@ -7,5 +7,5 @@ services:
     autoconfigure: true
     public: false
 
-  TYPO3\CMS\Core\:
+  VendorName\Sitepackage\:
     resource: '../Classes/*'
