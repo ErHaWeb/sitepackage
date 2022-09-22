@@ -1,40 +1,45 @@
 # Sitepackage Basic Structure
+
 ```
 .
-├── Classes                                     
-│   ├── Controller                              
+├── Classes
+│   ├── Controller
 │   │   └── .gitkeep                          # Placeholder file to track directory
-│   ├── Domain                                  
-│   │   ├── Model                               
+│   ├── Domain
+│   │   ├── Model
 │   │   │   └── .gitkeep                      # Placeholder file to track directory
-│   │   └── Repository                          
+│   │   └── Repository
 │   │       └── .gitkeep                      # Placeholder file to track directory
-│   └── ViewHelpers                             
+│   ├── Service
+│   │   └── .gitkeep                          # Placeholder file to track directory
+│   ├── View
+│   │   └── .gitkeep                          # Placeholder file to track directory
+│   └── ViewHelpers
 │       └── HtmlTagAttributesViewHelper.php   # Example ViewHelper file to add HTML tag attributes
-├── Configuration                               
-│   ├── Backend                                 
+├── Configuration
+│   ├── Backend
 │   │   ├── AjaxRoutes.php                    # Definitions for ajax routes for entry points
 │   │   ├── Modules.php                       # Definitions for modules
 │   │   └── Routes.php                        # Definitions for "regular" routes for entry points
-│   ├── Extbase                                 
-│   │   └── Persistence                         
+│   ├── Extbase
+│   │   └── Persistence
 │   │       └── Classes.php                   # Extbase persistence mapping for classes
-│   ├── FlexForms                               
+│   ├── FlexForms
 │   │   └── FlexFormExample.xml               # Example FlexForm file to provide plugin settings
-│   ├── Form                                    
+│   ├── Form
 │   │   └── CustomFormSetup.yaml              # Customize form configuration
 │   ├── Icons.php                             # Registers custom Icons in the IconRegistry
-│   ├── RTE                                     
+│   ├── RTE
 │   │   └── RteConfig.yaml                    # Customize RTE configuration
 │   ├── RequestMiddlewares.php                # Middleware Configuration for frontend and backend
 │   ├── Services.yaml                         # Configuration for automatic Symfony Service loading
-│   ├── TCA                                     
-│   │   └── Overrides                           
+│   ├── TCA
+│   │   └── Overrides
 │   │       ├── pages.php                     # Override "pages" TCA (e.g. add Page TSconfig includes)
 │   │       ├── sys_template.php              # Override "sys_template" TCA (e.g. add TypoScript templates)
 │   │       └── tt_content.php                # Override "tt_content" TCA (e.g. prepare custom content elements)
-│   ├── TsConfig                                
-│   │   ├── Page                                
+│   ├── TsConfig
+│   │   ├── Page
 │   │   │   ├── Default                       # Page TSconfig from "./Default" directory is always used
 │   │   │   │   ├── RTE.tsconfig              # Customize RTE configuration
 │   │   │   │   ├── TCAdefaults.tsconfig      # Override default values of TCA
@@ -52,20 +57,20 @@
 │   │   │   │   ├── options.tsconfig          # Look at ../Default/options.tsconfig
 │   │   │   │   └── templates.tsconfig        # Look at ../Default/templates.tsconfig
 │   │   │   └── page.tsconfig                 # Includes any file "./Include" (Added by ../../TCA/Overrides/pages.php)
-│   │   └── User                                
-│   │       ├── TCAdefaults.tsconfig          # 
+│   │   └── User
+│   │       ├── TCAdefaults.tsconfig          #
 │   │       ├── admPanel.tsconfig             # Configuration of the Admin Panel in the Frontend for the user
 │   │       ├── auth.tsconfig                 # Override default values of TCA on a user or group basis
 │   │       ├── options.tsconfig              # Various options for the user affecting the core at various points
 │   │       ├── page.tsconfig                 # Override any page TSconfig property on a user or group basis
 │   │       ├── permissions.tsconfig          # Set access permissions on a user or group basis
 │   │       └── setup.tsconfig                # Default values and override values for the User Settings module.
-│   ├── TypoScript                              
-│   │   ├── Constants                           
+│   ├── TypoScript
+│   │   ├── Constants
 │   │   │   ├── page.typoscript               # Sitepackage constants for page rendering
 │   │   │   ├── plugin.typoscript             # Override plugin specific constants
 │   │   │   └── styles.typoscript             # Frontend specific constants (mainly from EXT:fluid_styled_content)
-│   │   └── Setup                               
+│   │   └── Setup
 │   │       ├── _GIFBUILDER.typoscript        # Configure global settings for GIFBUILDER by this top-level object
 │   │       ├── config.typoscript             # Global configuration for frontend rendering
 │   │       ├── constants.typoscript          # Defines constants for replacement inside a parseFunc
@@ -74,58 +79,58 @@
 │   │       ├── page.typoscript               # This defines what is rendered in the frontend
 │   │       ├── plugin.typoscript             # Frontend set up for plugins
 │   │       └── tt_content.typoscript         # Content rendering definitions
-│   ├── Yaml                                    
+│   ├── Yaml
 │   │   └── .gitkeep                          # Placeholder file to track directory
 │   └── page.tsconfig                         # Automatically loaded during build time (includes ./TsConfig/Page/Default)
-├── Documentation                               
+├── Documentation
 │   └── .gitkeep                              # Placeholder file to track directory
 ├── LICENSE.txt                               # Official license file for GPL-2.0-or-later
 ├── README.md                                 # The file you currently look at
-├── Resources                                   
-│   ├── Private                                 
+├── Resources
+│   ├── Private
 │   │   ├── Forms                             # Can contain form definitions (read/write access granted)
 │   │   │   ├── .gitignore                    # Ignore all files inside this directory
-│   │   ├── Language                            
+│   │   ├── Language
 │   │   │   ├── de.locallang.xlf              # German translations of frontend labels
 │   │   │   ├── de.locallang_db.xlf           # German translations of backend labels
 │   │   │   ├── locallang.xlf                 # Source file for frontend labels (english)
 │   │   │   └── locallang_db.xlf              # Source file for backend labels (english)
-│   │   ├── Layouts                             
-│   │   │   ├── Form                            
-│   │   │   │   └── Frontend                    
+│   │   ├── Layouts
+│   │   │   ├── Form
+│   │   │   │   └── Frontend
 │   │   │   │       └── .gitkeep              # Placeholder file to track directory
-│   │   │   └── Page                            
+│   │   │   └── Page
 │   │   │       └── Default.html              # Default frontend layout file
-│   │   ├── Partials                            
-│   │   │   ├── Form                            
-│   │   │   │   └── Frontend                    
+│   │   ├── Partials
+│   │   │   ├── Form
+│   │   │   │   └── Frontend
 │   │   │   │       └── .gitkeep              # Placeholder file to track directory
-│   │   │   └── Page                            
+│   │   │   └── Page
 │   │   │       └── Navigation.html           # Partial for basic navigation rendering
-│   │   └── Templates                           
-│   │       ├── Form                            
-│   │       │   └── Frontend                    
+│   │   └── Templates
+│   │       ├── Form
+│   │       │   └── Frontend
 │   │       │       └── .gitkeep              # Placeholder file to track directory
-│   │       └── Page                            
+│   │       └── Page
 │   │           ├── Default.html              # Template File for default layout (configured in /Configuration/TsConfig/Page/Default/mod.tsconfig)
 │   │           └── Example.html              # Template File for example layout (configured in /Configuration/TsConfig/Page/Include/mod.tsconfig)
-│   └── Public                                  
-│       ├── Css                                 
+│   └── Public
+│       ├── Css
 │       │   ├── main.css                      # Main frontend CSS file (should be compiled from ../Scss/main.scss)
 │       │   └── rte.css                       # CSS used inside the Rich Text Editor (should be compiled from ../Scss/rte.scss)
-│       ├── Fonts                               
+│       ├── Fonts
 │       │   └── .gitkeep                      # Placeholder file to track directory
-│       ├── Icons                               
+│       ├── Icons
 │       │   └── Extension.svg                 # Extension icon
-│       ├── Images                              
+│       ├── Images
 │       │   └── .gitkeep                      # Placeholder file to track directory
-│       ├── JavaScript                          
+│       ├── JavaScript
 │       │   ├── .gitkeep                      # Placeholder file to track directory
 │       │   └── main.js                       # Main JavaScript file
-│       └── Scss                                
+│       └── Scss
 │           ├── main.scss                     # Main SCSS source file for frontend CSS
 │           └── rte.scss                      # SCSS source file for Rich Text Editor CSS
-├── Tests                                       
+├── Tests
 │   └── .gitkeep                              # Placeholder file to track directory
 ├── composer.json                             # Registration file for composer based installations
 ├── ext_emconf.php                            # Registration file for legacy installations
@@ -136,4 +141,5 @@
 ├── ext_typoscript_constants.typoscript       # Default TypoScript constants that will be included in all templates
 └── ext_typoscript_setup.typoscript           # Default TypoScript setup that will be included in all templates
 ```
+
 **Notice:** You will find a documentation link in each file for more details.
