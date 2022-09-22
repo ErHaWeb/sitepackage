@@ -1,4 +1,5 @@
-# Controller
+# Controller Directory
+
 ## ActionController
 Most Extbase controllers are based on the TYPO3\CMS\Extbase\Mvc\Controller\ActionController. It is theoretically possible to base a controller directly on the \TYPO3\CMS\Extbase\Mvc\Controller\ControllerInterface, however there are rarely use cases for that. Implementing the ControllerInterface does not guarantee a controller to be dispatchable. It is not recommended to base your controller directly on the ControllerInterface.
 
