@@ -35,24 +35,45 @@ defined('TYPO3') or die();
     ExtensionManagementUtility::addUserTSConfig('@import "EXT:sitepackage/Configuration/TsConfig/user.tsconfig"');
 
     /**
-     * Register custom EXT:form configuration
+     * Add static TypoScript from EXT:fluid_styled_content
+     */
+    if (ExtensionManagementUtility::isLoaded('fluid_styled_content')) {
+        ExtensionManagementUtility::addTypoScriptConstants(trim(
+            '
+                @import \'EXT:fluid_styled_content/Configuration/TypoScript/constants.typoscript\'
+            '
+        ));
+        ExtensionManagementUtility::addTypoScriptSetup(trim(
+            '
+                @import \'EXT:fluid_styled_content/Configuration/TypoScript/setup.typoscript\'
+            '
+        ));
+    }
+
+    /**
+     * Add static TypoScript from EXT:form and register custom configuration
      */
     if (ExtensionManagementUtility::isLoaded('form')) {
-        ExtensionManagementUtility::addTypoScriptSetup(trim('
-        module.tx_form {
-            settings {
-                yamlConfigurations {
-                    110 = EXT:sitepackage/Configuration/Form/CustomFormSetup.yaml
-                }
-            }
-        }
-        plugin.tx_form {
-            settings {
-                yamlConfigurations {
-                    110 = EXT:sitepackage/Configuration/Form/CustomFormSetup.yaml
-                }
-            }
-        }
-    '));
+        ExtensionManagementUtility::addTypoScriptSetup(trim(
+            '
+                @import \'EXT:form/Configuration/TypoScript/setup.typoscript\'
+                module.tx_form.settings.yamlConfigurations.100 = EXT:sitepackage/Configuration/Form/CustomFormSetup.yaml
+                plugin.tx_form.settings.yamlConfigurations.100 = EXT:sitepackage/Configuration/Form/CustomFormSetup.yaml
+            '
+        ));
     }
+
+    /**
+     * Add static TypoScript from EXT:sitepackage
+     */
+    ExtensionManagementUtility::addTypoScriptConstants(trim(
+        '
+            @import \'EXT:sitepackage/Configuration/TypoScript/Constants/*.typoscript\'
+        '
+    ));
+    ExtensionManagementUtility::addTypoScriptSetup(trim(
+        '
+            @import \'EXT:sitepackage/Configuration/TypoScript/Setup/*.typoscript\'
+        '
+    ));
 })();

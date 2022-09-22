@@ -1,7 +1,21 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
 <f:spaceless>
-    <f:comment><!--TYPO3SEARCH_begin--></f:comment>
-    <f:render section="Main"/>
-    <f:comment><!--TYPO3SEARCH_end--></f:comment>
+    <header id="">
+        <f:comment><!-- Language Navigation --></f:comment>
+        <f:render partial="Navigation" arguments="{items:navigationLanguage}"/>
+        <f:comment><!-- Main Navigation --></f:comment>
+        <f:render partial="Navigation" arguments="{items:navigationMain}"/>
+        <f:comment><!-- Rootline Navigation --></f:comment>
+        <f:render partial="Navigation" arguments="{items:navigationRootline}"/>
+    </header>
+    <main>
+        <f:comment><!--TYPO3SEARCH_begin--></f:comment>
+        <f:render section="Main"/>
+        <f:comment><!--TYPO3SEARCH_end--></f:comment>
+    </main>
+    <footer>
+        &copy; <f:format.date format="Y">now</f:format.date>
+        <f:cObject typoscriptObjectPath="lib.getIndpEnv" data="TYPO3_HOST_ONLY"/>
+    </footer>
 </f:spaceless>
 </html>

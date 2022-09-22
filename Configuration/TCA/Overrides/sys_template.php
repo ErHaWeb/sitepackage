@@ -13,8 +13,6 @@
  * The TYPO3 project - inspiring people to share!
  */
 
-use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
-
 defined('TYPO3') || die();
 
 (static function () {
@@ -29,6 +27,11 @@ defined('TYPO3') || die();
     $path = 'Configuration/TypoScript';
 
     /**
+     * TypoScript include path
+     */
+    $includePath = 'EXT:' . $extKey . '/' . $path . '/';
+
+    /**
      * Locallang file path
      */
     $locallangFilePath = 'LLL:EXT:' . $extKey . '/Resources/Private/Language/locallang_db.xlf';
@@ -39,7 +42,7 @@ defined('TYPO3') || die();
     $title = $locallangFilePath . ':sys_template.TypoScript.' . $extKey . '_title';
 
     /**
-     * Add default TypoScript (constants and setup)
+     * Add static TypoScript (constants and setup) directly through TCA instead of the API function to be able to translate the title
      */
-    ExtensionManagementUtility::addStaticFile($extKey, $path, $title);
+    $GLOBALS['TCA']['sys_template']['columns']['include_static_file']['config']['items'][] = [$title, $includePath];
 })();

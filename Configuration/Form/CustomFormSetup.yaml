@@ -15,8 +15,8 @@ TYPO3:
                   20: 'EXT:sitepackage/Resources/Private/Partials/Form/Frontend/'
                 layoutRootPaths:
                   20: 'EXT:sitepackage/Resources/Private/Layouts/Form/Frontend/'
-            persistenceManager:
-              allowSaveToExtensionPaths: true
-              allowDeleteFromExtensionPaths: false
-              allowedExtensionPaths:
-                10: 'EXT:sitepackage/Resources/Private/Forms/'
+      persistenceManager:
+        allowSaveToExtensionPaths: true
+        allowDeleteFromExtensionPaths: true
+        allowedExtensionPaths:
+          10: 'EXT:sitepackage/Resources/Private/Forms/'

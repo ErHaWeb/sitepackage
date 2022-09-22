@@ -1,0 +1,22 @@
+imports:
+  - { resource: "EXT:rte_ckeditor/Configuration/RTE/Default.yaml" }
+
+# Add configuration for the editor
+# For complete documentation see http://docs.ckeditor.com/#!/api/CKEDITOR.config
+
+editor:
+  config:
+    contentsCss: 'EXT:sitepackage/Resources/Public/Css/rte.css'
+
+    format_tags:
+
+    toolbarGroups:
+
+    justifyClasses:
+
+    extraPlugins:
+
+    removePlugins:
+
+    removeButtons:
+

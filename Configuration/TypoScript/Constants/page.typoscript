@@ -1,0 +1,12 @@
+# customsubcategory=100=Page Template
+
+page {
+    fluidtemplate {
+        # cat=sitepackage/100/100; type=string; label=Add custom Layout Root Path: Path to layouts
+        layoutRootPath =
+        # cat=sitepackage/100/110; type=string; label=Add custom Partial Root Path: Path to partials
+        partialRootPath =
+        # cat=sitepackage/100/120; type=string; label=Add custom Template Root Path: Path to templates
+        templateRootPath =
+    }
+}

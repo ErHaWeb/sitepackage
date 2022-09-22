@@ -1,18 +1,92 @@
 page = PAGE
 page {
+    shortcutIcon = EXT:sitepackage/Resources/Public/Icons/Extension.svg
+
+    meta {
+        viewport = width=device-width, initial-scale=1.0, shrink-to-fit=no
+    }
+
+    includeCSS {
+        main = EXT:sitepackage/Resources/Public/Css/main.css
+    }
+
+    includeJSFooter {
+        main = EXT:sitepackage/Resources/Public/JavaScript/main.js
+    }
+
     10 = FLUIDTEMPLATE
     10 {
-        templateName = Default
+        # Template names will be generated automatically by converting the applied
+        # backend_layout, there is no explicit mapping necessary anymore.
+        #
+        # BackendLayout Key
+        # subnavigation_right_2_columns -> SubnavigationRight2Columns.html
+        #
+        # Backend Record
+        # uid: 1 -> 1.html
+        #
+        # Database Entry
+        # value: -1 -> None.html
+        # value: pagets__subnavigation_right_2_columns -> SubnavigationRight2Columns.html
+
+        templateName = TEXT
+        templateName {
+            cObject = TEXT
+            cObject {
+                data = pagelayout
+                required = 1
+                case = uppercamelcase
+                split {
+                    token = pagets__
+                    cObjNum = 1
+                    1.current = 1
+                }
+            }
+
+            ifEmpty = Default
+        }
+
         templateRootPaths {
             0 = EXT:sitepackage/Resources/Private/Templates/Page/
+            1 = {$page.fluidtemplate.templateRootPath}
         }
 
         partialRootPaths {
             0 = EXT:sitepackage/Resources/Private/Partials/Page/
+            1 = {$page.fluidtemplate.partialRootPath}
         }
 
         layoutRootPaths {
             0 = EXT:sitepackage/Resources/Private/Layouts/Page/
+            1 = {$page.fluidtemplate.layoutRootPath}
+        }
+
+        dataProcessing {
+            # Language Navigation
+            10 = TYPO3\CMS\Frontend\DataProcessing\LanguageMenuProcessor
+            10 {
+                as = navigationLanguage
+                languages = auto
+            }
+
+            # Main Navigation
+            20 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+            20 {
+                as = navigationMain
+                expandAll = 1
+                levels = 99
+                titleField = nav_title // title
+            }
+
+            # Rootline Navigation
+            30 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+            30 {
+                as = navigationRootline
+                special = rootline
+                special.range = 0|-1
+                titleField = nav_title // title
+                includeNotInMenu = 1
+            }
         }
     }
 }

@@ -1,4 +1,0 @@
-/**
-* Import all .typoscript files from directory "Setup"
-*/
-@import './Setup/*.typoscript'
