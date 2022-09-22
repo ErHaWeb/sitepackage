@@ -1,3 +1,5 @@
+# https://docs.typo3.org/m/typo3/reference-typoscript/main/en-us/TopLevelObjects/Other.html#temp-styles-lib
+
 lib {
     # https://docs.typo3.org/c/typo3/cms-fluid-styled-content/main/en-us/FirstSteps/DisplayContent.html
     dynamicContent = COA
