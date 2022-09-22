@@ -11,7 +11,11 @@
  * LICENSE.txt file that was distributed with this source code.
  *
  * The TYPO3 project - inspiring people to share!
+ *
+ * https://docs.typo3.org/m/typo3/reference-coreapi/main/en-us/ExtensionArchitecture/FileStructure/ExtEmconf.html
  */
+
+declare(strict_types=1);
 
 $EM_CONF[$_EXTKEY] = [
     'title' => 'Sitepackage',
