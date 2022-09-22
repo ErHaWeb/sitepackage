@@ -15,11 +15,11 @@ config {
 
     # cache_clearAtMidnight = false
     # cache_period = 86400
-    compressCss = 1
-    compressJs = 1
-    concatenateCss = 1
-    concatenateJs = 1
-    contentObjectExceptionHandler = 1
+    # compressCss = 0
+    # compressJs = 0
+    # concatenateCss = 0
+    # concatenateJs = 0
+    # contentObjectExceptionHandler = 0
     contentObjectExceptionHandler {
 
     }
@@ -94,3 +94,13 @@ config {
     # xhtmlDoctype =
     # xmlprologue =
 }
+
+[applicationContext !== "Development"]
+    config {
+        compressCss = 1
+        compressJs = 1
+        concatenateCss = 1
+        concatenateJs = 1
+        contentObjectExceptionHandler = 1
+    }
+[global]
