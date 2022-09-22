@@ -1,0 +1,24 @@
+# https://docs.typo3.org/m/typo3/reference-tsconfig/main/en-us/PageTsconfig/TceMain.html
+
+TCEMAIN {
+    # clearCacheCmd = all
+    # clearCache_disable = 0
+    # clearCache_pageGrandParent = 0
+    # clearCache_pageSiblingChildren = 0
+    # disableHideAtCopy = 0
+    # disablePrependAtCopy = 0
+
+    permissions {
+
+    }
+
+    preview {
+
+    }
+
+    table {
+
+    }
+
+    # translateToMessage =
+}

@@ -3,7 +3,7 @@
         <header/>
         <body>
             <trans-unit id="pages.PageTSconfig.sitepackage_title" xml:space="preserve">
-                <source>Static page TSconfig for Sitepackage</source>
+                <source>Static Page TSconfig for Sitepackage</source>
             </trans-unit>
             <trans-unit id="sys_template.TypoScript.sitepackage_title" xml:space="preserve">
                 <source>Static TypoScript for Sitepackage</source>

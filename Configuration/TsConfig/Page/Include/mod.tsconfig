@@ -1,0 +1,52 @@
+# https://docs.typo3.org/m/typo3/reference-tsconfig/main/en-us/PageTsconfig/Mod.html
+
+mod {
+    SHARED {
+
+    }
+
+    web_info {
+
+    }
+
+    web_layout {
+        BackendLayouts {
+            example {
+                title = Example Backend Layout
+                # icon = EXT:sitepackage/Resources/Public/Images/BackendLayouts/example.gif
+                config {
+                    backend_layout {
+                        colCount = 1
+                        rowCount = 1
+                        rows {
+                            1 {
+                                columns {
+                                    1 {
+                                        name = Main Content
+                                        colPos = 0
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    web_list {
+
+    }
+
+    web_ts {
+
+    }
+
+    web_view {
+
+    }
+
+    wizards {
+
+    }
+}

@@ -31,13 +31,21 @@ defined('TYPO3') or die();
      */
     $versionInformation = GeneralUtility::makeInstance(Typo3Version::class);
     if ($versionInformation->getMajorVersion() < 12) {
-        ExtensionManagementUtility::addPageTSConfig('@import "EXT:sitepackage/Configuration/page.tsconfig"');
+        ExtensionManagementUtility::addPageTSConfig(trim(
+            '
+                @import "EXT:sitepackage/Configuration/page.tsconfig"
+            '
+        ));
     }
 
     /**
      * Adding the default User TSconfig
      */
-    ExtensionManagementUtility::addUserTSConfig('@import "EXT:sitepackage/Configuration/TsConfig/user.tsconfig"');
+    ExtensionManagementUtility::addUserTSConfig(trim(
+        '
+                @import "EXT:sitepackage/Configuration/TsConfig/User/*.tsconfig"
+            '
+    ));
 
     /**
      * Add static TypoScript from EXT:fluid_styled_content
@@ -45,12 +53,12 @@ defined('TYPO3') or die();
     if (ExtensionManagementUtility::isLoaded('fluid_styled_content')) {
         ExtensionManagementUtility::addTypoScriptConstants(trim(
             '
-                @import \'EXT:fluid_styled_content/Configuration/TypoScript/constants.typoscript\'
+                @import "EXT:fluid_styled_content/Configuration/TypoScript/constants.typoscript"
             '
         ));
         ExtensionManagementUtility::addTypoScriptSetup(trim(
             '
-                @import \'EXT:fluid_styled_content/Configuration/TypoScript/setup.typoscript\'
+                @import "EXT:fluid_styled_content/Configuration/TypoScript/setup.typoscript"
             '
         ));
     }
@@ -61,7 +69,7 @@ defined('TYPO3') or die();
     if (ExtensionManagementUtility::isLoaded('form')) {
         ExtensionManagementUtility::addTypoScriptSetup(trim(
             '
-                @import \'EXT:form/Configuration/TypoScript/setup.typoscript\'
+                @import "EXT:form/Configuration/TypoScript/setup.typoscript"
                 module.tx_form.settings.yamlConfigurations.100 = EXT:sitepackage/Configuration/Form/CustomFormSetup.yaml
                 plugin.tx_form.settings.yamlConfigurations.100 = EXT:sitepackage/Configuration/Form/CustomFormSetup.yaml
             '
@@ -73,12 +81,12 @@ defined('TYPO3') or die();
      */
     ExtensionManagementUtility::addTypoScriptConstants(trim(
         '
-            @import \'EXT:sitepackage/Configuration/TypoScript/Constants/*.typoscript\'
+            @import "EXT:sitepackage/Configuration/TypoScript/Constants/*.typoscript"
         '
     ));
     ExtensionManagementUtility::addTypoScriptSetup(trim(
         '
-            @import \'EXT:sitepackage/Configuration/TypoScript/Setup/*.typoscript\'
+            @import "EXT:sitepackage/Configuration/TypoScript/Setup/*.typoscript"
         '
     ));
 })();

@@ -24,7 +24,7 @@ defined('TYPO3') or die();
     /**
      * Page TSconfig file path
      */
-    $filePath = 'Configuration/TsConfig/page.tsconfig';
+    $filePath = 'Configuration/TsConfig/Page/page.tsconfig';
 
     /**
      * Page TSconfig include path
