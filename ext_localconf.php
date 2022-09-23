@@ -75,18 +75,4 @@ defined('TYPO3') or die();
             '
         ));
     }
-
-    /**
-     * Add static TypoScript from EXT:sitepackage
-     */
-    ExtensionManagementUtility::addTypoScriptConstants(trim(
-        '
-            @import "EXT:sitepackage/Configuration/TypoScript/Constants/*.typoscript"
-        '
-    ));
-    ExtensionManagementUtility::addTypoScriptSetup(trim(
-        '
-            @import "EXT:sitepackage/Configuration/TypoScript/Setup/*.typoscript"
-        '
-    ));
 })();
