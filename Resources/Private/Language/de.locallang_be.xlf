@@ -1,0 +1,27 @@
+<xliff version="1.0" xmlns:t3="http://typo3.org/schemas/xliff">
+    <file source-language="en" target-language="de" datatype="plaintext" original="messages" date="2011-10-18T18:20:51Z" product-name="sitepackage">
+        <header/>
+        <body>
+            <trans-unit id="backend_layout.default" xml:space="preserve">
+                <source>Default Backend Layout</source>
+                <target>Standard Backend Layout</target>
+            </trans-unit>
+            <trans-unit id="backend_layout.example" xml:space="preserve">
+                <source>2 Columns Example Backend Layout</source>
+                <target>2 Spalten Beispiel Backend Layout</target>
+            </trans-unit>
+            <trans-unit id="backend_layout.column.content" xml:space="preserve">
+                <source>Content</source>
+                <target>Inhalt</target>
+            </trans-unit>
+            <trans-unit id="backend_layout.column.content_left" xml:space="preserve">
+                <source>Left Column Content</source>
+                <target>Inhalt der linken Spalte</target>
+            </trans-unit>
+            <trans-unit id="backend_layout.column.content_right" xml:space="preserve">
+                <source>Right Column Content</source>
+                <target>Inhalt der rechten Spalte</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

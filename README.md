@@ -1,5 +1,10 @@
-# Sitepackage Basic Structure
+# <img width="50" height="50" style="vertical-align: middle;" src="Resources/Public/Icons/Extension.svg" alt=""> TYPO3 Sitepackage</div>
 
+With this TYPO3 Sitepackage I tried to stick as close as possible to the recommended standard and to represent all conceivable functional areas.
+
+For further details on the function of each file you will find a documentation link in each file for more details.
+
+## Basic Structure
 ```
 .
 ├── Classes                                       # Contains all PHP Classes
@@ -103,9 +108,11 @@
 │   │   │   ├── .gitignore                        # Ignore all files inside this directory
 │   │   ├── Language                              # Any language files to provide translated labels in backend and frontend 
 │   │   │   ├── de.locallang.xlf                  # German translations of Frontend labels
-│   │   │   ├── de.locallang_db.xlf               # German translations of Backend labels
+│   │   │   ├── de.locallang_be.xlf               # German translations of Backend labels
+│   │   │   ├── de.locallang_db.xlf               # German translations of labels used in TCA
 │   │   │   ├── locallang.xlf                     # Source file for Frontend labels (english)
-│   │   │   └── locallang_db.xlf                  # Source file for Backend labels (english)
+│   │   │   ├── locallang_be.xlf                  # Source file for Backend labels (english)
+│   │   │   └── locallang_db.xlf                  # Source file for labels used in TCA (english)
 │   │   ├── Layouts                               # Any Fluid Layout files
 │   │   │   ├── Form                              # Fluid Layout Overrides for EXT:form
 │   │   │   │   └── Frontend                      # Fluid Layout Frontend Overrides for EXT:form
@@ -128,6 +135,9 @@
 │       │   └── rte.css                           # CSS used inside the Rich Text Editor (should be compiled from ../Scss/rte.scss)
 │       ├── Fonts                                 # Any Font files to be loaded by the sitepackage
 │       ├── Icons                                 # Any Icon files to be loaded by the sitepackage
+│       │   ├── BackendLayouts                    # Contains Icons for BackendLayouts
+│       │   │   ├── columns-2.svg                 # Example BackendLayout Icon file to display two columns
+│       │   │   └── default.svg                   # Default BackendLayout Icon file to display one column
 │       │   └── Extension.svg                     # Extension icon
 │       ├── Images                                # Any Image files to be loaded by the sitepackage
 │       ├── JavaScript                            # Any JavaScript files to be loaded by the sitepackage
@@ -154,12 +164,9 @@
 ├── ext_typoscript_constants.typoscript           # Default TypoScript constants that will be included in all templates
 └── ext_typoscript_setup.typoscript               # Default TypoScript setup that will be included in all templates
 ```
+(This tree has been created by `tree -a`) 
 
-## Notices:
-
-### Documentation Links
-
-You will find a documentation link in each file for more details.
+## FAQ:
 
 ### How to get rid of the README.md files?
 
@@ -173,11 +180,17 @@ or in DDEV:
 ddev exec find ./packages/sitepackage/ -name "README.md" -type f -delete
 ```
 
-### How do I change namespace `VendorName/Sitepackage` to `FancyCompany/GreatExtension`?
+### How do I easily change the namespace, composer name and extension key?
+
+If want to change the Namespace used in all files from `VendorName/Sitepackage` to `FancyCompany/GreatExtension` (adjust this example to your needs) use the following commands:
+
 ```
 find ./packages/sitepackage \( -iname \*.html \) -type f -print0 | xargs -0 sed -i 's/VendorName\/Sitepackage/FancyCompany\/GreatExtension/g'
 find ./packages/sitepackage \( -iname \*.php -o -iname \*.yaml \) -type f -print0 | xargs -0 sed -i 's/VendorName\\\Sitepackage/FancyCompany\\\GreatExtension/g'
 find ./packages/sitepackage \( -iname \*.php -o -iname \*.json \) -type f -print0 | xargs -0 sed -i 's/VendorName\\\\\\\Sitepackage/FancyCompany\\\\\\\GreatExtension/g'
+```
+To change the composer name and extension key use the following commands:
+```
 find ./packages/sitepackage \( -iname \*.json \) -type f -print0 | xargs -0 sed -i 's/vendorname\/sitepackage/fancy-company\/great-extension/g'
 find ./packages/sitepackage \( -iname \*.php -o -iname \*.xml -o -iname \*.yaml -o -iname \*.typoscript -o -iname \*.tsconfig -o -iname \*.xlf -o -iname \*.json \) -type f -print0 | xargs -0 sed -i 's/sitepackage/great-extension/g'
 mv ./packages/sitepackage ./packages/great-extension
@@ -187,7 +200,11 @@ or in DDEV:
 ddev exec "find ./packages/sitepackage \( -iname \*.html \) -type f -print0 | xargs -0 sed -i 's/VendorName\/Sitepackage/FancyCompany\/GreatExtension/g'"
 ddev exec "find ./packages/sitepackage \( -iname \*.php -o -iname \*.yaml \) -type f -print0 | xargs -0 sed -i 's/VendorName\\\Sitepackage/FancyCompany\\\GreatExtension/g'"
 ddev exec "find ./packages/sitepackage \( -iname \*.php -o -iname \*.json \) -type f -print0 | xargs -0 sed -i 's/VendorName\\\\\\\Sitepackage/FancyCompany\\\\\\\GreatExtension/g'"
+```
+```
 ddev exec "find ./packages/sitepackage \( -iname \*.json \) -type f -print0 | xargs -0 sed -i 's/vendorname\/sitepackage/fancy-company\/great-extension/g'"
 ddev exec "find ./packages/sitepackage \( -iname \*.php -o -iname \*.xml -o -iname \*.yaml -o -iname \*.typoscript -o -iname \*.tsconfig -o -iname \*.xlf -o -iname \*.json \) -type f -print0 | xargs -0 sed -i 's/sitepackage/great-extension/g'"
 ddev exec mv ./packages/sitepackage ./packages/great-extension
 ```
+
+© 2022 Eric Bode

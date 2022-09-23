@@ -1,16 +1,20 @@
 example {
-    title = Example Backend Layout
-    # icon = EXT:sitepackage/Resources/Public/Images/BackendLayouts/example.gif
+    title = LLL:EXT:sitepackage/Resources/Private/Language/locallang_be.xlf:backend_layout.example
+    icon = EXT:sitepackage/Resources/Public/Icons/BackendLayouts/columns-2.svg
     config {
         backend_layout {
-            colCount = 1
+            colCount = 2
             rowCount = 1
             rows {
                 1 {
                     columns {
                         1 {
-                            name = Main Content
+                            name = LLL:EXT:sitepackage/Resources/Private/Language/locallang_be.xlf:backend_layout.column.content_left
                             colPos = 0
+                        }
+                        2 {
+                            name = LLL:EXT:sitepackage/Resources/Private/Language/locallang_be.xlf:backend_layout.column.content_right
+                            colPos = 1
                         }
                     }
                 }

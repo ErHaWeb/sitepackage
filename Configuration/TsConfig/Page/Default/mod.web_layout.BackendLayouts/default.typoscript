@@ -1,6 +1,6 @@
 default {
-    title = Default Backend Layout
-    # icon = EXT:sitepackage/Resources/Public/Images/BackendLayouts/default.gif
+    title = LLL:EXT:sitepackage/Resources/Private/Language/locallang_be.xlf:backend_layout.default
+    icon = EXT:sitepackage/Resources/Public/Icons/BackendLayouts/default.svg
     config {
         backend_layout {
             colCount = 1
@@ -9,7 +9,7 @@ default {
                 1 {
                     columns {
                         1 {
-                            name = Content
+                            name = LLL:EXT:sitepackage/Resources/Private/Language/locallang_be.xlf:backend_layout.column.content
                             colPos = 0
                         }
                     }
