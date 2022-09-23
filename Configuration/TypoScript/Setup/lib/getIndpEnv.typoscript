@@ -1,0 +1,8 @@
+getIndpEnv = TEXT
+getIndpEnv {
+    data.cObject = TEXT
+    data.cObject {
+        current = 1
+        wrap = getIndpEnv:|
+    }
+}

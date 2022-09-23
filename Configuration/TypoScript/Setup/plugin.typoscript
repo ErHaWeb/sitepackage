@@ -1,11 +1,5 @@
 # https://docs.typo3.org/m/typo3/reference-typoscript/11.5/en-us/TopLevelObjects/Plugin.html
 
 plugin {
-    tx_form {
-        settings {
-            yamlSettingsOverrides {
-
-            }
-        }
-    }
+    @import './plugin/*.typoscript'
 }

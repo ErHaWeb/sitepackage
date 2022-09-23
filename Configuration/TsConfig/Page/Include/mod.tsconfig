@@ -11,26 +11,7 @@ mod {
 
     web_layout {
         BackendLayouts {
-            example {
-                title = Example Backend Layout
-                # icon = EXT:sitepackage/Resources/Public/Images/BackendLayouts/example.gif
-                config {
-                    backend_layout {
-                        colCount = 1
-                        rowCount = 1
-                        rows {
-                            1 {
-                                columns {
-                                    1 {
-                                        name = Main Content
-                                        colPos = 0
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
+            @import './mod.web_layout.BackendLayouts/*.typoscript'
         }
     }
 

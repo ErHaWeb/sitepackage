@@ -1,0 +1,20 @@
+default {
+    title = Default Backend Layout
+    # icon = EXT:sitepackage/Resources/Public/Images/BackendLayouts/default.gif
+    config {
+        backend_layout {
+            colCount = 1
+            rowCount = 1
+            rows {
+                1 {
+                    columns {
+                        1 {
+                            name = Content
+                            colPos = 0
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
