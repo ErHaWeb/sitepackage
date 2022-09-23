@@ -15,7 +15,11 @@ For further details on the function of each file you will find a documentation l
 │   │   ├── Persistence                           # Contains all PHP Domain Persistence Classes
 │   │   ├── Repository                            # Contains all PHP Domain Repository Classes
 │   │   └── Validator                             # Contains all PHP Domain Validator Classes
+│   ├── ExpressionLanguage                        # Contains all Expression Language Provider PHP Classes
+│   │   └── CustomTypoScriptConditionProvider.php # Custom TypoScript Condition Provider
 │   ├── Service                                   # Contains all PHP Service Classes
+│   ├── TypoScript                                # Contains PHP Classes that extend TypoScript
+│   │   └── CustomConditionFunctionsProvider.php  # Custom Condition Functions Provider
 │   ├── View                                      # Contains all PHP View Classes
 │   └── ViewHelpers                               # Contains all PHP ViewHelper Classes to be used in Fluid
 │       └── HtmlTagAttributesViewHelper.php       # Example ViewHelper file to add HTML tag attributes
@@ -132,6 +136,8 @@ For further details on the function of each file you will find a documentation l
 │   │           └── Example.html                  # Template File for example layout (configured in /Configuration/TsConfig/Page/Include/mod.tsconfig)
 │   └── Public                                    # Public resource files accessible by the browser (e.g. CSS, JavaScript, Images, etc.)
 │       ├── Css                                   # Any CSS files to be loaded by the sitepackage
+│       │   ├── color1.scss                       # Example CSS to provide colors for color scheme 1
+│       │   ├── color2.scss                       # Example CSS to provide colors for color scheme 2
 │       │   ├── main.css                          # Main Frontend CSS file (should be compiled from ../Scss/main.scss)
 │       │   └── rte.css                           # CSS used inside the Rich Text Editor (should be compiled from ../Scss/rte.scss)
 │       ├── Fonts                                 # Any Font files to be loaded by the sitepackage
@@ -144,6 +150,8 @@ For further details on the function of each file you will find a documentation l
 │       ├── JavaScript                            # Any JavaScript files to be loaded by the sitepackage
 │       │   └── main.js                           # Main JavaScript file
 │       └── Scss                                  # Any SCSS files to be compiled to CSS files
+│           ├── color1.scss                       # SCSS source file for example color scheme 1
+│           ├── color2.scss                       # SCSS source file for example color scheme 2
 │           ├── main.scss                         # Main SCSS source file for Frontend CSS
 │           └── rte.scss                          # SCSS source file for Rich Text Editor CSS
 ├── Tests                                         # This directory contains tests, e.g. unit tests in the subfolder Unit/.
