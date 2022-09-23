@@ -1,4 +1,4 @@
-# https://docs.typo3.org/m/typo3/reference-tsconfig/main/en-us/PageTsconfig/Options.html
+# https://docs.typo3.org/m/typo3/reference-tsconfig/11.5/en-us/PageTsconfig/Options.html
 
 options {
     backendLayout {

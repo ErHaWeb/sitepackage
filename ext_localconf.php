@@ -16,7 +16,7 @@
 declare(strict_types=1);
 
 /**
- * https://docs.typo3.org/m/typo3/reference-coreapi/main/en-us/ExtensionArchitecture/FileStructure/ExtLocalconf.html
+ * https://docs.typo3.org/m/typo3/reference-coreapi/11.5/en-us/ExtensionArchitecture/FileStructure/ExtLocalconf.html
  */
 
 use TYPO3\CMS\Core\Information\Typo3Version;
@@ -28,6 +28,8 @@ defined('TYPO3') or die();
 (static function () {
     /**
      * Adding the default Page TSconfig
+     * 
+     * https://docs.typo3.org/c/typo3/cms-core/main/en-us/Changelog/12.0/Feature-96614-AutomaticInclusionOfPageTsConfigOfExtensions.html
      */
     $versionInformation = GeneralUtility::makeInstance(Typo3Version::class);
     if ($versionInformation->getMajorVersion() < 12) {
