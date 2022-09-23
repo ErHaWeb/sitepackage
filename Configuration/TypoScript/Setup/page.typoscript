@@ -92,3 +92,17 @@ page {
         }
     }
 }
+
+[rootlineField('tx_sitepackage_colorscheme') === '1']
+    page {
+        includeCSS {
+            colorscheme = EXT:sitepackage/Resources/Public/Css/color1.css
+        }
+    }
+[rootlineField('tx_sitepackage_colorscheme') === '2']
+    page {
+        includeCSS {
+            colorscheme = EXT:sitepackage/Resources/Public/Css/color2.css
+        }
+    }
+[global]

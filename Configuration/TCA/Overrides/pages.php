@@ -13,6 +13,8 @@
  * The TYPO3 project - inspiring people to share!
  */
 
+use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
+
 defined('TYPO3') or die();
 
 (static function () {
@@ -45,4 +47,40 @@ defined('TYPO3') or die();
      * Add static TSconfig directly through TCA instead of the API function to be able to translate the title
      */
     $GLOBALS['TCA']['pages']['columns']['tsconfig_includes']['config']['items'][] = [$title, $includePath];
+
+    /**
+     * Add further columns to pages records
+     */
+    $tempColumns = [
+        'tx_sitepackage_colorscheme' => [
+            'exclude' => 1,
+            'label' => 'LLL:EXT:sitepackage/Resources/Private/Language/locallang_db.xlf:pages.tx_sitepackage_colorscheme.title',
+            'description' => 'LLL:EXT:sitepackage/Resources/Private/Language/locallang_db.xlf:pages.tx_sitepackage_colorscheme.description',
+            'config' => [
+                'type' => 'select',
+                'renderType' => 'selectSingle',
+                'size' => 1,
+                'maxitems' => 1,
+                'items' => [
+                    ['LLL:EXT:sitepackage/Resources/Private/Language/locallang_db.xlf:pages.tx_sitepackage_colorscheme.I.0', '0', ''],
+                    ['LLL:EXT:sitepackage/Resources/Private/Language/locallang_db.xlf:pages.tx_sitepackage_colorscheme.I.1', '1', ''],
+                    ['LLL:EXT:sitepackage/Resources/Private/Language/locallang_db.xlf:pages.tx_sitepackage_colorscheme.I.2', '2', ''],
+                ],
+                'fieldWizard' => [
+                    'selectIcons' => [
+                        'disabled' => false,
+                    ],
+                ],
+            ],
+        ],
+    ];
+
+    ExtensionManagementUtility::addTCAcolumns('pages', $tempColumns);
+
+    ExtensionManagementUtility::addFieldsToPalette(
+        'pages',
+        'layout',
+        '--linebreak--,tx_sitepackage_colorscheme',
+        'after:newUntil'
+    );
 })();

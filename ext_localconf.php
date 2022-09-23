@@ -77,4 +77,13 @@ defined('TYPO3') or die();
             '
         ));
     }
+
+    /**
+     * Add further rootline fields
+     */
+    $rootlineFields = &$GLOBALS['TYPO3_CONF_VARS']['FE']['addRootLineFields'];
+    if ($rootlineFields !== '') {
+        $rootlineFields .= ',';
+    }
+    $rootlineFields .= 'tx_sitepackage_colorscheme';
 })();

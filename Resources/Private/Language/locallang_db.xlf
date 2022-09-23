@@ -5,6 +5,21 @@
             <trans-unit id="pages.PageTSconfig.sitepackage_title" xml:space="preserve">
                 <source>Static Page TSconfig for Sitepackage</source>
             </trans-unit>
+            <trans-unit id="pages.tx_sitepackage_colorscheme.title" xml:space="preserve">
+                <source>Color Scheme</source>
+            </trans-unit>
+            <trans-unit id="pages.tx_sitepackage_colorscheme.description" xml:space="preserve">
+                <source>This is provided by the Sitepackage</source>
+            </trans-unit>
+            <trans-unit id="pages.tx_sitepackage_colorscheme.I.0" xml:space="preserve">
+                <source>Default</source>
+            </trans-unit>
+            <trans-unit id="pages.tx_sitepackage_colorscheme.I.1" xml:space="preserve">
+                <source>Color Scheme 1</source>
+            </trans-unit>
+            <trans-unit id="pages.tx_sitepackage_colorscheme.I.2" xml:space="preserve">
+                <source>Color Scheme 2</source>
+            </trans-unit>
             <trans-unit id="sys_template.TypoScript.sitepackage_title" xml:space="preserve">
                 <source>Static TypoScript for Sitepackage</source>
             </trans-unit>

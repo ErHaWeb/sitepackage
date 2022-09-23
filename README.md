@@ -25,6 +25,7 @@ For further details on the function of each file you will find a documentation l
 │   │   ├── AjaxRoutes.php                        # Definitions for ajax routes for entry points
 │   │   ├── Modules.php                           # Definitions for Modules
 │   │   └── Routes.php                            # Definitions for "regular" routes for entry points
+│   ├── ExpressionLanguage.php                    # Register Expression Language Provider
 │   ├── Extbase                                   # Contains folder "Persistence"
 │   │   └── Persistence                           # Contains PHP file "Classes"
 │   │       └── Classes.php                       # Extbase persistence mapping for Classes
