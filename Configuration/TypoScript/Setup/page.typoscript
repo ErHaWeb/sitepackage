@@ -93,6 +93,8 @@ page {
     }
 }
 
+# Use custom "rootlineField" Symfony Condition defined under ./Classes/TypoScript/CustomConditionFunctionsProvider.php
+# to include specific CSS files based on a color scheme selection
 [rootlineField('tx_sitepackage_colorscheme') === '1']
     page {
         includeCSS {
