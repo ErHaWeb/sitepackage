@@ -3,6 +3,7 @@
 ```
 .
 ├── Classes                                       # Contains all PHP Classes
+│   ├── .htaccess                                 # Prevents public access to directory "Classes"
 │   ├── Controller                                # Contains all PHP controller Classes
 │   ├── Domain                                    # Contains all PHP Domain Classes
 │   │   ├── Model                                 # Contains all PHP Domain Model Classes
@@ -14,6 +15,7 @@
 │   └── ViewHelpers                               # Contains all PHP ViewHelper Classes to be used in Fluid
 │       └── HtmlTagAttributesViewHelper.php       # Example ViewHelper file to add HTML tag attributes
 ├── Configuration                                 # Contains any configuration file for Backend and Frontend
+│   ├── .htaccess                                 # Prevents public access to directory "Configuration"
 │   ├── Backend                                   # Contains configuration that is important within the Backend
 │   │   ├── AjaxRoutes.php                        # Definitions for ajax routes for entry points
 │   │   ├── Modules.php                           # Definitions for Modules
@@ -72,20 +74,20 @@
 │   │   │   ├── plugin.typoscript                 # Override plugin specific constants
 │   │   │   └── styles.typoscript                 # Frontend specific constants (mainly from EXT:fluid_styled_content)
 │   │   ├── Setup                                 # TypoScript Setup files
+│   │   │   ├── _GIFBUILDER.typoscript            # Configure global settings for GIFBUILDER by this top-level object
+│   │   │   ├── config.typoscript                 # Global configuration for Frontend rendering
+│   │   │   ├── constants.typoscript              # Defines constants for replacement inside a parseFunc
 │   │   │   ├── lib                               # Contains all definitions for the TypoScript "lib" top-level object
 │   │   │   │   ├── dynamicContent.typoscript     # Helper object to dynamically get Content of any Content Column Position
 │   │   │   │   ├── getIndpEnv.typoscript         # Helper object to get Environment-safe server and environment variables
 │   │   │   │   └── parseFunc.typoscript          # Helper object to parse content for stuff like special typo tags
-│   │   │   ├── plugin                            # Contains all definitions for the TypoScript "plugin" top-level object
-│   │   │   │   └── tx_form.typoscript            # TypoScript Configuration for EXT:form
-│   │   │   ├── tt_content                        # Contains all definitions for the TypoScript "tt_content" top-level object
-│   │   │   ├── _GIFBUILDER.typoscript            # Configure global settings for GIFBUILDER by this top-level object
-│   │   │   ├── config.typoscript                 # Global configuration for Frontend rendering
-│   │   │   ├── constants.typoscript              # Defines constants for replacement inside a parseFunc
 │   │   │   ├── lib.typoscript                    # Used for code "libraries" that can be referenced in TypoScript (includes ./lib)
 │   │   │   ├── module.typoscript                 # Backend Module configuration
 │   │   │   ├── page.typoscript                   # This defines what is rendered in the Frontend
+│   │   │   ├── plugin                            # Contains all definitions for the TypoScript "plugin" top-level object
+│   │   │   │   └── tx_form.typoscript            # TypoScript Configuration for EXT:form
 │   │   │   ├── plugin.typoscript                 # Frontend set up for plugins (includes ./plugin)
+│   │   │   ├── tt_content                        # Contains all definitions for the TypoScript "tt_content" top-level object
 │   │   │   └── tt_content.typoscript             # Content rendering definitions (includes ./tt_content)
 │   │   ├── constants.typoscript                  # Manually added Static TypoScript Constants (includes ./Constants)
 │   │   └── setup.typoscript                      # Manually added Static TypoScript Setup (includes ./Setup)
@@ -95,7 +97,8 @@
 ├── LICENSE.txt                                   # Official license file for GPL-2.0-or-later
 ├── README.md                                     # The file you currently look at
 ├── Resources                                     # Contains any public and private resource files
-│   ├── Private                                   # Private resource files like Fluid Templates, Language files or Form Definitions 
+│   ├── Private                                   # Private resource files like Fluid Templates, Language files or Form Definitions
+│   │   ├── .htaccess                             #  Prevents public access to directory "Private"
 │   │   ├── Forms                                 # Can contain form definitions (read/write access granted)
 │   │   │   ├── .gitignore                        # Ignore all files inside this directory
 │   │   ├── Language                              # Any language files to provide translated labels in backend and frontend 
