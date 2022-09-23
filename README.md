@@ -147,6 +147,8 @@ For further details on the function of each file you will find a documentation l
 │       │   │   └── default.svg                   # Default BackendLayout Icon file to display one column
 │       │   └── Extension.svg                     # Extension icon
 │       ├── Images                                # Any Image files to be loaded by the sitepackage
+│       │   └── Backend                           # Contains Images that are used in the backend
+│       │       └── loginBackgroundImage.svg      # Login Background Image configured in ext_localconf.php
 │       ├── JavaScript                            # Any JavaScript files to be loaded by the sitepackage
 │       │   └── main.js                           # Main JavaScript file
 │       └── Scss                                  # Any SCSS files to be compiled to CSS files

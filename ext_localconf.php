@@ -20,6 +20,7 @@ declare(strict_types=1);
  */
 
 use TYPO3\CMS\Core\Information\Typo3Version;
+use TYPO3\CMS\Core\Utility\ArrayUtility;
 use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 
@@ -86,4 +87,20 @@ defined('TYPO3') or die();
         $rootlineFields .= ',';
     }
     $rootlineFields .= 'tx_sitepackage_colorscheme';
+
+    /**
+     * Customize Login Mask and Backend display
+     */
+    ArrayUtility::mergeRecursiveWithOverrule(
+        $GLOBALS['TYPO3_CONF_VARS']['EXTENSIONS']['backend'],
+        [
+            'backendFavicon' => 'EXT:sitepackage/Resources/Public/Icons/Extension.svg',
+            'backendLogo' => 'EXT:sitepackage/Resources/Public/Icons/Extension.svg',
+            'loginBackgroundImage' => 'EXT:sitepackage/Resources/Public/Images/Backend/loginBackgroundImage.svg',
+            'loginFootnote' => '© ' . date("Y") . ' Sitepackage',
+            'loginHighlightColor' => '#ff8700',
+            'loginLogo' => 'EXT:sitepackage/Resources/Public/Icons/Extension.svg',
+            'loginLogoAlt' => 'Login Logo alternative Text'
+        ]
+    );
 })();
