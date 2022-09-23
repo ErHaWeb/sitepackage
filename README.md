@@ -4,6 +4,24 @@ With this TYPO3 Sitepackage I tried to stick as close as possible to the recomme
 
 For further details on the function of each file you will find a documentation link in each file for more details.
 
+## Features
+
+### Full blown directory and file structure
+
+This sitepackage contains almost all the directories and files (except resource files) you need when creating your own sitepackage.
+
+### Color scheme selector
+
+As an example of how to add new fields to pages records through `ext_tables.sql` and `/Configuration/TCA/Overrides/pages.php` and how to implement custom Symfony Conditions (with files `Configuration/ExpressionLanguage.php`, `Classes/ExpressionLanguage/CustomTypoScriptConditionProvider.php` and `Classes/TypoScript/CustomConditionFunctionsProvider.php`) to be used in the TypoScript/TSconfig context (`Configuration/TypoScript/Setup/page.typoscript`) this sitepackage contains a method to provide choosable color schemes to backend users.
+
+### Backend Style Customization
+
+This sitepackage can customize the TYPO3 login mask style (background image, footnote, highlight color, login logo and login logos alt text) and the backend style (backend favicon and logo). It uses the function of `EXT:backend`. But instead of relying on a backend user to set these variables through the extension settings it overrides them in `ext_localconf.php` (which is an easier and centralized way).
+
+### Example Backend Layouts
+
+Example BackendLayouts can be found here `Configuration/TsConfig/Page/Default/mod.web_layout.BackendLayouts/` (as part of the always loaded default Page TSconfig) and here `Configuration/TsConfig/Page/Include/mod.web_layout.BackendLayouts` (as part of the user included Page TSconfig).
+
 ## Basic Structure
 ```
 .
@@ -193,7 +211,7 @@ ddev exec find ./packages/sitepackage/ -name "README.md" -type f -delete
 
 ### How do I easily change the namespace, composer name and extension key?
 
-If want to change the Namespace used in all files from `VendorName/Sitepackage` to `FancyCompany/GreatExtension` (adjust this example to your needs) use the following commands:
+If you want to change the Namespace used in all files from `VendorName/Sitepackage` to `FancyCompany/GreatExtension` (adjust this example to your needs) use the following commands:
 
 ```
 find ./packages/sitepackage \( -iname \*.html \) -type f -print0 | xargs -0 sed -i 's/VendorName\/Sitepackage/FancyCompany\/GreatExtension/g'
