@@ -1,0 +1,4 @@
+sitepackage_newcontentelement =< lib.contentElement
+sitepackage_newcontentelement {
+    templateName = NewContentElement
+}

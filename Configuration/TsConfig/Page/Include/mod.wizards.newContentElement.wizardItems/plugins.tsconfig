@@ -1,0 +1,8 @@
+# add the content element to the tab "plugins"
+plugins {
+    elements {
+
+    }
+
+    show := addToList()
+}

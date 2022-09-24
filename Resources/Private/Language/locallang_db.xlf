@@ -2,6 +2,7 @@
     <file source-language="en" datatype="plaintext" original="messages" date="2011-10-18T18:20:51Z" product-name="sitepackage">
         <header/>
         <body>
+            <!-- pages -->
             <trans-unit id="pages.PageTSconfig.sitepackage_title" xml:space="preserve">
                 <source>Static Page TSconfig for Sitepackage</source>
             </trans-unit>
@@ -20,8 +21,18 @@
             <trans-unit id="pages.tx_sitepackage_colorscheme.I.2" xml:space="preserve">
                 <source>Color Scheme 2</source>
             </trans-unit>
+
+            <!-- sys_template -->
             <trans-unit id="sys_template.TypoScript.sitepackage_title" xml:space="preserve">
                 <source>Static TypoScript for Sitepackage</source>
+            </trans-unit>
+
+            <!-- tt_content -->
+            <trans-unit id="tt_content.sitepackage_newcontentelement.title" xml:space="preserve">
+                <source>Custom content element</source>
+            </trans-unit>
+            <trans-unit id="tt_content.sitepackage_newcontentelement.description" xml:space="preserve">
+                <source>This is the description of the example custom content element</source>
             </trans-unit>
         </body>
     </file>

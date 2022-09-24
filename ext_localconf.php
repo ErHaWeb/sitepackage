@@ -57,6 +57,14 @@ defined('TYPO3') or die();
         ExtensionManagementUtility::addTypoScriptConstants(trim(
             '
                 @import "EXT:fluid_styled_content/Configuration/TypoScript/constants.typoscript"
+                
+                styles {
+                    templates {
+                        templateRootPath = EXT:sitepackage/Resources/Private/Templates/Content/
+                        partialRootPath = EXT:sitepackage/Resources/Private/Partials/Content/
+                        layoutRootPath = EXT:sitepackage/Resources/Private/Layouts/Content/
+                    }
+                }
             '
         ));
         ExtensionManagementUtility::addTypoScriptSetup(trim(

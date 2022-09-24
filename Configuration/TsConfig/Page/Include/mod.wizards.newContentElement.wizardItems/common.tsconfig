@@ -1,0 +1,15 @@
+# add the content element to the tab "common"
+common {
+    elements {
+        sitepackage_newcontentelement {
+            iconIdentifier = sitepackage-icon
+            title = LLL:EXT:sitepackage/Resources/Private/Language/locallang_db.xlf:tt_content.sitepackage_newcontentelement.title
+            description = LLL:EXT:sitepackage/Resources/Private/Language/locallang_db.xlf:tt_content.sitepackage_newcontentelement.description
+            tt_content_defValues {
+                CType = sitepackage_newcontentelement
+            }
+        }
+    }
+
+    show := addToList(sitepackage_newcontentelement)
+}

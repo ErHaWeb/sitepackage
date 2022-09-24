@@ -11,7 +11,7 @@ mod {
 
     web_layout {
         BackendLayouts {
-            @import './mod.web_layout.BackendLayouts/*.typoscript'
+            @import './mod.web_layout.BackendLayouts/*.tsconfig'
         }
     }
 
@@ -28,6 +28,10 @@ mod {
     }
 
     wizards {
-
+        newContentElement {
+            wizardItems {
+                @import './mod.wizards.newContentElement.wizardItems/*.tsconfig'
+            }
+        }
     }
 }

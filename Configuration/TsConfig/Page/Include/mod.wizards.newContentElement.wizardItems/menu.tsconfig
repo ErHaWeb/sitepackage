@@ -1,0 +1,8 @@
+# add the content element to the tab "menu"
+menu {
+    elements {
+
+    }
+
+    show := addToList()
+}

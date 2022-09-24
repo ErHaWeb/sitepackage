@@ -22,5 +22,10 @@ declare(strict_types=1);
  */
 
 return [
-
+    'sitepackage-icon' => [
+        // icon provider class
+        'provider' => \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
+        // the source SVG for the SvgIconProvider
+        'source' => 'EXT:sitepackage/Resources/Public/Icons/Extension.svg',
+    ],
 ];
