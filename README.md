@@ -126,7 +126,7 @@ Example BackendLayouts can be found here `Configuration/TsConfig/Page/Default/mo
 ├── README.md                                     # The file you currently look at
 ├── Resources                                     # Contains any public and private resource files
 │   ├── Private                                   # Private resource files like Fluid Templates, Language files or Form Definitions
-│   │   ├── .htaccess                             #  Prevents public access to directory "Private"
+│   │   ├── .htaccess                             # Prevents public access to directory "Private"
 │   │   ├── Forms                                 # Can contain form definitions (read/write access granted)
 │   │   │   ├── .gitignore                        # Ignore all files inside this directory
 │   │   ├── Language                              # Any language files to provide translated labels in backend and frontend 
