@@ -1,4 +1,4 @@
-# Validator
+# Classes/Domain/Validator/
 
 Contains all PHP Domain Validator Classes
 

@@ -1,4 +1,4 @@
-# lib
+# Configuration/TypoScript/Setup/lib/
 
 Contains all definitions for the TypoScript "lib" top-level object
 

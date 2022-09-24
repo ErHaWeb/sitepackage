@@ -1,4 +1,4 @@
-# Domain
+# Classes/Domain/
 
 Contains all PHP Domain Classes
 

@@ -1,4 +1,4 @@
-# Model
+# Classes/Domain/Model/
 
 Contains all PHP Domain Model Classes
 

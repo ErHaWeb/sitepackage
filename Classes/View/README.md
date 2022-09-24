@@ -1,4 +1,4 @@
-# View
+# Classes/View/
 
 Contains all PHP View Classes
 

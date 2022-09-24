@@ -1,2 +1,2 @@
-# Persistence
+# Configuration/Extbase/Persistence/
 

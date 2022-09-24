@@ -1,2 +1,2 @@
-# Language
+# Resources/Private/Language/
 

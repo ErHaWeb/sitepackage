@@ -1,2 +1,2 @@
-# Css
+# Resources/Public/Css/
 

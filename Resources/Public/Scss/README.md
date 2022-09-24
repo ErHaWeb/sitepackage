@@ -1,2 +1,2 @@
-# Scss
+# Resources/Public/Scss/
 

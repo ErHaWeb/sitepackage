@@ -1,2 +1,2 @@
-# Yaml
+# Configuration/Yaml/
 

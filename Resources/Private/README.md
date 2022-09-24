@@ -1,2 +1,2 @@
-# Private
+# Resources/Private/
 

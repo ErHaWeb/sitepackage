@@ -1,2 +1,2 @@
-# Public
+# Resources/Public/
 

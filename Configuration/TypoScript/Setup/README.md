@@ -1,2 +1,2 @@
-# Setup
+# Configuration/TypoScript/Setup/
 

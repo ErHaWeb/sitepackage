@@ -1,2 +1,2 @@
-# Icons
+# Resources/Public/Icons/
 

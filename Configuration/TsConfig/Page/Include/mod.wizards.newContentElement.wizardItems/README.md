@@ -1,4 +1,4 @@
-# mod.wizards.newContentElement.wizardItems
+# Configuration/TsConfig/Page/Include/mod.wizards.newContentElement.wizardItems/
 
 Contains definitions for the new content element wizards
 

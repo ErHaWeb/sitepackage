@@ -1,2 +1,2 @@
-# Images
+# Resources/Public/Images/
 

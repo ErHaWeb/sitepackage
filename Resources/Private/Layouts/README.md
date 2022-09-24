@@ -1,2 +1,2 @@
-# Layouts
+# Resources/Private/Layouts/
 

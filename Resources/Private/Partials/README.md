@@ -1,2 +1,2 @@
-# Partials
+# Resources/Private/Partials/
 

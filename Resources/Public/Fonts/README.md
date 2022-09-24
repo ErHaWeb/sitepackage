@@ -1,2 +1,2 @@
-# Fonts
+# Resources/Public/Fonts/
 

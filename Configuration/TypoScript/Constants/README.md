@@ -1,2 +1,2 @@
-# Constants
+# Configuration/TypoScript/Constants/
 

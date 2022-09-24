@@ -1,4 +1,4 @@
-# plugin
+# Configuration/TypoScript/Setup/plugin/
 
 Contains all definitions for the TypoScript "plugin" top-level object
 

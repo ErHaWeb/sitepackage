@@ -1,4 +1,4 @@
-# ViewHelpers
+# Classes/ViewHelpers/
 
 Contains all PHP ViewHelper Classes to be used in Fluid
 

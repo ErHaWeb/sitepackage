@@ -1,2 +1,2 @@
-# Page
+# Resources/Private/Layouts/Page/
 

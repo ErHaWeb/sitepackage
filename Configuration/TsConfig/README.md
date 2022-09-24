@@ -1,2 +1,2 @@
-# TsConfig
+# Configuration/TsConfig/
 

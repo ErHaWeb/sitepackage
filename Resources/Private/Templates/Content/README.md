@@ -1,2 +1,2 @@
-# Content
+# Resources/Private/Templates/Content/
 

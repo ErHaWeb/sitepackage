@@ -1,2 +1,2 @@
-# Extbase
+# Configuration/Extbase/
 

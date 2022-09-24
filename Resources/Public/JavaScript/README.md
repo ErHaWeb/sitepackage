@@ -1,2 +1,2 @@
-# JavaScript
+# Resources/Public/JavaScript/
 
