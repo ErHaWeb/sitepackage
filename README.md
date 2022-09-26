@@ -25,7 +25,7 @@ Example BackendLayouts can be found here `Configuration/TsConfig/Page/Default/mo
 ## Basic Structure
 
 - [`Classes`](Classes/) → Contains all PHP Classes
-  - [`.htaccess`](Classes/.htaccess) → Prevents public access to directory "Classes"
+  - [`.htaccess`](Classes/.htaccess) → Prevents public access to directory [`Classes`](Classes/)
   - [`Controller`](Classes/Controller) → Contains all PHP controller Classes
   - [`Domain`](Classes/Domain/) → Contains all PHP Domain Classes
     - [`Model`](Classes/Domain/Model/) → Contains all PHP Domain Model Classes
@@ -41,14 +41,14 @@ Example BackendLayouts can be found here `Configuration/TsConfig/Page/Default/mo
   - [`ViewHelpers`](Classes/ViewHelpers/) → Contains all PHP ViewHelper Classes to be used in Fluid
     - [`HtmlTagAttributesViewHelper.php`](Classes/ViewHelpers/HtmlTagAttributesViewHelper.php) → Example ViewHelper file to add HTML tag attributes
 - [`Configuration`](Configuration/) → Contains any configuration file for Backend and Frontend
-  - [`.htaccess`](Configuration/.htaccess) → Prevents public access to directory "Configuration"
+  - [`.htaccess`](Configuration/.htaccess) → Prevents public access to directory [`Configuration`](Configuration/)
   - [`Backend`](Configuration/Backend/) → Contains configuration that is important within the Backend
     - [`AjaxRoutes.php`](Configuration/Backend/AjaxRoutes.php) → Definitions for ajax routes for entry points
     - [`Modules.php`](Configuration/Backend/Modules.php) → Definitions for Modules
     - [`Routes.php`](Configuration/Backend/Routes.php) → Definitions for "regular" routes for entry points
   - [`ExpressionLanguage.php`](Configuration/ExpressionLanguage.php) → Register Expression Language Provider
-  - [`Extbase`](Configuration/Extbase/) → Contains folder "Persistence"
-    - [`Persistence`](Configuration/Extbase/Persistence/) → Contains PHP file "Classes"
+  - [`Extbase`](Configuration/Extbase/) → Contains folder [`Persistence`](Configuration/Extbase/Persistence/)
+    - [`Persistence`](Configuration/Extbase/Persistence/) → Contains PHP file [`Classes.php`](Configuration/Extbase/Persistence/Classes.php)
       - [`Classes.php`](Configuration/Extbase/Persistence/Classes.php) → Extbase persistence mapping for Classes
   - [`FlexForms`](Configuration/FlexForms/) → Contains FlexForm XML files
     - [`FlexFormExample.xml`](Configuration/FlexForms/FlexFormExample.xml) → Example FlexForm file to provide plugin settings
@@ -60,35 +60,35 @@ Example BackendLayouts can be found here `Configuration/TsConfig/Page/Default/mo
   - [`RequestMiddlewares.php`](Configuration/RequestMiddlewares.php) → Middleware Configuration for Frontend and Backend
   - [`Services.yaml`](Configuration/Services.yaml) → Configuration for automatic Symfony Service loading
   - [`TCA`](Configuration/TCA/) → Contains Table Configuration Array PHP files and Overrides
-    - [`Overrides`](Configuration/TCA/Overrides/) → Contains TCA Override PHP files
-      - [`pages.php`](Configuration/TCA/Overrides/pages.php) → Override "pages" TCA (e.g. add Page TSconfig includes)
-      - [`sys_template.php`](Configuration/TCA/Overrides/sys_template.php) → Override "sys_template" TCA (e.g. add TypoScript templates)
-      - [`tt_content.php`](Configuration/TCA/Overrides/tt_content.php) → Override "tt_content" TCA (e.g. prepare custom content elements)
+    - [`Overrides`](Configuration/TCA/Overrides/) → Contains [`TCA`](Configuration/TCA/) Override PHP files
+      - [`pages.php`](Configuration/TCA/Overrides/pages.php) → Override [`TCA`](Configuration/TCA/) for table `pages`  (e.g. add Page TSconfig includes)
+      - [`sys_template.php`](Configuration/TCA/Overrides/sys_template.php) → Override TCA for table `sys_template` (e.g. add TypoScript templates)
+      - [`tt_content.php`](Configuration/TCA/Overrides/tt_content.php) → Override [`TCA`](Configuration/TCA/) for table `tt_content` (e.g. prepare custom content elements)
   - [`TsConfig`](Configuration/TsConfig/) → Any TSconfig file for backend related adjustments
     - [`Page`](Configuration/TsConfig/Page/) → Contains Page TSconfig files for backend configuration (primarily modules)
-      - [`Default`](Configuration/TsConfig/Page/Default/) → Page TSconfig from "./Default" directory is always included
-      - [`Include`](Configuration/TsConfig/Page/Include/) → Page TSconfig from "./Include" directory can be included manually
+      - [`Default`](Configuration/TsConfig/Page/Default/) → Page TSconfig from [`Default`](Configuration/TsConfig/Page/Default/) directory is always included
+      - [`Include`](Configuration/TsConfig/Page/Include/) → Page TSconfig from [`Include`](Configuration/TsConfig/Page/Include/) directory can be included manually
         - [`RTE.tsconfig`](Configuration/TsConfig/Page/Include/RTE.tsconfig) → Customize RTE configuration
-        - [`TCAdefaults.tsconfig`](Configuration/TsConfig/Page/Include/TCAdefaults.tsconfig) → Override default values of TCA
+        - [`TCAdefaults.tsconfig`](Configuration/TsConfig/Page/Include/TCAdefaults.tsconfig) → Override default values of [`TCA`](Configuration/TCA/)
         - [`TCEFORM.tsconfig`](Configuration/TsConfig/Page/Include/TCEFORM.tsconfig) → Detailed configuration of how editing forms are rendered
         - [`TCEMAIN.tsconfig`](Configuration/TsConfig/Page/Include/TCEMAIN.tsconfig) → Configuration for the TYPO3 Core Engine (DataHandler)
         - [`mod.web_layout.BackendLayouts`](Configuration/TsConfig/Page/Include/mod.web_layout.BackendLayouts/) → Contains all BackendLayouts
           - [`default.tsconfig`](Configuration/TsConfig/Page/Include/mod.web_layout.BackendLayouts/default.tsconfig) → Contains the default BackendLayout
           - [`example.tsconfig`](Configuration/TsConfig/Page/Include/mod.web_layout.BackendLayouts/example.tsconfig) → Contains and additional example BackendLayout
         - [`mod.wizards.newContentElement.wizardItems`](Configuration/TsConfig/Page/Include/mod.wizards.newContentElement.wizardItems/) → Contains configurations for the newContentElement Wizard
-          - [`common.tsconfig`](Configuration/TsConfig/Page/Include/mod.wizards.newContentElement.wizardItems/common.tsconfig) → Defines content elements for the tab "common"
-          - [`forms.tsconfig`](Configuration/TsConfig/Page/Include/mod.wizards.newContentElement.wizardItems/forms.tsconfig) → Defines content elements for the tab "forms"
-          - [`menu.tsconfig`](Configuration/TsConfig/Page/Include/mod.wizards.newContentElement.wizardItems/menu.tsconfig) → Defines content elements for the tab "menu"
-          - [`plugins.tsconfig`](Configuration/TsConfig/Page/Include/mod.wizards.newContentElement.wizardItems/plugins.tsconfig) → Defines content elements for the tab "plugins"
-          - [`special.tsconfig`](Configuration/TsConfig/Page/Include/mod.wizards.newContentElement.wizardItems/special.tsconfig) → Defines content elements for the tab "special"
+          - [`common.tsconfig`](Configuration/TsConfig/Page/Include/mod.wizards.newContentElement.wizardItems/common.tsconfig) → Defines content elements for the tab `common`
+          - [`forms.tsconfig`](Configuration/TsConfig/Page/Include/mod.wizards.newContentElement.wizardItems/forms.tsconfig) → Defines content elements for the tab `forms`
+          - [`menu.tsconfig`](Configuration/TsConfig/Page/Include/mod.wizards.newContentElement.wizardItems/menu.tsconfig) → Defines content elements for the tab `menu`
+          - [`plugins.tsconfig`](Configuration/TsConfig/Page/Include/mod.wizards.newContentElement.wizardItems/plugins.tsconfig) → Defines content elements for the tab `plugins`
+          - [`special.tsconfig`](Configuration/TsConfig/Page/Include/mod.wizards.newContentElement.wizardItems/special.tsconfig) → Defines content elements for the tab `special`
         - [`mod.tsconfig`](Configuration/TsConfig/Page/Include/mod.tsconfig) → Configuration for Backend Modules
         - [`options.tsconfig`](Configuration/TsConfig/Page/Include/options.tsconfig) → Various options for the page affecting the core at various points
         - [`templates.tsconfig`](Configuration/TsConfig/Page/Include/templates.tsconfig) → Override fluid templates rendered by Backend controller
-      - [`page.tsconfig`](Configuration/TsConfig/Page/page.tsconfig) → Included by user in page records (includes ./TsConfig/Page/Include)
+      - [`page.tsconfig`](Configuration/TsConfig/Page/page.tsconfig) → Included by user in page records (includes [`Include`](Configuration/TsConfig/Page/Include/))
     - [`User`](Configuration/TsConfig/User/) → Contains User TSconfig files for backend configuration on a user or group basis
-      - [`TCAdefaults.tsconfig`](Configuration/TsConfig/User/TCAdefaults.tsconfig) → Override default values of TCA on a user or group basis
+      - [`TCAdefaults.tsconfig`](Configuration/TsConfig/User/TCAdefaults.tsconfig) → Override default values of [`TCA`](Configuration/TCA/) on a user or group basis
       - [`admPanel.tsconfig`](Configuration/TsConfig/User/admPanel.tsconfig) → Configuration of the Admin Panel in the Frontend for the user
-      - [`auth.tsconfig`](Configuration/TsConfig/User/auth.tsconfig) → Override default values of TCA on a user or group basis
+      - [`auth.tsconfig`](Configuration/TsConfig/User/auth.tsconfig) → Override default values of [`TCA`](Configuration/TCA/) on a user or group basis
       - [`options.tsconfig`](Configuration/TsConfig/User/options.tsconfig) → Various options for the user affecting the core at various points
       - [`page.tsconfig`](Configuration/TsConfig/User/page.tsconfig) → Override any page TSconfig property on a user or group basis
       - [`permissions.tsconfig`](Configuration/TsConfig/User/permissions.tsconfig) → Set access permissions on a user or group basis
@@ -106,60 +106,60 @@ Example BackendLayouts can be found here `Configuration/TsConfig/Page/Default/mo
         - [`dynamicContent.typoscript`](Configuration/TypoScript/Setup/lib/dynamicContent.typoscript) → Helper object to dynamically get Content of any Content Column Position
         - [`getIndpEnv.typoscript`](Configuration/TypoScript/Setup/lib/getIndpEnv.typoscript) → Helper object to get Environment-safe server and environment variables
         - [`parseFunc.typoscript`](Configuration/TypoScript/Setup/lib/parseFunc.typoscript) → Helper object to parse content for stuff like special typo tags
-      - [`lib.typoscript`](Configuration/TypoScript/Setup/lib.typoscript) → Used for code "libraries" that can be referenced in TypoScript (includes ./lib)
+      - [`lib.typoscript`](Configuration/TypoScript/Setup/lib.typoscript) → Used for code "libraries" that can be referenced in TypoScript (includes [`lib`](Configuration/TypoScript/Setup/lib/))
       - [`module.typoscript`](Configuration/TypoScript/Setup/module.typoscript) → Backend Module configuration
       - [`page.typoscript`](Configuration/TypoScript/Setup/page.typoscript) → This defines what is rendered in the Frontend
       - [`plugin`](Configuration/TypoScript/Setup/plugin/) → Contains all definitions for the TypoScript "plugin" top-level object
         - [`tx_form.typoscript`](Configuration/TypoScript/Setup/plugin/tx_form.typoscript) → TypoScript Configuration for EXT:form
-      - [`plugin.typoscript`](Configuration/TypoScript/Setup/plugin.typoscript) → Frontend set up for plugins (includes ./plugin)
+      - [`plugin.typoscript`](Configuration/TypoScript/Setup/plugin.typoscript) → Frontend set up for plugins (includes [`plugin`](Configuration/TypoScript/Setup/plugin/))
       - [`tt_content`](Configuration/TypoScript/Setup/tt_content/) → Contains all definitions for the TypoScript "tt_content" top-level object
         - [`sitepackage_newcontentelement.typoscript`](Configuration/TypoScript/Setup/tt_content/sitepackage_newcontentelement.typoscript) → Frontend rendering definition for example content element for based on EXT:fluid_styled_content
-      - [`tt_content.typoscript`](Configuration/TypoScript/Setup/tt_content.typoscript) → Content rendering definitions (includes ./tt_content)
-    - [`constants.typoscript`](Configuration/TypoScript/constants.typoscript) → Manually added Static TypoScript Constants (includes ./Constants)
-    - [`setup.typoscript`](Configuration/TypoScript/setup.typoscript) → Manually added Static TypoScript Setup (includes ./Setup)
+      - [`tt_content.typoscript`](Configuration/TypoScript/Setup/tt_content.typoscript) → Content rendering definitions (includes [`tt_content`](Configuration/TypoScript/Setup/tt_content/))
+    - [`constants.typoscript`](Configuration/TypoScript/constants.typoscript) → Manually added Static TypoScript Constants (includes [`Constants`](Configuration/TypoScript/Constants/))
+    - [`setup.typoscript`](Configuration/TypoScript/setup.typoscript) → Manually added Static TypoScript Setup (includes [`Setup`](Configuration/TypoScript/Setup/))
   - [`Yaml`](Configuration/Yaml/) → Any YAML files used to configure this sitepackage
-  - [`page.tsconfig`](Configuration/page.tsconfig) → Automatically loaded during build time (includes ./TsConfig/Page/Default)
+  - [`page.tsconfig`](Configuration/page.tsconfig) → Automatically loaded during build time (includes [`Default`](Configuration/TsConfig/Page/Default/))
 - [`Documentation`](Documentation/) → Documentation files for this sitepackage
 - [`LICENSE.txt`](LICENSE.txt) → Official license file for GPL-2.0-or-later
 - [`README.md`](README.md) → The file you currently look at
 - [`Resources`](Resources/) → Contains any public and private resource files
   - [`Private`](Resources/Private/) → Private resource files like Fluid Templates, Language files or Form Definitions
-    - [`.htaccess`](Resources/Private/.htaccess) → Prevents public access to directory "Private"
+    - [`.htaccess`](Resources/Private/.htaccess) → Prevents public access to directory [`Private`](Resources/Private/)
     - [`Forms`](Resources/Private/Forms/) → Can contain form definitions (read/write access granted)
       - [`.gitignore`](Resources/Private/Forms/.gitignore) → Ignore all files inside this directory
     - [`Language`](Resources/Private/Language/) → Any language files to provide translated labels in backend and frontend
       - [`de.locallang.xlf`](Resources/Private/Language/de.locallang.xlf) → German translations of Frontend labels
       - [`de.locallang_be.xlf`](Resources/Private/Language/de.locallang_be.xlf) → German translations of Backend labels
-      - [`de.locallang_db.xlf`](Resources/Private/Language/de.locallang_db.xlf) → German translations of labels used in TCA
+      - [`de.locallang_db.xlf`](Resources/Private/Language/de.locallang_db.xlf) → German translations of labels used in [`TCA`](Configuration/TCA/)
       - [`locallang.xlf`](Resources/Private/Language/locallang.xlf) → Source file for Frontend labels (english)
       - [`locallang_be.xlf`](Resources/Private/Language/locallang_be.xlf) → Source file for Backend labels (english)
-      - [`locallang_db.xlf`](Resources/Private/Language/locallang_db.xlf) → Source file for labels used in TCA (english)
+      - [`locallang_db.xlf`](Resources/Private/Language/locallang_db.xlf) → Source file for labels used in [`TCA`](Configuration/TCA/) (english)
     - [`Layouts`](Resources/Private/Layouts/) → Any Fluid Layout files
       - [`Content`](Resources/Private/Layouts/Content/) → Fluid Layout Overrides for EXT:fluid_styled_content
       - [`Form`](Resources/Private/Layouts/Form/) → Fluid Layout Overrides for EXT:form
         - [`Frontend`](Resources/Private/Layouts/Form/Frontend/) → Fluid Layout Frontend Overrides for EXT:form
-      - [`Page`](Resources/Private/Layouts/Page/) → Fluid Layout for PAGE rendering of this sitepackage
+      - [`Page`](Resources/Private/Layouts/Page/) → Fluid Layout for [`PAGE`](Configuration/TypoScript/Setup/page.typoscript) rendering of this sitepackage
         - [`Default.html`](Resources/Private/Layouts/Page/Default.html) → Default Frontend layout file
     - [`Partials`](Resources/Private/Partials/) → Any Fluid Partial files
       - [`Content`](Resources/Private/Partials/Content/) → Fluid Partial Overrides for EXT:fluid_styled_content
       - [`Form`](Resources/Private/Partials/Form/) → Fluid Partial Overrides for EXT:form
         - [`Frontend`](Resources/Private/Partials/Form/Frontend/) → Fluid Partial Frontend Overrides for EXT:form
-      - [`Page`](Resources/Private/Partials/Page/) → Fluid Partials for PAGE rendering of this sitepackage
+      - [`Page`](Resources/Private/Partials/Page/) → Fluid Partials for [`PAGE`](Configuration/TypoScript/Setup/page.typoscript) rendering of this sitepackage
         - [`Navigation.html`](Resources/Private/Partials/Page/Navigation.html) → Partial for basic navigation rendering
     - [`Templates`](Resources/Private/Templates/) → Any Fluid Template files
       - [`Content`](Resources/Private/Templates/Content/) → Fluid Template Overrides for EXT:fluid_styled_content
         - [`NewContentElement.html`](Resources/Private/Templates/Content/NewContentElement.html) → Fluid Template for example content element
       - [`Form`](Resources/Private/Templates/Form/) → Fluid Template Overrides for EXT:form
         - [`Frontend`](Resources/Private/Templates/Form/Frontend/) → Fluid Template Frontend Overrides for EXT:form
-      - [`Page`](Resources/Private/Templates/Page/) → Fluid Templates for PAGE rendering of this sitepackage
+      - [`Page`](Resources/Private/Templates/Page/) → Fluid Templates for [`PAGE`](Configuration/TypoScript/Setup/page.typoscript) rendering of this sitepackage
         - [`Default.html`](Resources/Private/Templates/Page/Default.html) → Template File for default layout (configured in /Configuration/TsConfig/Page/Default/mod.tsconfig)
         - [`Example.html`](Resources/Private/Templates/Page/Example.html) → Template File for example layout (configured in /Configuration/TsConfig/Page/Include/mod.tsconfig)
   - [`Public`](Resources/Public/) → Public resource files accessible by the browser (e.g. CSS, JavaScript, Images, etc.)
     - [`Css`](Resources/Public/Css/) → Any CSS files to be loaded by the sitepackage
-      - [`color1.css`](Resources/Public/Css/color1.css) → Example CSS to provide colors for color scheme 1
-      - [`color2.css`](Resources/Public/Css/color2.css) → Example CSS to provide colors for color scheme 2
-      - [`main.css`](Resources/Public/Css/main.css) → Main Frontend CSS file (should be compiled from ../Scss/main.scss)
-      - [`rte.css`](Resources/Public/Css/rte.css) → CSS used inside the Rich Text Editor (should be compiled from ../Scss/rte.scss)
+      - [`color1.css`](Resources/Public/Css/color1.css) → Example CSS to provide colors for color scheme 1 (should be compiled from [`color1.scss`](Resources/Public/Scss/color1.scss))
+      - [`color2.css`](Resources/Public/Css/color2.css) → Example CSS to provide colors for color scheme 2 (should be compiled from [`color2.scss`](Resources/Public/Scss/color2.scss))
+      - [`main.css`](Resources/Public/Css/main.css) → Main Frontend CSS file (should be compiled from [`main.scss`](Resources/Public/Scss/main.scss))
+      - [`rte.css`](Resources/Public/Css/rte.css) → CSS used inside the Rich Text Editor (should be compiled from [`rte.scss`](Resources/Public/Scss/rte.scss))
     - [`Fonts`](Resources/Public/Fonts/) → Any Font files to be loaded by the sitepackage
     - [`Icons`](Resources/Public/Icons/) → Any Icon files to be loaded by the sitepackage
       - [`BackendLayouts`](Resources/Public/Icons/BackendLayouts) → Contains Icons for BackendLayouts
@@ -168,7 +168,7 @@ Example BackendLayouts can be found here `Configuration/TsConfig/Page/Default/mo
       - [`Extension.svg`](Resources/Public/Icons/Extension.svg) → Extension icon
     - [`Images`](Resources/Public/Images/) → Any Image files to be loaded by the sitepackage
       - [`Backend`](Resources/Public/Images/Backend/) → Contains Images that are used in the backend
-        - [`loginBackgroundImage.svg`](Resources/Public/Images/Backend/loginBackgroundImage.svg) → Login Background Image configured in ext_localconf.php
+        - [`loginBackgroundImage.svg`](Resources/Public/Images/Backend/loginBackgroundImage.svg) → Login Background Image configured in [`ext_localconf.php`](ext_localconf.php)
     - [`JavaScript`](Resources/Public/JavaScript/) → Any JavaScript files to be loaded by the sitepackage
       - [`main.js`](Resources/Public/JavaScript/main.js) → Main JavaScript file
     - [`Scss`](Resources/Public/Scss/) → Any SCSS files to be compiled to CSS files
@@ -176,16 +176,16 @@ Example BackendLayouts can be found here `Configuration/TsConfig/Page/Default/mo
       - [`color2.scss`](Resources/Public/Scss/color2.scss) → SCSS source file for example color scheme 2
       - [`main.scss`](Resources/Public/Scss/main.scss) → Main SCSS source file for Frontend CSS
       - [`rte.scss`](Resources/Public/Scss/rte.scss) → SCSS source file for Rich Text Editor CSS
-- [`Tests`](Tests/) → This directory contains tests, e.g. unit tests in the subfolder Unit/.
-  - [`Functional`](Tests/Functional/) →
-    - [`Domain`](Tests/Functional/Domain/) →
-      - [`Repository`](Tests/Functional/Domain/Repository/) →
-        - [`Fixtures`](Tests/Functional/Domain/Repository/Fixtures/) →
-  - [`Unit`](Tests/Unit/) →
-    - [`Controller`](Tests/Unit/Controller/) →
-    - [`Domain`](Tests/Unit/Domain/) →
-      - [`Model`](Tests/Unit/Domain/Model/) →
-      - [`Repository`](Tests/Unit/Domain/Repository/) →
+- [`Tests`](Tests/) → This directory contains tests, e.g. unit tests in the subfolder [`Unit`](Tests/Unit/).
+  - [`Functional`](Tests/Functional/) → 
+    - [`Domain`](Tests/Functional/Domain/) → 
+      - [`Repository`](Tests/Functional/Domain/Repository/) → 
+        - [`Fixtures`](Tests/Functional/Domain/Repository/Fixtures/) → 
+  - [`Unit`](Tests/Unit/) → 
+    - [`Controller`](Tests/Unit/Controller/) → 
+    - [`Domain`](Tests/Unit/Domain/) → 
+      - [`Model`](Tests/Unit/Domain/Model/) → 
+      - [`Repository`](Tests/Unit/Domain/Repository/) → 
 - [`composer.json`](composer.json) → Registration file for composer based installations
 - [`ext_emconf.php`](ext_emconf.php) → Registration file for legacy installations
 - [`ext_localconf.php`](ext_localconf.php) → Always included in global scope, in Frontend, Backend and CLI context
