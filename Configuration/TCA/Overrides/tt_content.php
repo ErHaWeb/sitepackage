@@ -31,7 +31,7 @@ defined('TYPO3') or die();
             // plugin signature: extkey_identifier
             'sitepackage_newcontentelement',
             // icon identifier
-            'content-text',
+            'sitepackage-icon',
         ],
         'textmedia',
         'after'

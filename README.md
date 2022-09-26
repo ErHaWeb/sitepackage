@@ -22,6 +22,10 @@ This sitepackage can customize the TYPO3 login mask style (background image, foo
 
 Example BackendLayouts can be found here `Configuration/TsConfig/Page/Default/mod.web_layout.BackendLayouts/` (as part of the always loaded default Page TSconfig) and here `Configuration/TsConfig/Page/Include/mod.web_layout.BackendLayouts` (as part of the user included Page TSconfig).
 
+### Example Custom Content Element
+
+This sitepackage includes an example of a custom content element. Its icon has been defined in `Configuration/Icons.php`, it is registered and configured in `Configuration/TCA/Overrides/tt_content.php` and added to the newContentElement wizard in `Configuration/TsConfig/Page/Include/mod.wizards.newContentElement.wizardItems/common.tsconfig`. The frontend rendering based on EXT:fluid_styled_content is configured in `Configuration/TypoScript/Setup/tt_content/sitepackage_newcontentelement.typoscript` and finally rendered by Fluid template `Resources/Private/Templates/Page/Example.html`.
+
 ## Basic Structure
 
 - [`Classes`](Classes/) → Contains all PHP Classes
