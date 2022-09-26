@@ -176,7 +176,7 @@ Example BackendLayouts can be found here `Configuration/TsConfig/Page/Default/mo
       - [`color2.scss`](Resources/Public/Scss/color2.scss) → SCSS source file for example color scheme 2
       - [`main.scss`](Resources/Public/Scss/main.scss) → Main SCSS source file for Frontend CSS
       - [`rte.scss`](Resources/Public/Scss/rte.scss) → SCSS source file for Rich Text Editor CSS
-- [`Tests`](Tests/) → This directory contains tests, e.g. unit tests in the subfolder [`Unit`](Tests/Unit/).
+- [`Tests`](Tests/) → This directory contains tests, e.g. unit tests in the subfolder [`Unit`](Tests/Unit/)
   - [`Functional`](Tests/Functional/) → 
     - [`Domain`](Tests/Functional/Domain/) → 
       - [`Repository`](Tests/Functional/Domain/Repository/) → 

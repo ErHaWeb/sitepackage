@@ -1,3 +1,3 @@
 # Configuration/Extbase/
 
-Contains folder [`Persistence`](Configuration/Extbase/Persistence/)
+Contains folder [`Persistence`](Persistence/)
