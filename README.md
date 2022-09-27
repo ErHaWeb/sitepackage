@@ -26,6 +26,10 @@ Example BackendLayouts can be found here `Configuration/TsConfig/Page/Default/mo
 
 This sitepackage includes an example of a custom content element. Its icon has been defined in `Configuration/Icons.php`, it is registered and configured in `Configuration/TCA/Overrides/tt_content.php` and added to the newContentElement wizard in `Configuration/TsConfig/Page/Include/mod.wizards.newContentElement.wizardItems/common.tsconfig`. The frontend rendering based on EXT:fluid_styled_content is configured in `Configuration/TypoScript/Setup/tt_content/sitepackage_newcontentelement.typoscript` and finally rendered by Fluid template `Resources/Private/Templates/Page/Example.html`.
 
+### Custom ViewHelper
+
+As an example of how to add custom ViewHelpers this sitepackage adds the possibility to modify attributes of the html tag by the `HtmlTagAttributesViewHelper` in file `Classes/ViewHelpers/HtmlTagAttributesViewHelper.php`. The ViewHelper namespace `xmlns:s="http://typo3.org/ns/VendorName/Sitepackage/ViewHelpers"` has been added to the Fluid Template file `Resources/Private/Layouts/Page/Default.html` and it is used to add information about the currently selected layout as data attribute with tag `<s:htmlTagAttributes data="{data-layout:current}"/>`.
+
 ### XML Sitemap configuration
 
 When EXT:seo is loaded, its static TypoScript is automatically included. The sitepackage adds the ability to hide pages in the XML sitemap by setting the sitemap priority to 0 with the constant `Configuration/TypoScript/Constants/plugin/tx_seo.typoscript`. Please make sure to add the following lines to your site configuration to be able to access the sitemap via its human-readable URI `sitemap.xml`:
