@@ -35,11 +35,11 @@ As an example of how to add custom ViewHelpers this sitepackage adds the possibi
 When EXT:seo is loaded, its static TypoScript is automatically included. The sitepackage adds the ability to hide pages in the XML sitemap by setting the sitemap priority to 0 with the constant `Configuration/TypoScript/Constants/plugin/tx_seo.typoscript`. Please make sure to add the following lines to your site configuration to be able to access the sitemap via its human-readable URI `sitemap.xml`:
 
 ```
-routes:
-  -
-    route: sitemap.xml
-    type: uri
-    source: 't3://page?uid=1&type=1533906435'
+routeEnhancers:
+  PageTypeSuffix:
+    type: PageType
+    map:
+      sitemap.xml: 1533906435
 ```
 
 ## Basic Structure
