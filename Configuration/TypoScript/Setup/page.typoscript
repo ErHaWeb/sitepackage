@@ -2,13 +2,13 @@
 
 page = PAGE
 page {
-    shortcutIcon = EXT:sitepackage/Resources/Public/Icons/Favicon/favicon.ico
+    shortcutIcon = EXT:sitepackage/Resources/Public/Icons/Extension.svg
 
     meta {
         viewport = {$page.meta.viewport}
         robots = {$page.meta.robots}
         apple-mobile-web-app-capable = {$page.meta.apple-mobile-web-app-capable}
-        
+
         X-UA-Compatible = {$page.meta.compatible}
         X-UA-Compatible {
             attribute = http-equiv
