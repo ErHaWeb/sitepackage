@@ -2,7 +2,7 @@
 
 page = PAGE
 page {
-    shortcutIcon = EXT:sitepackage/Resources/Public/Icons/Extension.svg
+    shortcutIcon = EXT:sitepackage/Resources/Public/Icons/Favicon/favicon.ico
 
     meta {
         viewport = width=device-width, initial-scale=1.0, shrink-to-fit=no
@@ -14,6 +14,27 @@ page {
 
     includeJSFooter {
         main = EXT:sitepackage/Resources/Public/JavaScript/main.js
+    }
+
+    headerData {
+        10 = TEXT
+        10 {
+            value (
+<link rel="apple-touch-icon" sizes="180x180" href="{path:EXT:sitepackage/Resources/Public/Icons/Favicon/apple-touch-icon.png}">
+<link rel="icon" type="image/png" sizes="32x32" href="{path:EXT:sitepackage/Resources/Public/Icons/Favicon/favicon-32x32.png}">
+<link rel="icon" type="image/png" sizes="192x192" href="{path:EXT:sitepackage/Resources/Public/Icons/Favicon/android-chrome-192x192.png}">
+<link rel="icon" type="image/png" sizes="16x16" href="{path:EXT:sitepackage/Resources/Public/Icons/Favicon/favicon-16x16.png}">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="{path:EXT:sitepackage/Resources/Public/Icons/Favicon/safari-pinned-tab.svg}" color="#5bbad5">
+<meta name="apple-mobile-web-app-title" content="{siteLanguage:websiteTitle}">
+<meta name="application-name" content="{siteLanguage:websiteTitle}">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="{path:EXT:sitepackage/Resources/Public/Icons/Favicon/mstile-144x144.png}">
+<meta name="msapplication-config" content="/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+            )
+            insertData = 1
+        }
     }
 
     10 = FLUIDTEMPLATE
