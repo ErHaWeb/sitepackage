@@ -1,0 +1,12 @@
+tx_seo {
+    settings {
+        xmlSitemap {
+            sitemaps {
+                pages {
+                    # Add the possibility to hide pages in XML sitemap with priority == 0
+                    additionalWhere := appendString( AND sitemap_priority > 0)
+                }
+            }
+        }
+    }
+}

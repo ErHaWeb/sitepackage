@@ -75,6 +75,22 @@ defined('TYPO3') or die();
     }
 
     /**
+     * Add static TypoScript from EXT:seo
+     */
+    if (ExtensionManagementUtility::isLoaded('seo')) {
+        ExtensionManagementUtility::addTypoScriptConstants(trim(
+            '
+                @import "EXT:seo/Configuration/TypoScript/XmlSitemap/constants.typoscript"
+            '
+        ));
+        ExtensionManagementUtility::addTypoScriptSetup(trim(
+            '
+                @import "EXT:seo/Configuration/TypoScript/XmlSitemap/setup.typoscript"
+            '
+        ));
+    }
+
+    /**
      * Add static TypoScript from EXT:form and register custom configuration
      */
     if (ExtensionManagementUtility::isLoaded('form')) {

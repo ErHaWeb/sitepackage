@@ -26,6 +26,18 @@ Example BackendLayouts can be found here `Configuration/TsConfig/Page/Default/mo
 
 This sitepackage includes an example of a custom content element. Its icon has been defined in `Configuration/Icons.php`, it is registered and configured in `Configuration/TCA/Overrides/tt_content.php` and added to the newContentElement wizard in `Configuration/TsConfig/Page/Include/mod.wizards.newContentElement.wizardItems/common.tsconfig`. The frontend rendering based on EXT:fluid_styled_content is configured in `Configuration/TypoScript/Setup/tt_content/sitepackage_newcontentelement.typoscript` and finally rendered by Fluid template `Resources/Private/Templates/Page/Example.html`.
 
+### XML Sitemap configuration
+
+When EXT:seo is loaded, its static TypoScript is automatically included. The sitepackage adds the ability to hide pages in the XML sitemap by setting the sitemap priority to 0 with the constant `Configuration/TypoScript/Constants/plugin/tx_seo.typoscript`. Please make sure to add the following lines to your site configuration to be able to access the sitemap via its human-readable URI `sitemap.xml`:
+
+```
+routes:
+  -
+    route: sitemap.xml
+    type: uri
+    source: 't3://page?uid=1&type=1533906435'
+```
+
 ## Basic Structure
 
 - [`Classes`](Classes/) → Contains all PHP Classes
@@ -100,23 +112,25 @@ This sitepackage includes an example of a custom content element. Its icon has b
   - [`TypoScript`](Configuration/TypoScript/) → TypoScript files from this directory can be included manually
     - [`Constants`](Configuration/TypoScript/Constants/) → TypoScript Constant files
       - [`page.typoscript`](Configuration/TypoScript/Constants/page.typoscript) → Sitepackage constants for page rendering
-      - [`plugin.typoscript`](Configuration/TypoScript/Constants/plugin.typoscript) → Override plugin specific constants
+      - [`plugin`](Configuration/TypoScript/Constants/plugin/) → Contains all TypoScript Constants definitions for the "plugin" top-level object
+        - [`tx_seo.typoscript`](Configuration/TypoScript/Constants/plugin/tx_seo.typoscript) → TypoScript Constants for EXT:seo
+      - [`plugin.typoscript`](Configuration/TypoScript/Constants/plugin.typoscript) → Constants plugins (includes [`plugin`](Configuration/TypoScript/Setup/plugin/))
       - [`styles.typoscript`](Configuration/TypoScript/Constants/styles.typoscript) → Frontend specific constants (mainly from EXT:fluid_styled_content)
     - [`Setup`](Configuration/TypoScript/Setup/) → TypoScript Setup files
       - [`_GIFBUILDER.typoscript`](Configuration/TypoScript/Setup/_GIFBUILDER.typoscript) → Configure global settings for GIFBUILDER by this top-level object
       - [`config.typoscript`](Configuration/TypoScript/Setup/config.typoscript) → Global configuration for Frontend rendering
       - [`constants.typoscript`](Configuration/TypoScript/Setup/constants.typoscript) → Defines constants for replacement inside a parseFunc
-      - [`lib`](Configuration/TypoScript/Setup/lib/) → Contains all definitions for the TypoScript "lib" top-level object
+      - [`lib`](Configuration/TypoScript/Setup/lib/) → Contains all TypoScript Setup definitions for the "lib" top-level object
         - [`dynamicContent.typoscript`](Configuration/TypoScript/Setup/lib/dynamicContent.typoscript) → Helper object to dynamically get Content of any Content Column Position
         - [`getIndpEnv.typoscript`](Configuration/TypoScript/Setup/lib/getIndpEnv.typoscript) → Helper object to get Environment-safe server and environment variables
         - [`parseFunc.typoscript`](Configuration/TypoScript/Setup/lib/parseFunc.typoscript) → Helper object to parse content for stuff like special typo tags
       - [`lib.typoscript`](Configuration/TypoScript/Setup/lib.typoscript) → Used for code "libraries" that can be referenced in TypoScript (includes [`lib`](Configuration/TypoScript/Setup/lib/))
       - [`module.typoscript`](Configuration/TypoScript/Setup/module.typoscript) → Backend Module configuration
       - [`page.typoscript`](Configuration/TypoScript/Setup/page.typoscript) → This defines what is rendered in the Frontend
-      - [`plugin`](Configuration/TypoScript/Setup/plugin/) → Contains all definitions for the TypoScript "plugin" top-level object
+      - [`plugin`](Configuration/TypoScript/Setup/plugin/) → Contains all TypoScript Setup definitions for the "plugin" top-level object
         - [`tx_form.typoscript`](Configuration/TypoScript/Setup/plugin/tx_form.typoscript) → TypoScript Configuration for EXT:form
       - [`plugin.typoscript`](Configuration/TypoScript/Setup/plugin.typoscript) → Frontend set up for plugins (includes [`plugin`](Configuration/TypoScript/Setup/plugin/))
-      - [`tt_content`](Configuration/TypoScript/Setup/tt_content/) → Contains all definitions for the TypoScript "tt_content" top-level object
+      - [`tt_content`](Configuration/TypoScript/Setup/tt_content/) → Contains all TypoScript Setup definitions for the "tt_content" top-level object
         - [`sitepackage_newcontentelement.typoscript`](Configuration/TypoScript/Setup/tt_content/sitepackage_newcontentelement.typoscript) → Frontend rendering definition for example content element for based on EXT:fluid_styled_content
       - [`tt_content.typoscript`](Configuration/TypoScript/Setup/tt_content.typoscript) → Content rendering definitions (includes [`tt_content`](Configuration/TypoScript/Setup/tt_content/))
     - [`constants.typoscript`](Configuration/TypoScript/constants.typoscript) → Manually added Static TypoScript Constants (includes [`Constants`](Configuration/TypoScript/Constants/))
