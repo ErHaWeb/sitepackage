@@ -5,7 +5,17 @@ page {
     shortcutIcon = EXT:sitepackage/Resources/Public/Icons/Favicon/favicon.ico
 
     meta {
-        viewport = width=device-width, initial-scale=1.0, shrink-to-fit=no
+        viewport = {$page.meta.viewport}
+        robots = {$page.meta.robots}
+        apple-mobile-web-app-capable = {$page.meta.apple-mobile-web-app-capable}
+        
+        X-UA-Compatible = {$page.meta.compatible}
+        X-UA-Compatible {
+            attribute = http-equiv
+        }
+
+        google = {$page.meta.google}
+        google-site-verification = {$page.meta.google-site-verification}
     }
 
     includeCSS {
