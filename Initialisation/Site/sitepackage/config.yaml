@@ -1,0 +1,50 @@
+base: /
+errorHandling:
+  -
+    errorCode: 404
+    errorHandler: Page
+    errorContentSource: 't3://page?uid=2'
+  -
+    errorCode: 403
+    errorHandler: Page
+    errorContentSource: 't3://page?uid=3'
+  -
+    errorCode: 500
+    errorHandler: Page
+    errorContentSource: 't3://page?uid=4'
+  -
+    errorCode: 503
+    errorHandler: Page
+    errorContentSource: 't3://page?uid=5'
+  -
+    errorCode: 0
+    errorHandler: Page
+    errorContentSource: 't3://page?uid=6'
+languages:
+  -
+    title: English
+    enabled: true
+    languageId: 0
+    base: /
+    typo3Language: default
+    locale: en_US.UTF-8
+    iso-639-1: en
+    websiteTitle: 'TYPO3 Sitepackage'
+    navigationTitle: English
+    hreflang: en-US
+    direction: ltr
+    flag: us
+rootPageId: 1
+routeEnhancers:
+  PageTypeSuffix:
+    type: PageType
+    map:
+      sitemap.xml: 1533906435
+      browserconfig.xml: 7943879438
+      site.webmanifest: 3478304621
+routes:
+  -
+    route: robots.txt
+    type: staticText
+    content: "User-agent: *\r\nDisallow: /typo3/\r\nDisallow: /typo3_src/\r\nAllow: /typo3/sysext/frontend/Resources/Public/*\r\n"
+websiteTitle: 'TYPO3 Sitepackage'
