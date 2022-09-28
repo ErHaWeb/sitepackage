@@ -3,13 +3,13 @@
  */
 
 .cke_editable::after {
-    content: "Added Sitepackage CSS!";
+    content: "";
+    background: center / contain no-repeat url("../Icons/Extension.svg");
+    width: 36px;
+    height: 36px;
     position: absolute;
-    top: 0;
-    right: 0;
-    padding: 0 0.4rem;
-    color: white;
-    background-color: rgba(255, 135, 0, 0.7);
+    top: 1rem;
+    right: 1rem;
     opacity: 1;
     transition: opacity 0.3s;
 }
