@@ -8,17 +8,6 @@ imports:
 
 editor:
   config:
-    contentsCss: 'EXT:sitepackage/Resources/Public/Css/rte.css'
-
-    format_tags:
-
-    toolbarGroups:
-
-    justifyClasses:
-
-    extraPlugins:
-
-    removePlugins:
-
-    removeButtons:
-
+    contentsCss:
+      - 'EXT:rte_ckeditor/Resources/Public/Css/contents.css'
+      - 'EXT:sitepackage/Resources/Public/Css/rte.css'

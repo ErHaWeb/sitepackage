@@ -113,6 +113,11 @@ defined('TYPO3') or die();
     $rootlineFields .= 'tx_sitepackage_colorscheme';
 
     /**
+     * Add sitepackage preset for RTE
+     */
+    $GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['sitepackage'] = 'EXT:sitepackage/Configuration/RTE/RteConfig.yaml';
+
+    /**
      * Customize Login Mask and Backend display
      */
     ArrayUtility::mergeRecursiveWithOverrule(

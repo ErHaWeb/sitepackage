@@ -1,3 +1,19 @@
-h1 {
-    color: red;
+/**
+ * This sample is intended to show that custom CSS has been added to the RTE by the sitepackage
+ */
+
+.cke_editable::after {
+    content: "Added Sitepackage CSS!";
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 0.4rem;
+    color: white;
+    background-color: rgba(255, 135, 0, 0.7);
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+html:hover .cke_editable::after {
+    opacity: 0;
 }
