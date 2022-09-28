@@ -32,7 +32,7 @@ As an example of how to add custom ViewHelpers this sitepackage adds the possibi
 
 ### XML Sitemap configuration
 
-When EXT:seo is loaded, its static TypoScript is automatically included. The sitepackage adds the ability to hide pages in the XML sitemap by setting the sitemap priority to 0 with the constant `Configuration/TypoScript/Constants/plugin/tx_seo.typoscript`. Please make sure to add the following lines to your site configuration to be able to access the sitemap via its human-readable URI `sitemap.xml`:
+When EXT:seo is loaded, its static TypoScript is automatically included. The sitepackage adds the ability to hide pages in the XML sitemap by setting the sitemap priority to 0 with the constant `Configuration/TypoScript/Constants/plugin/tx_seo.typoscript`. Please make sure to add the following lines to your site configuration to be able to access the sitemap via its human-readable URI `sitemap.xml` if you have not used this sitepackage as a distribution:
 
 ```
 routeEnhancers:
@@ -50,7 +50,7 @@ The file `Configuration/TypoScript/Setup/browserconfig.typoscript` configures a 
 
 The file `Configuration/TypoScript/Setup/site.webmanifest.typoscript` configures a separete PAGE object with mime type `application/json` to output the `site.webmanifest`.
 
-To be able to also display `browserconfig.xml` and `site.webmanifest` you need to add the following lines in your site configuration:
+To be able to also display `browserconfig.xml` and `site.webmanifest` you need to add the following lines in your site configuration if you have not used this sitepackage as a distribution:
 
 ```
 routeEnhancers:
@@ -66,7 +66,7 @@ routeEnhancers:
 
 ### Site Configuration Auto Initialization
 
-If you install this sitepackage an empty TYPO3 CMS installation it will create a new site configuration, a first root page with a link to the static TSconfig of this sitepackage, a template record with a link to the static TypoScript of this sitepackage and pages records for various HTTP error codes (404, 403, 500, 503 and undefined), which are referenced in the site configuration.
+If you install this sitepackage in an empty TYPO3 CMS installation it will create a new site configuration with configuration for `sitemap.xml`, `browserconfig.xml` and `site.webmanifest`, a first root page with a link to the static TSconfig of this sitepackage, a template record with a link to the static TypoScript of this sitepackage and pages records for various HTTP error codes (404, 403, 500, 503 and undefined), which are referenced in the site configuration.
 
 By default the language en-US is used. If you want to change it, just edit the site configuration in your TYPO3 installation under `config/sites/sitepackage/config.yaml`or via the `Site Management > Sites` module in the TYPO3 backend. 
 
