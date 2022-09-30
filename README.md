@@ -70,6 +70,18 @@ If you install this sitepackage in an empty TYPO3 CMS installation it will creat
 
 By default the language en-US is used. If you want to change it, just edit the site configuration in your TYPO3 installation under `config/sites/sitepackage/config.yaml`or via the `Site Management > Sites` module in the TYPO3 backend. 
 
+### Ready to use Task Runner for SCSS and JavaScript
+
+This site package provides a Gulp task runner that handles the following tasks:
+
+- Compile SCSS from `Resources/Public/Scss/` to CSS directory `Resources/Public/Css/`
+- Improve backwards compatibility of your CSS code by using the well known [Autoprefixer PostCSS plugin](https://github.com/postcss/autoprefixer)
+- Minify JavaScript and CSS files and save them as separate files with ending `*.min.css` / `*.min.js`
+- Static JavaScript code analysis with ([JSHint Documentation](https://jshint.com/docs/)), feel free to adjust the configuration file `.jshintrc` to your needs
+- Concatenate and minify all JavaScript files from directory `Resources/Public/JavaScript/Src` and save the result under `Resources/Public/JavaScript/Dist`
+
+To initially install Gulp and all necessary modules execute command `npm install`. Now you are able to run all tasks at once by executing command `gulp`. To run specific tasks use `gulp <taskname>`. To get an overview wich tasks can be executed run `gulp --tasks`.
+
 ## Basic Structure
 
 - [`Classes`](Classes/) → Contains all PHP Classes
