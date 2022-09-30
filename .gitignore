@@ -1,0 +1,7 @@
+node_modules
+package-lock.json
+Resources/Public/Css/*.*
+Resources/Public/Css/Backend/*.*
+Resources/Public/Css/Frontend/*.*
+Resources/Public/JavaScript/Dist/*.*
+!README.md

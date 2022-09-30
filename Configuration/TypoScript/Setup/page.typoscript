@@ -19,11 +19,11 @@ page {
     }
 
     includeCSS {
-        main = EXT:sitepackage/Resources/Public/Css/main.css
+        main = EXT:sitepackage/Resources/Public/Css/Frontend/main.min.css
     }
 
     includeJSFooter {
-        main = EXT:sitepackage/Resources/Public/JavaScript/main.js
+        main = EXT:sitepackage/Resources/Public/JavaScript/Dist/main.min.js
     }
 
     headerData {
@@ -129,13 +129,13 @@ page {
 [rootlineField('tx_sitepackage_colorscheme') === '1']
     page {
         includeCSS {
-            colorscheme = EXT:sitepackage/Resources/Public/Css/color1.css
+            main = EXT:sitepackage/Resources/Public/Css/Frontend/main-color1.min.css
         }
     }
 [rootlineField('tx_sitepackage_colorscheme') === '2']
     page {
         includeCSS {
-            colorscheme = EXT:sitepackage/Resources/Public/Css/color2.css
+            main = EXT:sitepackage/Resources/Public/Css/Frontend/main-color2.min.css
         }
     }
 [global]

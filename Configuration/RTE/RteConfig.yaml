@@ -9,5 +9,4 @@ imports:
 editor:
   config:
     contentsCss:
-      - 'EXT:rte_ckeditor/Resources/Public/Css/contents.css'
-      - 'EXT:sitepackage/Resources/Public/Css/rte.css'
+      - 'EXT:sitepackage/Resources/Public/Css/Backend/rte.min.css'

@@ -211,10 +211,10 @@ By default the language en-US is used. If you want to change it, just edit the s
         - [`Example.html`](Resources/Private/Templates/Page/Example.html) → Template File for example layout (configured in /Configuration/TsConfig/Page/Include/mod.tsconfig)
   - [`Public`](Resources/Public/) → Public resource files accessible by the browser (e.g. CSS, JavaScript, Images, etc.)
     - [`Css`](Resources/Public/Css/) → Any CSS files to be loaded by the sitepackage
-      - [`color1.css`](Resources/Public/Css/color1.css) → Example CSS to provide colors for color scheme 1 (should be compiled from [`color1.scss`](Resources/Public/Scss/color1.scss))
-      - [`color2.css`](Resources/Public/Css/color2.css) → Example CSS to provide colors for color scheme 2 (should be compiled from [`color2.scss`](Resources/Public/Scss/color2.scss))
-      - [`main.css`](Resources/Public/Css/main.css) → Main Frontend CSS file (should be compiled from [`main.scss`](Resources/Public/Scss/main.scss))
-      - [`rte.css`](Resources/Public/Css/rte.css) → CSS used inside the Rich Text Editor (should be compiled from [`rte.scss`](Resources/Public/Scss/rte.scss))
+      - [`Backend`](Resources/Public/Css/Backend/) → Backend CSS files to be loaded by the sitepackage (compiled and minified by Gulp)
+        - [`...`](Resources/Public/Css/Backend/) → Compiled Backend CSS files
+      - [`Frontend`](Resources/Public/Css/Frontend/) → Frontend CSS files to be loaded by the sitepackage (compiled and minified by Gulp)
+        - [`...`](Resources/Public/Css/Frontend/) → Compiled Frontend CSS files
     - [`Fonts`](Resources/Public/Fonts/) → Any Font files to be loaded by the sitepackage
     - [`Icons`](Resources/Public/Icons/) → Any Icon files to be loaded by the sitepackage
       - [`BackendLayouts`](Resources/Public/Icons/BackendLayouts) → Contains Icons for BackendLayouts
@@ -229,12 +229,19 @@ By default the language en-US is used. If you want to change it, just edit the s
       - [`Distribution.png`](Resources/Public/Images/Distribution.png) → Preview image for the distribution list in the Extension Manager
       - [`DistributionWelcome.png`](Resources/Public/Images/DistributionWelcome.png) → The welcome image is displayed in the distribution detail view inside the Extension Manager.
     - [`JavaScript`](Resources/Public/JavaScript/) → Any JavaScript files to be loaded by the sitepackage
-      - [`main.js`](Resources/Public/JavaScript/main.js) → Main JavaScript file
+      - [`Dist`](Resources/Public/JavaScript/Dist/) → Contains minified redistributable JavaScript files (compiled by gulp)
+        - [`...`](Resources/Public/JavaScript/Dist/) → Compiled JavaScript files
+      - [`Src`](Resources/Public/JavaScript/Src/) → Contains source JavaScript files (used by gulp)
+        - [`main.js`](Resources/Public/JavaScript/Src/main.js) → A starting point to write your own JavaScript (this should be compiled by Gulp)
     - [`Scss`](Resources/Public/Scss/) → Any SCSS files to be compiled to CSS files
-      - [`color1.scss`](Resources/Public/Scss/color1.scss) → SCSS source file for example color scheme 1
-      - [`color2.scss`](Resources/Public/Scss/color2.scss) → SCSS source file for example color scheme 2
-      - [`main.scss`](Resources/Public/Scss/main.scss) → Main SCSS source file for Frontend CSS
-      - [`rte.scss`](Resources/Public/Scss/rte.scss) → SCSS source file for Rich Text Editor CSS
+      - [`Backend`](Resources/Public/Scss/Backend/) → Backend SCSS files to be compiled by Gulp
+        - [`rte.scss`](Resources/Public/Scss/Backend/rte.scss) → Backend RTE styles that inherit frontend RTE styles
+      - [`Frontend`](Resources/Public/Scss/Frontend/) → Frontend SCSS files to be compiled by Gulp
+        - [`_rte.scss`](Resources/Public/Scss/Frontend/_rte.scss) → Frontend RTE styles (prepending "_" means, that this file will be included by other files and compiled by itself)
+        - [`_variables.scss`](Resources/Public/Scss/Frontend/_variables.scss) → Global variables to be used in all scss files (prepending "_" means, that this file will be included by other files and compiled by itself)
+        - [`main.scss`](Resources/Public/Scss/Frontend/main.scss) → Main styles (imports [`_rte.scss`](Resources/Public/Scss/Frontend/_rte.scss) and [`_variables.scss`](Resources/Public/Scss/Frontend/_variables.scss))
+        - [`main-color1.scss`](Resources/Public/Scss/Frontend/main-color1.scss) → Main styles with definitions for color scheme 1 (imports [`main.scss`](Resources/Public/Scss/Frontend/main.scss))
+        - [`main-color2.scss`](Resources/Public/Scss/Frontend/main-color1.scss) → Main styles with definitions for color scheme 2 (imports [`main.scss`](Resources/Public/Scss/Frontend/main.scss))
 - [`Tests`](Tests/) → This directory contains tests, e.g. unit tests in the subfolder [`Unit`](Tests/Unit/)
   - [`Functional`](Tests/Functional/) → 
     - [`Domain`](Tests/Functional/Domain/) → 
@@ -245,6 +252,8 @@ By default the language en-US is used. If you want to change it, just edit the s
     - [`Domain`](Tests/Unit/Domain/) → 
       - [`Model`](Tests/Unit/Domain/Model/) → 
       - [`Repository`](Tests/Unit/Domain/Repository/) → 
+- [`.gitignore`](.gitignore) → Exclude any unnecessary/temporary data from versioning
+- [`.jshintrc`](.gitignore) → Basis JSHint configuration file used by Gulp ([JSHint Documentation](https://jshint.com/docs/))
 - [`composer.json`](composer.json) → Registration file for composer based installations
 - [`ext_emconf.php`](ext_emconf.php) → Registration file for legacy installations
 - [`ext_localconf.php`](ext_localconf.php) → Always included in global scope, in Frontend, Backend and CLI context
@@ -253,6 +262,9 @@ By default the language en-US is used. If you want to change it, just edit the s
 - [`ext_tables_static+adt.sql`](ext_tables_static+adt.sql) → Static SQL data to be used by the sitepackage
 - [`ext_typoscript_constants.typoscript`](ext_typoscript_constants.typoscript) → Default TypoScript constants that will be included in all templates
 - [`ext_typoscript_setup.typoscript`](ext_typoscript_setup.typoscript) → Default TypoScript setup that will be included in all templates
+- [`gulpfile.js`](gulpfile.js) → Gulp Task Runner Configuration file, after initial `npm install` run `gulp` for all tasks or `gulp --tasks` for an overview
+- [`LICENSE.txt`](LICENSE.txt) → Official GNU general public license file
+- [`package.json`](package.json) → Node Package Manager (npm) to set up Gulp Tasks, for first initialization run `npm install`
 
 ## FAQ:
 
