@@ -72,7 +72,7 @@ By default the language en-US is used. If you want to change it, just edit the s
 
 ### Ready to use Task Runner for SCSS and JavaScript
 
-This site package provides a Gulp task runner that handles the following tasks:
+This site package provides a [Gulp](https://gulpjs.com/) task runner that handles the following tasks:
 
 - Compile SCSS from `Resources/Public/Scss/` to CSS directory `Resources/Public/Css/`
 - Improve backwards compatibility of your CSS code by using the well known [Autoprefixer PostCSS plugin](https://github.com/postcss/autoprefixer)
@@ -241,9 +241,9 @@ To initially install Gulp and all necessary modules execute command `npm install
       - [`Distribution.png`](Resources/Public/Images/Distribution.png) → Preview image for the distribution list in the Extension Manager
       - [`DistributionWelcome.png`](Resources/Public/Images/DistributionWelcome.png) → The welcome image is displayed in the distribution detail view inside the Extension Manager.
     - [`JavaScript`](Resources/Public/JavaScript/) → Any JavaScript files to be loaded by the sitepackage
-      - [`Dist`](Resources/Public/JavaScript/Dist/) → Contains minified redistributable JavaScript files (compiled by gulp)
+      - [`Dist`](Resources/Public/JavaScript/Dist/) → Contains minified redistributable JavaScript files (compiled by Gulp)
         - [`...`](Resources/Public/JavaScript/Dist/) → Compiled JavaScript files
-      - [`Src`](Resources/Public/JavaScript/Src/) → Contains source JavaScript files (used by gulp)
+      - [`Src`](Resources/Public/JavaScript/Src/) → Contains source JavaScript files (used by Gulp)
         - [`main.js`](Resources/Public/JavaScript/Src/main.js) → A starting point to write your own JavaScript (this should be compiled by Gulp)
     - [`Scss`](Resources/Public/Scss/) → Any SCSS files to be compiled to CSS files
       - [`Backend`](Resources/Public/Scss/Backend/) → Backend SCSS files to be compiled by Gulp
