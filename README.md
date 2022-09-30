@@ -12,7 +12,7 @@ This sitepackage contains almost all the directories and files (except resource 
 
 ### Color scheme selector
 
-As an example of how to add new fields to pages records through `ext_tables.sql` and `/Configuration/TCA/Overrides/pages.php` and how to implement custom Symfony Conditions (with files `Configuration/ExpressionLanguage.php`, `Classes/ExpressionLanguage/CustomProvider.php` and `Classes/ExpressionLanguage/FunctionsProvider/CustomFunctionsProvider.php`) to be used in the TypoScript/TSconfig context (`Configuration/TypoScript/Setup/page.typoscript`) this sitepackage contains a method to provide choosable color schemes to backend users.
+As an example of how to add new fields to pages records through `ext_tables.sql` and `/Configuration/TCA/Overrides/pages.php` and how to implement custom Symfony Conditions (with files `Configuration/ExpressionLanguage.php`, `Classes/ExpressionLanguage/CustomTypoScriptConditionProvider.php` and `Classes/ExpressionLanguage/FunctionsProvider/CustomConditionFunctionsProvider.php`) to be used in the TypoScript/TSconfig context (`Configuration/TypoScript/Setup/page.typoscript`) this sitepackage contains a method to provide choosable color schemes to backend users.
 
 ### Backend Style Customization
 

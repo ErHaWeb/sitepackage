@@ -21,10 +21,10 @@ declare(strict_types=1);
  * https://docs.typo3.org/m/typo3/reference-coreapi/11.5/en-us/ApiOverview/SymfonyExpressionLanguage/Index.html#registering-new-provider-within-an-extension
  */
 
-use VendorName\Sitepackage\ExpressionLanguage\CustomProvider;
+use VendorName\Sitepackage\ExpressionLanguage\CustomTypoScriptConditionProvider;
 
 return [
     'typoscript' => [
-        CustomProvider::class,
+        CustomTypoScriptConditionProvider::class,
     ]
 ];
