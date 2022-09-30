@@ -12,7 +12,7 @@ This sitepackage contains almost all the directories and files (except resource 
 
 ### Color scheme selector
 
-As an example of how to add new fields to pages records through `ext_tables.sql` and `/Configuration/TCA/Overrides/pages.php` and how to implement custom Symfony Conditions (with files `Configuration/ExpressionLanguage.php`, `Classes/ExpressionLanguage/CustomTypoScriptConditionProvider.php` and `Classes/TypoScript/CustomConditionFunctionsProvider.php`) to be used in the TypoScript/TSconfig context (`Configuration/TypoScript/Setup/page.typoscript`) this sitepackage contains a method to provide choosable color schemes to backend users.
+As an example of how to add new fields to pages records through `ext_tables.sql` and `/Configuration/TCA/Overrides/pages.php` and how to implement custom Symfony Conditions (with files `Configuration/ExpressionLanguage.php`, `Classes/ExpressionLanguage/CustomProvider.php` and `Classes/ExpressionLanguage/FunctionsProvider/CustomFunctionsProvider.php`) to be used in the TypoScript/TSconfig context (`Configuration/TypoScript/Setup/page.typoscript`) this sitepackage contains a method to provide choosable color schemes to backend users.
 
 ### Backend Style Customization
 
@@ -92,11 +92,11 @@ To initially install Gulp and all necessary modules execute command `npm install
     - [`Persistence`](Classes/Domain/Persistence/) → Contains all PHP Domain Persistence Classes
     - [`Repository`](Classes/Domain/Repository/) → Contains all PHP Domain Repository Classes
     - [`Validator`](Classes/Domain/Validator/) → Contains all PHP Domain Validator Classes
-  - [`ExpressionLanguage`](Classes/ExpressionLanguage/) → Contains all Expression Language Provider PHP Classes
-    - [`CustomTypoScriptConditionProvider.php`](Classes/ExpressionLanguage/CustomTypoScriptConditionProvider.php) → Custom TypoScript Condition Provider
+  - [`ExpressionLanguage`](Classes/ExpressionLanguage/) → Contains Expression Language Provider PHP Classes
+    - [`FunctionsProvider`](Classes/ExpressionLanguage/FunctionsProvider/) → Contains Expression Language Functions Provider PHP Classes
+      - [`CustomFunctionsProvider.php`](Classes/ExpressionLanguage/CustomTypoScriptConditionProvider.php) → Custom Expression Language Function Provider
+    - [`CustomProvider.php`](Classes/ExpressionLanguage/CustomTypoScriptConditionProvider.php) → Custom Expression Language Provider
   - [`Service`](Classes/Service/) → Contains all PHP Service Classes
-  - [`TypoScript`](Classes/TypoScript/) → Contains PHP Classes that extend TypoScript
-    - [`CustomConditionFunctionsProvider.php`](Classes/TypoScript/CustomConditionFunctionsProvider.php) → Custom Condition Functions Provider
   - [`View`](Classes/View/) → Contains all PHP View Classes
   - [`ViewHelpers`](Classes/ViewHelpers/) → Contains all PHP ViewHelper Classes to be used in Fluid
     - [`HtmlTagAttributesViewHelper.php`](Classes/ViewHelpers/HtmlTagAttributesViewHelper.php) → Example ViewHelper file to add HTML tag attributes

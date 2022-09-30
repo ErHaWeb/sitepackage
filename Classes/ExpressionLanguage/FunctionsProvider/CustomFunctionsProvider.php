@@ -19,12 +19,12 @@ declare(strict_types=1);
  * https://docs.typo3.org/m/typo3/reference-coreapi/11.5/en-us/ApiOverview/SymfonyExpressionLanguage/Index.html#additional-functions
  */
 
-namespace VendorName\Sitepackage\TypoScript;
+namespace VendorName\Sitepackage\ExpressionLanguage\FunctionsProvider;
 
 use Symfony\Component\ExpressionLanguage\ExpressionFunction;
 use Symfony\Component\ExpressionLanguage\ExpressionFunctionProviderInterface;
 
-class CustomConditionFunctionsProvider implements ExpressionFunctionProviderInterface
+class CustomFunctionsProvider implements ExpressionFunctionProviderInterface
 {
     public function getFunctions(): array
     {

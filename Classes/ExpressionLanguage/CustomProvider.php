@@ -22,14 +22,14 @@ declare(strict_types=1);
 namespace VendorName\Sitepackage\ExpressionLanguage;
 
 use TYPO3\CMS\Core\ExpressionLanguage\AbstractProvider;
-use VendorName\Sitepackage\TypoScript\CustomConditionFunctionsProvider;
+use VendorName\Sitepackage\ExpressionLanguage\FunctionsProvider\CustomFunctionsProvider;
 
-class CustomTypoScriptConditionProvider extends AbstractProvider
+class CustomProvider extends AbstractProvider
 {
     public function __construct()
     {
         $this->expressionLanguageProviders = [
-            CustomConditionFunctionsProvider::class,
+            CustomFunctionsProvider::class,
         ];
     }
 }
