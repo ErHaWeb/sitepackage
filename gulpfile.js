@@ -1,8 +1,3 @@
-/*!
-* gulp
-* $ npm install gulp gulp-sass sass gulp-autoprefixer gulp-cssnano gulp-jshint gulp-uglify gulp-rename gulp-concat gulp-clean --save-dev
-*/
-
 // Load plugins
 const {src, dest, watch, series, parallel} = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
