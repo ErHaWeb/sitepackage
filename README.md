@@ -1,4 +1,4 @@
-# <img width="50" height="50" style="vertical-align: middle;" src="Resources/Public/Icons/Extension.svg" alt=""> TYPO3 CMS Sitepackage</div>
+# <img width="50" height="50" src="Resources/Public/Icons/Extension.svg" alt="TYPO3 CMS Sitepackage"> TYPO3 CMS Sitepackage</div>
 
 This sitepackage sticks as closely as possible to the recommended standard and maps all conceivable functional areas. There are also various examples of common use cases.
 
