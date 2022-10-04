@@ -6,7 +6,7 @@
   "require": {
     "php": ">=7.4.1",
     "ext-pdo": "*",
-    "typo3/minimal": "^11.4"
+    "typo3/minimal": "^11.4 || ^12.0"
   },
   "authors": [
     {
