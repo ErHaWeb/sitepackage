@@ -6,7 +6,7 @@
   "require": {
     "php": ">=7.4.1",
     "ext-pdo": "*",
-    "typo3/minimal": "^11.4 || ^12.0"
+    "typo3/minimal": "^11.5 || ^12.0 || dev-main"
   },
   "authors": [
     {
@@ -32,11 +32,10 @@
   "homepage": "https://typo3.org",
   "require-dev": {
     "roave/security-advisories": "dev-latest",
-    "helhum/typo3-console": "^7.0.2",
-    "typo3/cms-belog": "^11.5",
-    "typo3/cms-lowlevel": "^11.5",
-    "typo3/cms-scheduler": "^11.5",
-    "typo3/cms-setup": "^11.5"
+    "typo3/cms-belog": "^11.5 || ^12.0 || dev-main",
+    "typo3/cms-lowlevel": "^11.5 || ^12.0 || dev-main",
+    "typo3/cms-scheduler": "^11.5 || ^12.0 || dev-main",
+    "typo3/cms-setup": "^11.5 || ^12.0 || dev-main"
   },
   "extra": {
     "typo3/cms": {
