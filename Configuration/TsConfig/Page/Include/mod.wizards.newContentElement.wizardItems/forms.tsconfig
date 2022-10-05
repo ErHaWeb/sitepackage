@@ -1,8 +1,10 @@
-# add the content element to the tab "forms"
-forms {
-    elements {
+mod.wizards.newContentElement.wizardItems {
+    # add the content element to the tab "forms"
+    forms {
+        elements {
 
+        }
+
+        show := addToList()
     }
-
-    show := addToList()
 }

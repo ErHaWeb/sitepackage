@@ -1,7 +1,7 @@
 # https://docs.typo3.org/c/typo3/cms-fluid-styled-content/11.5/en-us/FirstSteps/DisplayContent.html
 
-dynamicContent = COA
-dynamicContent {
+lib.dynamicContent = COA
+lib.dynamicContent {
     10 = LOAD_REGISTER
     10.colPos.cObject = TEXT
     10.colPos.cObject {

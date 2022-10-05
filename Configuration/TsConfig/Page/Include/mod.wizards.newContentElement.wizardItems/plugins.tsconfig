@@ -1,8 +1,10 @@
-# add the content element to the tab "plugins"
-plugins {
-    elements {
+mod.wizards.newContentElement.wizardItems {
+    # add the content element to the tab "plugins"
+    plugins {
+        elements {
 
+        }
+
+        show := addToList()
     }
-
-    show := addToList()
 }

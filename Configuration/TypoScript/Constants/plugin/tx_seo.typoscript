@@ -1,4 +1,4 @@
-tx_seo {
+plugin.tx_seo {
     settings {
         xmlSitemap {
             sitemaps {

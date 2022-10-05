@@ -1,4 +1,4 @@
-sitepackage_newcontentelement =< lib.contentElement
-sitepackage_newcontentelement {
+tt_content.sitepackage_newcontentelement =< lib.contentElement
+tt_content.sitepackage_newcontentelement {
     templateName = NewContentElement
 }

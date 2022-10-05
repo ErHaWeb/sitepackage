@@ -1,5 +1,5 @@
-getIndpEnv = TEXT
-getIndpEnv {
+lib.getIndpEnv = TEXT
+lib.getIndpEnv {
     data.cObject = TEXT
     data.cObject {
         current = 1

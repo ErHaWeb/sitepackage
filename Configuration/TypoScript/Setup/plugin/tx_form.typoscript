@@ -1,4 +1,4 @@
-tx_form {
+plugin.tx_form {
     settings {
         yamlSettingsOverrides {
 
