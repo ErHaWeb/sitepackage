@@ -96,6 +96,7 @@ To initially install Gulp and all necessary modules execute command `npm install
     - [`FunctionsProvider`](Classes/ExpressionLanguage/FunctionsProvider/) → Contains Expression Language Functions Provider PHP Classes
       - [`CustomFunctionsProvider.php`](Classes/ExpressionLanguage/CustomTypoScriptConditionProvider.php) → Custom Expression Language Function Provider
     - [`CustomProvider.php`](Classes/ExpressionLanguage/CustomTypoScriptConditionProvider.php) → Custom Expression Language Provider
+  - [`Hook`](Classes/Hook/) → Contains all PHP Hook Classes
   - [`Service`](Classes/Service/) → Contains all PHP Service Classes
   - [`View`](Classes/View/) → Contains all PHP View Classes
   - [`ViewHelpers`](Classes/ViewHelpers/) → Contains all PHP ViewHelper Classes to be used in Fluid
