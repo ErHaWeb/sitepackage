@@ -222,20 +222,20 @@ To initially install Gulp and all necessary modules execute command `npm install
       - [`locallang_be.xlf`](Resources/Private/Language/locallang_be.xlf) → Source file for Backend labels (english)
       - [`locallang_db.xlf`](Resources/Private/Language/locallang_db.xlf) → Source file for labels used in [`TCA`](Configuration/TCA/) (english)
     - [`Layouts`](Resources/Private/Layouts/) → Any Fluid Layout files
-      - [`Content`](Resources/Private/Layouts/Content/) → Fluid Layout Overrides for EXT:fluid_styled_content
+      - [`Content`](Resources/Private/Layouts/ContentElements/) → Fluid Layout Overrides for EXT:fluid_styled_content
       - [`Form`](Resources/Private/Layouts/Form/) → Fluid Layout Overrides for EXT:form
         - [`Frontend`](Resources/Private/Layouts/Form/Frontend/) → Fluid Layout Frontend Overrides for EXT:form
       - [`Page`](Resources/Private/Layouts/Page/) → Fluid Layout for [`PAGE`](Configuration/TypoScript/Setup/page.typoscript) rendering of this sitepackage
         - [`Default.html`](Resources/Private/Layouts/Page/Default.html) → Default Frontend layout file
     - [`Partials`](Resources/Private/Partials/) → Any Fluid Partial files
-      - [`Content`](Resources/Private/Partials/Content/) → Fluid Partial Overrides for EXT:fluid_styled_content
+      - [`Content`](Resources/Private/Partials/ContentElements/) → Fluid Partial Overrides for EXT:fluid_styled_content
       - [`Form`](Resources/Private/Partials/Form/) → Fluid Partial Overrides for EXT:form
         - [`Frontend`](Resources/Private/Partials/Form/Frontend/) → Fluid Partial Frontend Overrides for EXT:form
       - [`Page`](Resources/Private/Partials/Page/) → Fluid Partials for [`PAGE`](Configuration/TypoScript/Setup/page.typoscript) rendering of this sitepackage
         - [`Navigation.html`](Resources/Private/Partials/Page/Navigation.html) → Partial for basic navigation rendering
     - [`Templates`](Resources/Private/Templates/) → Any Fluid Template files
-      - [`Content`](Resources/Private/Templates/Content/) → Fluid Template Overrides for EXT:fluid_styled_content
-        - [`NewContentElement.html`](Resources/Private/Templates/Content/NewContentElement.html) → Fluid Template for example content element
+      - [`Content`](Resources/Private/Templates/ContentElements/) → Fluid Template Overrides for EXT:fluid_styled_content
+        - [`NewContentElement.html`](Resources/Private/Templates/ContentElements/NewContentElement.html) → Fluid Template for example content element
       - [`Form`](Resources/Private/Templates/Form/) → Fluid Template Overrides for EXT:form
         - [`Frontend`](Resources/Private/Templates/Form/Frontend/) → Fluid Template Frontend Overrides for EXT:form
       - [`Page`](Resources/Private/Templates/Page/) → Fluid Templates for [`PAGE`](Configuration/TypoScript/Setup/page.typoscript) rendering of this sitepackage

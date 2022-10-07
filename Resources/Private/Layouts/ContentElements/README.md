@@ -1,3 +1,3 @@
-# Resources/Private/Layouts/Content/
+# Resources/Private/Layouts/ContentElements/
 
 Fluid Layout Overrides for EXT:fluid_styled_content
