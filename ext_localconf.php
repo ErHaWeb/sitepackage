@@ -61,9 +61,9 @@ defined('TYPO3') or die();
                 
                 styles {
                     templates {
-                        templateRootPath = EXT:sitepackage/Resources/Private/Templates/Content/
-                        partialRootPath = EXT:sitepackage/Resources/Private/Partials/Content/
-                        layoutRootPath = EXT:sitepackage/Resources/Private/Layouts/Content/
+                        templateRootPath = EXT:sitepackage/Resources/Private/Templates/ContentElements/
+                        partialRootPath = EXT:sitepackage/Resources/Private/Partials/ContentElements/
+                        layoutRootPath = EXT:sitepackage/Resources/Private/Layouts/ContentElements/
                     }
                 }
             '
