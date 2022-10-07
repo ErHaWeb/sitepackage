@@ -30,6 +30,21 @@ This sitepackage includes an example of a custom content element. Its icon has b
 
 As an example of how to add custom ViewHelpers this sitepackage adds the possibility to modify attributes of the html tag by the `HtmlTagAttributesViewHelper` in file `Classes/ViewHelpers/HtmlTagAttributesViewHelper.php`. The ViewHelper namespace `xmlns:s="http://typo3.org/ns/VendorName/Sitepackage/ViewHelpers"` has been added to the Fluid Template file `Resources/Private/Layouts/Page/Default.html` and it is used to add information about the currently selected layout as data attribute with tag `<s:htmlTagAttributes data="{data-layout:current}"/>`.
 
+### Custom Symfony Command
+
+If you want to run any process from your sitepackage using the command line interface (CLI) such as a time-consuming import of data from an external system, symfony commands are the way to go. A simple example is shown in this sitepackage under `Classes/Command/DoSomethingCommand.php`. Command Classes like this are registered under `Configuration/Services.yaml`.
+
+To run the example command enter the following line: 
+
+Composer-based installation:
+```
+vendor/bin/typo3 sitepackage:dosomething anyArgument -o anyOptionValue
+```
+Legacy installation:
+```
+typo3/sysext/core/bin/typo3 sitepackage:dosomething anyArgument -o anyOptionValue
+```
+
 ### XML Sitemap configuration
 
 When EXT:seo is loaded, its static TypoScript is automatically included. The sitepackage adds the ability to hide pages in the XML sitemap by setting the sitemap priority to 0 with the constant `Configuration/TypoScript/Constants/plugin/tx_seo.typoscript`. Please make sure to add the following lines to your site configuration to be able to access the sitemap via its human-readable URI `sitemap.xml` if you have not used this sitepackage as a distribution:
@@ -86,7 +101,9 @@ To initially install Gulp and all necessary modules execute command `npm install
 
 - [`Classes`](Classes/) → Contains all PHP Classes
   - [`.htaccess`](Classes/.htaccess) → Prevents public access to directory [`Classes`](Classes/)
-  - [`Controller`](Classes/Controller) → Contains all PHP controller Classes
+  - [`Command`](Classes/Command/) → Contains all PHP Symfony Command Classes
+    - [`DoSomethingCommand.php`](Classes/Command/DoSomethingCommand.php) → Example of a custom Symfony Command
+  - [`Controller`](Classes/Controller/) → Contains all PHP controller Classes
   - [`Domain`](Classes/Domain/) → Contains all PHP Domain Classes
     - [`Model`](Classes/Domain/Model/) → Contains all PHP Domain Model Classes
     - [`Persistence`](Classes/Domain/Persistence/) → Contains all PHP Domain Persistence Classes
