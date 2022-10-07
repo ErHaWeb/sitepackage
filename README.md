@@ -99,6 +99,7 @@ To initially install Gulp and all necessary modules execute command `npm install
   - [`Hook`](Classes/Hook/) → Contains all PHP Hook Classes
   - [`Middleware`](Classes/Middleware/) → Contains all PHP Middleware Classes
   - [`Service`](Classes/Service/) → Contains all PHP Service Classes
+  - [`Utility`](Classes/Utility/) → Contains all PHP Utility Classes
   - [`View`](Classes/View/) → Contains all PHP View Classes
   - [`ViewHelpers`](Classes/ViewHelpers/) → Contains all PHP ViewHelper Classes to be used in Fluid
     - [`HtmlTagAttributesViewHelper.php`](Classes/ViewHelpers/HtmlTagAttributesViewHelper.php) → Example ViewHelper file to add HTML tag attributes
