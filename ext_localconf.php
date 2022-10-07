@@ -19,6 +19,7 @@ declare(strict_types=1);
  * https://docs.typo3.org/m/typo3/reference-coreapi/11.5/en-us/ExtensionArchitecture/FileStructure/ExtLocalconf.html
  */
 
+use TYPO3\CMS\Core\Configuration\ExtensionConfiguration;
 use TYPO3\CMS\Core\Information\Typo3Version;
 use TYPO3\CMS\Core\Utility\ArrayUtility;
 use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
@@ -118,18 +119,24 @@ defined('TYPO3') or die();
     $GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['sitepackage'] = 'EXT:sitepackage/Configuration/RTE/RteConfig.yaml';
 
     /**
-     * Customize Login Mask and Backend display
+     * Get Extension Configuration
+     */
+    $extensionConfiguration = GeneralUtility::makeInstance(ExtensionConfiguration::class)
+        ->get('sitepackage');
+
+    /**
+     * Customize Login Mask and Backend display based on Extension Configuration
      */
     ArrayUtility::mergeRecursiveWithOverrule(
         $GLOBALS['TYPO3_CONF_VARS']['EXTENSIONS']['backend'],
         [
-            'backendFavicon' => 'EXT:sitepackage/Resources/Public/Icons/Extension.svg',
-            'backendLogo' => 'EXT:sitepackage/Resources/Public/Icons/Extension.svg',
-            'loginBackgroundImage' => 'EXT:sitepackage/Resources/Public/Images/Backend/loginBackgroundImage.svg',
-            'loginFootnote' => '© ' . date("Y") . ' Sitepackage',
-            'loginHighlightColor' => '#ff8700',
-            'loginLogo' => 'EXT:sitepackage/Resources/Public/Icons/Extension.svg',
-            'loginLogoAlt' => 'Login Logo alternative Text'
+            'backendFavicon' => $extensionConfiguration['backend']['backendFavicon'],
+            'backendLogo' => $extensionConfiguration['backend']['backendLogo'],
+            'loginBackgroundImage' => $extensionConfiguration['backend']['loginBackgroundImage'],
+            'loginFootnote' => str_replace('%s', date("Y"), $extensionConfiguration['backend']['loginFootnote']),
+            'loginHighlightColor' => $extensionConfiguration['backend']['loginHighlightColor'],
+            'loginLogo' => $extensionConfiguration['backend']['loginLogo'],
+            'loginLogoAlt' => $extensionConfiguration['backend']['loginLogoAlt']
         ]
     );
 })();

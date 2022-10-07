@@ -16,7 +16,7 @@ As an example of how to add new fields to pages records through `ext_tables.sql`
 
 ### Backend Style Customization
 
-This sitepackage can customize the TYPO3 login mask style (background image, footnote, highlight color, login logo and login logos alt text) and the backend style (backend favicon and logo). It uses the function of `EXT:backend`. But instead of relying on a backend user to set these variables through the extension settings it overrides them in `ext_localconf.php` (which is an easier and centralized way).
+This sitepackage can customize the TYPO3 login mask style (background image, footnote, highlight color, login logo and login logos alt text) and the backend style (backend favicon and logo). It uses the function of `EXT:backend`. But instead of relying on a backend user to set these variables through the extension settings it overrides them in `ext_localconf.php` with the Extension Configuration of this sitepackage in `ext_conf_template.txt` (which is an easier and centralized way).
 
 ### Example Backend Layouts
 
@@ -270,6 +270,7 @@ To initially install Gulp and all necessary modules execute command `npm install
 - [`.gitignore`](.gitignore) → Exclude any unnecessary/temporary data from versioning
 - [`.jshintrc`](.gitignore) → Basis JSHint configuration file used by Gulp ([JSHint Documentation](https://jshint.com/docs/))
 - [`composer.json`](composer.json) → Registration file for composer based installations
+- [`ext_conf_template.txt`](ext_conf_template.txt) → Extension Configuration that will be accessible in the TYPO3 backend from Settings module
 - [`ext_emconf.php`](ext_emconf.php) → Registration file for legacy installations
 - [`ext_localconf.php`](ext_localconf.php) → Always included in global scope, in Frontend, Backend and CLI context
 - [`ext_tables.php`](ext_tables.php) → Register Backend Modules / scheduler tasks, add table options, $GLOBALS assignments, BE User settings extensions

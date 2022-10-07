@@ -1,0 +1,24 @@
+# https://docs.typo3.org/m/typo3/reference-coreapi/main/en-us/ExtensionArchitecture/FileStructure/ExtConfTemplate.html
+
+backend {
+    # cat=Overrides; type=string; label=LLL:EXT:backend/Resources/Private/Language/locallang.xlf:config.loginLogo
+    loginLogo = EXT:sitepackage/Resources/Public/Icons/Extension.svg
+
+    # cat=Overrides; type=string; label=LLL:EXT:backend/Resources/Private/Language/locallang.xlf:config.loginLogoAlt
+    loginLogoAlt = Login Logo alternative Text
+
+    # cat=Overrides; type=color; label=LLL:EXT:backend/Resources/Private/Language/locallang.xlf:config.loginHighlightColor
+    loginHighlightColor = #ff8700
+
+    # cat=Overrides; type=string; label=LLL:EXT:backend/Resources/Private/Language/locallang.xlf:config.loginBackgroundImage
+    loginBackgroundImage = EXT:sitepackage/Resources/Public/Images/Backend/loginBackgroundImage.svg
+
+    # cat=Overrides; type=string; label=LLL:EXT:backend/Resources/Private/Language/locallang.xlf:config.loginFootnote
+    loginFootnote = © %s Sitepackage
+
+    # cat=Overrides; type=string; label=LLL:EXT:backend/Resources/Private/Language/locallang.xlf:config.backendLogo
+    backendLogo = EXT:sitepackage/Resources/Public/Icons/Extension.svg
+
+    # cat=Overrides; type=string; label=LLL:EXT:backend/Resources/Private/Language/locallang.xlf:config.backendFavicon
+    backendFavicon = EXT:sitepackage/Resources/Public/Icons/Extension.svg
+}
