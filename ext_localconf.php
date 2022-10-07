@@ -20,7 +20,6 @@ declare(strict_types=1);
  */
 
 use TYPO3\CMS\Core\Configuration\ExtensionConfiguration;
-use TYPO3\CMS\Core\Information\Typo3Version;
 use TYPO3\CMS\Core\Utility\ArrayUtility;
 use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
@@ -28,20 +27,6 @@ use TYPO3\CMS\Core\Utility\GeneralUtility;
 defined('TYPO3') or die();
 
 (static function () {
-    /**
-     * Adding the default Page TSconfig
-     * 
-     * https://docs.typo3.org/c/typo3/cms-core/main/en-us/Changelog/12.0/Feature-96614-AutomaticInclusionOfPageTsConfigOfExtensions.html
-     */
-    $versionInformation = GeneralUtility::makeInstance(Typo3Version::class);
-    if ($versionInformation->getMajorVersion() < 12) {
-        ExtensionManagementUtility::addPageTSConfig(trim(
-            '
-                @import "EXT:sitepackage/Configuration/page.tsconfig"
-            '
-        ));
-    }
-
     /**
      * Adding the default User TSconfig
      */
