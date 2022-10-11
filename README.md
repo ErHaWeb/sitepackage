@@ -73,7 +73,7 @@ routeEnhancers:
     type: PageType
     map:
       # The above-mentioned configuration for "sitemap.xml" may already be here. 
-      browserconfig.xml: 7943879438
+      browserconfig.xml: 2943879438
       site.webmanifest: 3478304621
 ```
 
