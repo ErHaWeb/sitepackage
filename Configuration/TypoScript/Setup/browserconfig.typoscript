@@ -1,6 +1,6 @@
 browserconfig\.xml = PAGE
 browserconfig\.xml {
-    typeNum = 7943879438
+    typeNum = 2943879438
     config {
         disableAllHeaderCode = 1
         additionalHeaders.10.header = Content-type:text/xml

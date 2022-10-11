@@ -40,7 +40,7 @@ routeEnhancers:
     type: PageType
     map:
       sitemap.xml: 1533906435
-      browserconfig.xml: 7943879438
+      browserconfig.xml: 2943879438
       site.webmanifest: 3478304621
 routes:
   -
