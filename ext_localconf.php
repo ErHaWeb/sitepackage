@@ -13,8 +13,6 @@
  * The TYPO3 project - inspiring people to share!
  */
 
-declare(strict_types=1);
-
 /**
  * https://docs.typo3.org/m/typo3/reference-coreapi/10.4/en-us/ExtensionArchitecture/FileStructure/ExtLocalconf.html
  */
