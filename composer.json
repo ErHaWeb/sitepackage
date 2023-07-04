@@ -1,10 +1,10 @@
 {
   "name": "vendorname/sitepackage",
   "type": "typo3-cms-extension",
-  "description": "Sitepackage for TYPO3 11",
+  "description": "Sitepackage for TYPO3 10",
   "license": "GPL-2.0-or-later",
   "require": {
-    "typo3/minimal": "^11.0"
+    "typo3/minimal": "^10.0"
   },
   "authors": [
     {
@@ -30,11 +30,11 @@
   "homepage": "https://typo3.org",
   "require-dev": {
     "roave/security-advisories": "dev-latest",
-    "helhum/typo3-console": "^7.0",
-    "typo3/cms-belog": "^11.0",
-    "typo3/cms-lowlevel": "^11.0",
-    "typo3/cms-scheduler": "^11.0",
-    "typo3/cms-setup": "^11.0"
+    "helhum/typo3-console": "^6.0",
+    "typo3/cms-belog": "^10.0",
+    "typo3/cms-lowlevel": "^10.0",
+    "typo3/cms-scheduler": "^10.0",
+    "typo3/cms-setup": "^10.0"
   },
   "extra": {
     "typo3/cms": {

@@ -16,12 +16,12 @@
 declare(strict_types=1);
 
 /**
- * https://docs.typo3.org/m/typo3/reference-coreapi/11.5/en-us/ExtensionArchitecture/FileStructure/ExtEmconf.html
+ * https://docs.typo3.org/m/typo3/reference-coreapi/10.4/en-us/ExtensionArchitecture/FileStructure/ExtEmconf.html
  */
 
 $EM_CONF[$_EXTKEY] = [
     'title' => 'Sitepackage',
-    'description' => 'Sitepackage for TYPO3 11',
+    'description' => 'Sitepackage for TYPO3 10',
     'category' => 'templates',
     'author' => 'Author Name',
     'author_email' => 'email@author.name.com',
@@ -31,7 +31,7 @@ $EM_CONF[$_EXTKEY] = [
     'version' => '1.0.0',
     'constraints' => [
         'depends' => [
-            'typo3' => '11.0.0-11.5.99',
+            'typo3' => '10.0.0-10.4.99',
         ],
         'conflicts' => [
         ],
