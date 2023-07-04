@@ -1,4 +1,4 @@
-# https://docs.typo3.org/c/typo3/cms-fluid-styled-content/11.5/en-us/FirstSteps/DisplayContent.html
+# https://docs.typo3.org/c/typo3/cms-fluid-styled-content/12.4/en-us/FirstSteps/DisplayContent.html
 
 lib.dynamicContent = COA
 lib.dynamicContent {

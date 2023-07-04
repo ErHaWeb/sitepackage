@@ -1,3 +1,3 @@
-# https://docs.typo3.org/m/typo3/reference-typoscript/11.5/en-us/TopLevelObjects/Other.html#tt
+# https://docs.typo3.org/m/typo3/reference-typoscript/12.4/en-us/TopLevelObjects/Other.html#tt
 
 @import 'EXT:sitepackage/Configuration/TypoScript/Setup/tt_content/*.typoscript'

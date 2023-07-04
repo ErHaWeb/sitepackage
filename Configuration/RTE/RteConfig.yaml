@@ -1,4 +1,4 @@
-# https://docs.typo3.org/c/typo3/cms-rte-ckeditor/11.5/en-us/Configuration/Reference.html
+# https://docs.typo3.org/c/typo3/cms-rte-ckeditor/12.4/en-us/Configuration/Reference.html
 
 imports:
   - { resource: "EXT:rte_ckeditor/Configuration/RTE/Default.yaml" }

@@ -1,4 +1,4 @@
--- https://docs.typo3.org/m/typo3/reference-coreapi/11.5/en-us/ExtensionArchitecture/FileStructure/ExtTablesSql.html
+-- https://docs.typo3.org/m/typo3/reference-coreapi/12.4/en-us/ExtensionArchitecture/FileStructure/ExtTablesSql.html
 
 CREATE TABLE pages
 (
