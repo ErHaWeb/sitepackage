@@ -16,7 +16,7 @@
 declare(strict_types=1);
 
 /**
- * https://docs.typo3.org/m/typo3/reference-coreapi/12.4/en-us/ApiOverview/SymfonyExpressionLanguage/Index.html#additional-functions
+ * https://docs.typo3.org/m/typo3/reference-coreapi/main/en-us/ApiOverview/SymfonyExpressionLanguage/Index.html#additional-functions
  */
 
 namespace VendorName\Sitepackage\ExpressionLanguage\FunctionsProvider;

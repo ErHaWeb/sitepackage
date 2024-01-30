@@ -19,7 +19,7 @@ declare(strict_types=1);
  * Definitions for routes provided by EXT:sitepackage
  * Contains all "regular" routes for entry points
  *
- * https://docs.typo3.org/m/typo3/reference-coreapi/12.4/en-us/ApiOverview/Backend/BackendRouting.html
+ * https://docs.typo3.org/m/typo3/reference-coreapi/main/en-us/ApiOverview/Backend/BackendRouting.html
  */
 
 return [

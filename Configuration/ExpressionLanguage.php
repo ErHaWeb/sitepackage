@@ -18,7 +18,7 @@ declare(strict_types=1);
 /**
  * Register Expression Language Provider by EXT:sitepackage
  *
- * https://docs.typo3.org/m/typo3/reference-coreapi/12.4/en-us/ApiOverview/SymfonyExpressionLanguage/Index.html#registering-new-provider-within-an-extension
+ * https://docs.typo3.org/m/typo3/reference-coreapi/main/en-us/ApiOverview/SymfonyExpressionLanguage/Index.html#registering-new-provider-within-an-extension
  */
 
 use VendorName\Sitepackage\ExpressionLanguage\CustomTypoScriptConditionProvider;

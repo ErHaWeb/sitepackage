@@ -20,7 +20,7 @@ defined('TYPO3') or die();
 (static function () {
     /**
      * Add a custom content element to the "Type" dropdown
-     * https://docs.typo3.org/m/typo3/reference-coreapi/12.4/en-us/ApiOverview/ContentElements/AddingYourOwnContentElements.html#register-the-content-element-type
+     * https://docs.typo3.org/m/typo3/reference-coreapi/main/en-us/ApiOverview/ContentElements/AddingYourOwnContentElements.html#register-the-content-element-type
      */
     ExtensionManagementUtility::addTcaSelectItem(
         'tt_content',
