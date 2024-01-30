@@ -4,7 +4,7 @@
   "description": "Sitepackage for TYPO3 13",
   "license": "GPL-2.0-or-later",
   "require": {
-    "typo3/minimal": "^13.0"
+    "typo3/minimal": "dev-main"
   },
   "authors": [
     {
@@ -30,10 +30,10 @@
   "homepage": "https://typo3.org",
   "require-dev": {
     "roave/security-advisories": "dev-latest",
-    "typo3/cms-belog": "^13.0",
-    "typo3/cms-lowlevel": "^13.0",
-    "typo3/cms-scheduler": "^13.0",
-    "typo3/cms-setup": "^13.0"
+    "typo3/cms-belog": "dev-main",
+    "typo3/cms-lowlevel": "dev-main",
+    "typo3/cms-scheduler": "dev-main",
+    "typo3/cms-setup": "dev-main"
   },
   "extra": {
     "typo3/cms": {
