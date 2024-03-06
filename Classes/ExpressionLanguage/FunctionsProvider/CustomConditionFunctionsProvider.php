@@ -42,7 +42,7 @@ class CustomConditionFunctionsProvider implements ExpressionFunctionProviderInte
         }, function (...$args) {
             $rootlinePages = array_reverse($args[0]['tree']->rootLine);
             foreach ($rootlinePages as $rootlinePage) {
-                $val = $rootlinePage[$args[1]];
+                $val = $rootlinePage[$args[1]] ?? null;
                 if (isset($val) && $val) {
                     return $val;
                 }
