@@ -27,7 +27,6 @@ $EM_CONF[$_EXTKEY] = [
     'author_email' => 'email@author.name.com',
     'author_company' => 'Author Company',
     'state' => 'stable',
-    'clearCacheOnLoad' => true,
     'version' => '2.0.0',
     'constraints' => [
         'depends' => [
