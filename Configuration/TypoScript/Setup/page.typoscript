@@ -137,4 +137,4 @@ page {
             main = EXT:sitepackage/Resources/Public/Css/Frontend/main-color2.min.css
         }
     }
-[global]
+[END]
