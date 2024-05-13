@@ -62,9 +62,21 @@ defined('TYPO3') or die();
                 'size' => 1,
                 'maxitems' => 1,
                 'items' => [
-                    ['LLL:EXT:sitepackage/Resources/Private/Language/locallang_db.xlf:pages.tx_sitepackage_colorscheme.I.0', '0', ''],
-                    ['LLL:EXT:sitepackage/Resources/Private/Language/locallang_db.xlf:pages.tx_sitepackage_colorscheme.I.1', '1', ''],
-                    ['LLL:EXT:sitepackage/Resources/Private/Language/locallang_db.xlf:pages.tx_sitepackage_colorscheme.I.2', '2', ''],
+                    [
+                        'label' => 'LLL:EXT:sitepackage/Resources/Private/Language/locallang_db.xlf:pages.tx_sitepackage_colorscheme.I.0',
+                        'value' => '0',
+                        'icon' => ''
+                    ],
+                    [
+                        'label' => 'LLL:EXT:sitepackage/Resources/Private/Language/locallang_db.xlf:pages.tx_sitepackage_colorscheme.I.1',
+                        'value' => '1',
+                        'icon' => ''
+                    ],
+                    [
+                        'label' => 'LLL:EXT:sitepackage/Resources/Private/Language/locallang_db.xlf:pages.tx_sitepackage_colorscheme.I.2',
+                        'value' => '2',
+                        'icon' => ''
+                    ],
                 ],
                 'fieldWizard' => [
                     'selectIcons' => [
