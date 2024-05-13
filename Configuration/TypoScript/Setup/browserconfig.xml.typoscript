@@ -1,0 +1,55 @@
+browserconfig\.xml = PAGE
+browserconfig\.xml {
+  typeNum = 2943879438
+  config {
+    disableAllHeaderCode = 1
+    additionalHeaders.10.header = Content-type:text/xml
+    admPanel = 0
+    debug = 0
+  }
+
+  10 = TEXT
+  10 {
+    wrap (
+<?xml version="1.0" encoding="utf-8"?>
+<browserconfig>
+    <msapplication>
+        <tile>
+            |
+            <TileColor>#da532c</TileColor>
+        </tile>
+    </msapplication>
+</browserconfig>
+    )
+
+    value = square70x70, square150x150, wide310x150, square310x310, square144x144
+    split {
+      token = ,
+      cObjNum = 1
+      1.cObject = COA
+      1.cObject {
+        stdWrap.wrap = <|/>
+
+        10 = TEXT
+        10 {
+          current = 1
+          trim = 1
+          noTrimWrap = ||logo |
+        }
+
+        20 = TEXT
+        20 {
+          current = 1
+          trim = 1
+          replacement.10 {
+            search = #(square|wide)#i
+            replace =
+            useRegExp = 1
+          }
+
+          dataWrap = src="{path:EXT:sitepackage/Resources/Public/Icons/Favicon/mstile-|.png}"
+        }
+      }
+    }
+  }
+}

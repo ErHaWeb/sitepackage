@@ -1,61 +1,50 @@
 site\.webmanifest = PAGE
 site\.webmanifest {
-    typeNum = 3478304621
-    config {
-        disableAllHeaderCode = 1
-        additionalHeaders.10.header = Content-type:application/json
-        admPanel = 0
-        debug = 0
-    }
+  typeNum = 3478304621
+  config {
+    disableAllHeaderCode = 1
+    additionalHeaders.10.header = Content-type:application/json
+    admPanel = 0
+    debug = 0
+  }
 
-    10 = COA
+  10 = COA
+  10 {
+    stdWrap.wrap = {|}
+
+    10 = TEXT
     10 {
-        stdWrap.wrap = {|}
+      dataWrap (
+"name":"{siteLanguage:websiteTitle // site:websiteTitle}",
+"short_name":"{siteLanguage:websiteTitle // site:websiteTitle}",
+"icons":[|],
+"theme_color":"#ffffff",
+"background_color":"#ffffff",
+"display":"standalone"
+      )
 
+      value = 36x36, 48x48, 72x72, 96x96, 144x144, 192x192, 256x256, 384x384, 512x512
+      split {
+        token = ,
+        wrap = {|},|*|{|},|*|{|}
+        cObjNum = 1
+        1.cObject = COA
+        1.cObject {
+          10 = TEXT
+          10 {
+            current = 1
+            trim = 1
+            dataWrap = "src":"{path:EXT:sitepackage/Resources/Public/Icons/Favicon/android-chrome-|.png}",
+          }
 
-        10 = COA
-        10 {
-            wrap (
-"name": "{siteLanguage:websiteTitle}",
-"short_name": "{siteLanguage:websiteTitle}",
-"icons": [|],
-"theme_color": "#ffffff",
-"background_color": "#ffffff",
-"display": "standalone"
-            )
-            wrap.insertData = 1
-
-            10 = TEXT
-            10 {
-                value = "src": "{path:EXT:sitepackage/Resources/Public/Icons/Favicon/android-chrome-36x36.png}", "sizes": "36x36", "type": "image/png"
-                stdWrap.insertData = 1
-                wrap = {|},
-            }
-
-            20 < .10
-            20.value = "src": "{path:EXT:sitepackage/Resources/Public/Icons/Favicon/android-chrome-48x48.png}","sizes": "48x48","type": "image/png"
-
-            30 < .10
-            30.value = "src": "{path:EXT:sitepackage/Resources/Public/Icons/Favicon/android-chrome-72x72.png}","sizes": "72x72","type": "image/png"
-
-            40 < .10
-            40.value = "src": "{path:EXT:sitepackage/Resources/Public/Icons/Favicon/android-chrome-96x96.png}","sizes": "96x96","type": "image/png"
-
-            50 < .10
-            50.value = "src": "{path:EXT:sitepackage/Resources/Public/Icons/Favicon/android-chrome-144x144.png}","sizes": "144x144","type": "image/png"
-
-            60 < .10
-            60.value = "src": "{path:EXT:sitepackage/Resources/Public/Icons/Favicon/android-chrome-192x192.png}","sizes": "192x192","type": "image/png"
-
-            70 < .10
-            70.value = "src": "{path:EXT:sitepackage/Resources/Public/Icons/Favicon/android-chrome-256x256.png}","sizes": "256x256","type": "image/png"
-
-            80 < .10
-            80.value = "src": "{path:EXT:sitepackage/Resources/Public/Icons/Favicon/android-chrome-384x384.png}","sizes": "384x384","type": "image/png"
-
-            90 < .10
-            90.value = "src": "{path:EXT:sitepackage/Resources/Public/Icons/Favicon/android-chrome-512x512.png}","sizes": "512x512","type": "image/png"
-            90.wrap = {|}
+          20 = TEXT
+          20 {
+            current = 1
+            trim = 1
+            wrap = "sizes":"|","type":"image/png"
+          }
         }
+      }
     }
+  }
 }
