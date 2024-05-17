@@ -26,6 +26,6 @@ return [
         // icon provider class
         'provider' => \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
         // the source SVG for the SvgIconProvider
-        'source' => 'EXT:sitepackage/Resources/Public/Icons/Extension.svg',
+        'source' => 'EXT:sitepackage/Resources/Public/Icons/Sitepackage.svg',
     ],
 ];
