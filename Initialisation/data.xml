@@ -53,13 +53,7 @@
 					<pid>0</pid>
 					<title>Root</title>
 					<relations index="rels" type="array"></relations>
-					<softrefs type="array">
-						<softref_element index="tsconfig_includes:ext_fileref:2" type="array">
-							<field>tsconfig_includes</field>
-							<spKey>ext_fileref</spKey>
-							<matchString>EXT:sitepackage/Configuration/TsConfig/Page/page.tsconfig</matchString>
-						</softref_element>
-					</softrefs>
+                    <softrefs type="array"></softrefs>
 				</rec>
 				<rec index="7" type="array">
 					<uid>7</uid>
@@ -102,21 +96,6 @@
 					<title>404 (Page not found)</title>
 					<relations index="rels" type="array"></relations>
 					<softrefs type="array"></softrefs>
-				</rec>
-			</table>
-			<table index="sys_template" type="array">
-				<rec index="1" type="array">
-					<uid>1</uid>
-					<pid>1</pid>
-					<title>TypoScript Root Template</title>
-					<relations index="rels" type="array"></relations>
-					<softrefs type="array">
-						<softref_element index="include_static_file:ext_fileref:2" type="array">
-							<field>include_static_file</field>
-							<spKey>ext_fileref</spKey>
-							<matchString>EXT:sitepackage/Configuration/TypoScript/</matchString>
-						</softref_element>
-					</softrefs>
 				</rec>
 			</table>
 			<table index="tt_content" type="array">
@@ -171,9 +150,6 @@
 				</table>
 			</page_contents>
 			<page_contents index="1" type="array">
-				<table index="sys_template" type="array">
-					<item index="1">1</item>
-				</table>
 				<table index="tt_content" type="array">
 					<item index="1">1</item>
 				</table>
@@ -283,7 +259,7 @@
 				<field index="fe_login_mode" type="integer">0</field>
 				<field index="backend_layout"></field>
 				<field index="backend_layout_next_level"></field>
-				<field index="tsconfig_includes">EXT:sitepackage/Configuration/TsConfig/Page/page.tsconfig</field>
+                <field index="tsconfig_includes" type="NULL"></field>
 				<field index="categories" type="integer">0</field>
 				<field index="tx_impexp_origuid" type="integer">1</field>
 				<field index="seo_title"></field>
@@ -301,62 +277,7 @@
 				<field index="sitemap_changefreq"></field>
 				<field index="tx_sitepackage_colorscheme">0</field>
 			</fieldlist>
-			<related index="rels" type="array">
-				<field index="tsconfig_includes" type="array">
-					<softrefs type="array">
-						<keys type="array">
-							<softref_key index="ext_fileref" type="array">
-								<softref_element index="2" type="array">
-									<matchString>EXT:sitepackage/Configuration/TsConfig/Page/page.tsconfig</matchString>
-								</softref_element>
-							</softref_key>
-						</keys>
-					</softrefs>
-				</field>
-			</related>
-		</tablerow>
-		<tablerow index="sys_template:1" type="array">
-			<fieldlist index="data" type="array">
-				<field index="uid" type="integer">1</field>
-				<field index="pid" type="integer">1</field>
-				<field index="tstamp" type="integer">1664346084</field>
-				<field index="crdate" type="integer">1664346084</field>
-				<field index="cruser_id" type="integer">2</field>
-				<field index="deleted" type="integer">0</field>
-				<field index="hidden" type="integer">0</field>
-				<field index="starttime" type="integer">0</field>
-				<field index="endtime" type="integer">0</field>
-				<field index="sorting" type="integer">256</field>
-				<field index="description">This record of table &quot;sys_template&quot; was created using the file EXT:sitepackage/Initialisation/data.xml</field>
-				<field index="t3_origuid" type="integer">0</field>
-				<field index="t3ver_oid" type="integer">0</field>
-				<field index="t3ver_wsid" type="integer">0</field>
-				<field index="t3ver_state" type="integer">0</field>
-				<field index="t3ver_stage" type="integer">0</field>
-				<field index="title">TypoScript Root Template</field>
-				<field index="root" type="integer">1</field>
-				<field index="clear" type="integer">3</field>
-				<field index="include_static_file">EXT:sitepackage/Configuration/TypoScript/</field>
-				<field index="constants" type="NULL"></field>
-				<field index="config"></field>
-				<field index="basedOn"></field>
-				<field index="includeStaticAfterBasedOn" type="integer">0</field>
-				<field index="static_file_mode" type="integer">0</field>
-				<field index="tx_impexp_origuid" type="integer">1</field>
-			</fieldlist>
-			<related index="rels" type="array">
-				<field index="include_static_file" type="array">
-					<softrefs type="array">
-						<keys type="array">
-							<softref_key index="ext_fileref" type="array">
-								<softref_element index="2" type="array">
-									<matchString>EXT:sitepackage/Configuration/TypoScript/</matchString>
-								</softref_element>
-							</softref_key>
-						</keys>
-					</softrefs>
-				</field>
-			</related>
+            <related index="rels" type="array"></related>
 		</tablerow>
 		<tablerow index="tt_content:1" type="array">
 			<fieldlist index="data" type="array">

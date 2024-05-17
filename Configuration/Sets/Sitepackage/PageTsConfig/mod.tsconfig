@@ -1,10 +1,10 @@
 # https://docs.typo3.org/m/typo3/reference-tsconfig/main/en-us/PageTsconfig/Mod.html
 
 # https://docs.typo3.org/m/typo3/reference-tsconfig/main/en-us/PageTsconfig/Mod.html#backendlayouts
-@import 'EXT:sitepackage/Configuration/TsConfig/Page/Include/mod.web_layout.BackendLayouts/*.tsconfig'
+@import 'EXT:sitepackage/Configuration/Sets/Sitepackage/PageTsConfig/mod.web_layout.BackendLayouts/*.tsconfig'
 
 # https://docs.typo3.org/m/typo3/reference-tsconfig/main/en-us/PageTsconfig/Mod.html#newcontentelement-wizarditems
-@import 'EXT:sitepackage/Configuration/TsConfig/Page/Include/mod.wizards.newContentElement.wizardItems/*.tsconfig'
+@import 'EXT:sitepackage/Configuration/Sets/Sitepackage/PageTsConfig/mod.wizards.newContentElement.wizardItems/*.tsconfig'
 
 mod {
     SHARED {

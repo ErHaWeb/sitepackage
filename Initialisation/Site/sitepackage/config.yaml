@@ -1,4 +1,6 @@
 base: /
+dependencies:
+  - vendorname/sitepackage
 errorHandling:
   -
     errorCode: 404

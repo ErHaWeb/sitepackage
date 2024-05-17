@@ -37,59 +37,6 @@ defined('TYPO3') or die();
     ));
 
     /**
-     * Add static TypoScript from EXT:fluid_styled_content
-     */
-    if (ExtensionManagementUtility::isLoaded('fluid_styled_content')) {
-        ExtensionManagementUtility::addTypoScriptConstants(trim(
-            '
-                @import "EXT:fluid_styled_content/Configuration/TypoScript/constants.typoscript"
-                
-                styles {
-                    templates {
-                        templateRootPath = EXT:sitepackage/Resources/Private/Templates/ContentElements/
-                        partialRootPath = EXT:sitepackage/Resources/Private/Partials/ContentElements/
-                        layoutRootPath = EXT:sitepackage/Resources/Private/Layouts/ContentElements/
-                    }
-                }
-            '
-        ));
-        ExtensionManagementUtility::addTypoScriptSetup(trim(
-            '
-                @import "EXT:fluid_styled_content/Configuration/TypoScript/setup.typoscript"
-            '
-        ));
-    }
-
-    /**
-     * Add static TypoScript from EXT:seo
-     */
-    if (ExtensionManagementUtility::isLoaded('seo')) {
-        ExtensionManagementUtility::addTypoScriptConstants(trim(
-            '
-                @import "EXT:seo/Configuration/TypoScript/XmlSitemap/constants.typoscript"
-            '
-        ));
-        ExtensionManagementUtility::addTypoScriptSetup(trim(
-            '
-                @import "EXT:seo/Configuration/TypoScript/XmlSitemap/setup.typoscript"
-            '
-        ));
-    }
-
-    /**
-     * Add static TypoScript from EXT:form and register custom configuration
-     */
-    if (ExtensionManagementUtility::isLoaded('form')) {
-        ExtensionManagementUtility::addTypoScriptSetup(trim(
-            '
-                @import "EXT:form/Configuration/TypoScript/setup.typoscript"
-                module.tx_form.settings.yamlConfigurations.100 = EXT:sitepackage/Configuration/Form/CustomFormSetup.yaml
-                plugin.tx_form.settings.yamlConfigurations.100 = EXT:sitepackage/Configuration/Form/CustomFormSetup.yaml
-            '
-        ));
-    }
-
-    /**
      * Add further rootline fields
      */
     $rootlineFields = &$GLOBALS['TYPO3_CONF_VARS']['FE']['addRootLineFields'];

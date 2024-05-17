@@ -1,4 +1,4 @@
-# Configuration/TypoScript/Setup/plugin/
+# Configuration/Sets/Sitepackage/Setup/plugin/
 
 Contains all TypoScript Setup definitions for the "plugin" top-level object
 

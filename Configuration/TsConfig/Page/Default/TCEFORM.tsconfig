@@ -1,0 +1,7 @@
+TCEFORM {
+  pages {
+    # As the custom tx_sitepackage_colorscheme is specific for the sitepackage disable it by default
+    # This will be enabled in Configuration/Sets/Sitepackage/PageTsConfig/TCEFORM.tsconfig
+    tx_sitepackage_colorscheme.disabled = 1
+  }
+}
