@@ -1,0 +1,20 @@
+# Settings for EXT:fluid_styled_content
+styles:
+  templates:
+    templateRootPath: 'EXT:sitepackage/Resources/Private/Templates/ContentElements/'
+    partialRootPath: 'EXT:sitepackage/Resources/Private/Partials/ContentElements/'
+    layoutRootPath: 'EXT:sitepackage/Resources/Private/Layouts/ContentElements/'
+
+# Settings for EXT:form
+module:
+  tx_form:
+    settings:
+      yamlConfigurations:
+        100: 'EXT:sitepackage/Configuration/Form/CustomFormSetup.yaml'
+plugin:
+  tx_form:
+    settings:
+      yamlConfigurations:
+        # register your own additional configuration
+        # choose a number higher than 10 (10 is reserved)
+        100: 'EXT:sitepackage/Configuration/Form/CustomFormSetup.yaml'
