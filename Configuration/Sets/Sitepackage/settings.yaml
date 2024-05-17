@@ -5,13 +5,21 @@ styles:
     partialRootPath: 'EXT:sitepackage/Resources/Private/Partials/ContentElements/'
     layoutRootPath: 'EXT:sitepackage/Resources/Private/Layouts/ContentElements/'
 
-# Settings for EXT:form
+# Settings for EXT:seo
+seo:
+  sitemap:
+    pages:
+      additionalWhere: ' {#no_index} = 0 AND {#canonical_link} = '' AND {#sitemap_priority} > 0'
+
 module:
+  # Settings for EXT:form
   tx_form:
     settings:
       yamlConfigurations:
         100: 'EXT:sitepackage/Configuration/Form/CustomFormSetup.yaml'
+
 plugin:
+  # Settings for EXT:form
   tx_form:
     settings:
       yamlConfigurations:

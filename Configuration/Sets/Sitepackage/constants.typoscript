@@ -1,3 +1,5 @@
-# Add all TypoScript files of directory "./Constants/" for this site set
-
-@import 'EXT:sitepackage/Configuration/Sets/Sitepackage/Constants/*.typoscript'
+# Classic TypoScript constants can be defined here.
+#
+# Normally it makes no sense to still define constants here.
+# Instead, use settings.definitions.yaml to set constants of the
+# sitepackage and settings.yaml to set constants of other extensions.

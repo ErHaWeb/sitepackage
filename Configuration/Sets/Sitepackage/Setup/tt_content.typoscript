@@ -1,3 +1,8 @@
-# https://docs.typo3.org/m/typo3/reference-typoscript/main/en-us/TopLevelObjects/Other.html#tt
+# https://docs.typo3.org/m/typo3/reference-typoscript/main/en-us/TopLevelObjects/Other.html#tlo-tt_content
 
-@import 'EXT:sitepackage/Configuration/Sets/Sitepackage/Setup/tt_content/*.typoscript'
+tt_content {
+  sitepackage_newcontentelement =< lib.contentElement
+  sitepackage_newcontentelement {
+    templateName = NewContentElement
+  }
+}

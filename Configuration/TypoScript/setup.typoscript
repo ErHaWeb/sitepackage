@@ -1,3 +1,0 @@
-# Add all files of directory "./Setup/" if static TypoScript has been included
-
-@import 'EXT:sitepackage/Configuration/TypoScript/Setup/*.typoscript'
