@@ -10,10 +10,3 @@ services:
   VendorName\Sitepackage\:
     resource: '../Classes/*'
     exclude: '../Classes/Domain/Model/*'
-
-  # https://docs.typo3.org/m/typo3/reference-coreapi/12.4/en-us/ApiOverview/CommandControllers/Tutorial.html#register-the-command
-  VendorName\Sitepackage\Command\DoSomethingCommand:
-    tags:
-      - name: console.command
-        command: 'sitepackage:dosomething'
-        description: 'A command that does nothing and always succeeds.'
