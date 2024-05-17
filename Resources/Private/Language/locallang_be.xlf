@@ -53,6 +53,10 @@
             <trans-unit id="constants.page.meta.google-site-verification" xml:space="preserve">
                 <source>Google Site Verification Code:Verify your site ownership</source>
             </trans-unit>
+
+			<trans-unit id="sets.sitepackage.label" xml:space="preserve">
+                <source>Sitepackage</source>
+            </trans-unit>
         </body>
     </file>
 </xliff>

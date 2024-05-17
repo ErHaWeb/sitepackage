@@ -1,3 +1,3 @@
 # Configuration/TsConfig/Page/
 
-Contains Page TSconfig files for backend configuration (primarily modules)
+Contains global Page TSconfig files for backend configuration (primarily modules)

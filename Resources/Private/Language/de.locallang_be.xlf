@@ -69,6 +69,11 @@
                 <source>Google Site Verification Code:Verify your site ownership</source>
                 <target>Google Site Verification Code:Bestätigen Sie Ihre Website-Inhaberschaft</target>
             </trans-unit>
+
+			<trans-unit id="sets.sitepackage.label" xml:space="preserve">
+                <source>Sitepackage</source>
+				<target>Sitepackage</target>
+            </trans-unit>
         </body>
     </file>
 </xliff>

@@ -1,4 +1,4 @@
-# Configuration/TypoScript/Setup/tt_content/
+# Configuration/Sets/Sitepackage/Setup/tt_content/
 
 Contains all TypoScript Setup definitions for the "tt_content" top-level object
 

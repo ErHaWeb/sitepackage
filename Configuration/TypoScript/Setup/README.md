@@ -1,3 +1,3 @@
 # Configuration/TypoScript/Setup/
 
-TypoScript Setup files
+Global TypoScript Setup files

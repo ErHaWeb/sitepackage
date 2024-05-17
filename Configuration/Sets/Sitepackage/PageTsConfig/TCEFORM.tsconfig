@@ -2,7 +2,8 @@
 
 TCEFORM {
     pages {
-
+      # Enable sitepackage-specific custom field
+      tx_sitepackage_colorscheme.disabled = 0
     }
 
     tt_content {

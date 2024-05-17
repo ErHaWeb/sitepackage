@@ -1,3 +1,3 @@
 # Configuration/TypoScript/Constants/
 
-TypoScript Constant files
+Global TypoScript Constant files
