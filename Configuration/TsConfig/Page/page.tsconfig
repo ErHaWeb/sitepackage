@@ -1,3 +1,0 @@
-# Add all files of directory "./Page/Include/" if static Page TSconfig has been included
-
-@import 'EXT:sitepackage/Configuration/TsConfig/Page/Include/*.tsconfig'

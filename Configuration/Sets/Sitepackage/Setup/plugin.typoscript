@@ -1,3 +1,5 @@
 # https://docs.typo3.org/m/typo3/reference-typoscript/main/en-us/TopLevelObjects/Plugin.html
 
-@import 'EXT:sitepackage/Configuration/Sets/Sitepackage/Setup/plugin/*.typoscript'
+plugin {
+
+}
