@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/EricBode/sitepackage.git"
+    "url": "git+https://https://github.com/ErHaWeb/sitepackage.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/EricBode/sitepackage/issues"
+    "url": "https://https://github.com/ErHaWeb/sitepackage/issues"
   },
-  "homepage": "https://github.com/EricBode/sitepackage#readme",
+  "homepage": "https://https://github.com/ErHaWeb/sitepackage#readme",
   "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
