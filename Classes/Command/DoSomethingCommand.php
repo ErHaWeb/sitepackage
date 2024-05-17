@@ -21,6 +21,7 @@ declare(strict_types=1);
 
 namespace VendorName\Sitepackage\Command;
 
+use Symfony\Component\Console\Attribute\AsCommand;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
@@ -33,6 +34,15 @@ use Symfony\Component\Console\Style\SymfonyStyle;
  * typo3 sitepackage:dosomething anyArgument -o anyOptionValue
  * typo3 sitepackage:dosomething anyArgument --exampleOption=anyOptionValue
  */
+
+/**
+ * https://docs.typo3.org/m/typo3/reference-coreapi/main/en-us/ApiOverview/CommandControllers/Tutorial.html#console-command-tutorial-registration-attribute
+ */
+#[AsCommand(
+    name: 'sitepackage:dosomething',
+    description: 'A command that does nothing and always succeeds.',
+    aliases: ['examples:dosomethingalias'],
+)]
 class DoSomethingCommand extends Command
 {
     protected function configure(): void
