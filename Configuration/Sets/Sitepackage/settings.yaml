@@ -9,7 +9,7 @@ styles:
 seo:
   sitemap:
     pages:
-      additionalWhere: ' {#no_index} = 0 AND {#canonical_link} = '' AND {#sitemap_priority} > 0'
+      additionalWhere: ' {#no_index} = 0 AND {#canonical_link} = "" AND {#sitemap_priority} > 0'
 
 module:
   # Settings for EXT:form
