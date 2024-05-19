@@ -27,15 +27,22 @@ defined('TYPO3') or die();
         'CType',
         [
             // title
-            'LLL:EXT:sitepackage/Resources/Private/Language/locallang_db.xlf:tt_content.sitepackage_newcontentelement.title',
+            'label' => 'LLL:EXT:sitepackage/Resources/Private/Language/locallang_db.xlf:tt_content.sitepackage_newcontentelement.title',
             // plugin signature: extkey_identifier
-            'sitepackage_newcontentelement',
+            'value' => 'sitepackage_newcontentelement',
             // icon identifier
-            'sitepackage-icon',
+            'icon' => 'sitepackage-icon',
+            // group
+            'group' => 'default',
+            // description
+            'description' => 'LLL:EXT:sitepackage/Resources/Private/Language/locallang_db.xlf:tt_content.sitepackage_newcontentelement.description',
         ],
         'textmedia',
-        'after'
+        'after',
     );
+
+    // Adds the content element icon to TCA typeicon_classes
+    $GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['sitepackage_newcontentelement'] = 'sitepackage-icon';
 
     // Configure the default backend fields for the content element
     $GLOBALS['TCA']['tt_content']['types']['sitepackage_newcontentelement'] = [
