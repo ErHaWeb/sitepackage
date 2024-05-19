@@ -1,6 +1,6 @@
 mod.wizards.newContentElement.wizardItems {
-    # add the content element to the tab "common"
-    common {
+    # add the content element to the tab "default"
+    default {
         elements {
             sitepackage_newcontentelement {
                 iconIdentifier = sitepackage-icon
