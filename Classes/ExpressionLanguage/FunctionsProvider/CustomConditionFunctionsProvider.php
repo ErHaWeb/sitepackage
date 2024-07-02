@@ -38,8 +38,7 @@ class CustomConditionFunctionsProvider implements ExpressionFunctionProviderInte
      */
     protected function getRootlineFieldFunction(): ExpressionFunction
     {
-        return new ExpressionFunction('rootlineField', static function ($str) {
-        }, function (...$args) {
+        return new ExpressionFunction('rootlineField', static function ($str) {}, function (...$args) {
             $rootlinePages = array_reverse($args[0]['tree']->rootLine);
             foreach ($rootlinePages as $rootlinePage) {
                 $val = $rootlinePage[$args[1]] ?? null;

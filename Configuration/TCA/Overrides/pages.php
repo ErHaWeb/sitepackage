@@ -65,17 +65,17 @@ defined('TYPO3') or die();
                     [
                         'label' => 'LLL:EXT:sitepackage/Resources/Private/Language/locallang_db.xlf:pages.tx_sitepackage_colorscheme.I.0',
                         'value' => '0',
-                        'icon' => ''
+                        'icon' => '',
                     ],
                     [
                         'label' => 'LLL:EXT:sitepackage/Resources/Private/Language/locallang_db.xlf:pages.tx_sitepackage_colorscheme.I.1',
                         'value' => '1',
-                        'icon' => ''
+                        'icon' => '',
                     ],
                     [
                         'label' => 'LLL:EXT:sitepackage/Resources/Private/Language/locallang_db.xlf:pages.tx_sitepackage_colorscheme.I.2',
                         'value' => '2',
-                        'icon' => ''
+                        'icon' => '',
                     ],
                 ],
                 'fieldWizard' => [

@@ -118,10 +118,10 @@ defined('TYPO3') or die();
             'backendFavicon' => $extensionConfiguration['backend']['backendFavicon'],
             'backendLogo' => $extensionConfiguration['backend']['backendLogo'],
             'loginBackgroundImage' => $extensionConfiguration['backend']['loginBackgroundImage'],
-            'loginFootnote' => str_replace('%s', date("Y"), $extensionConfiguration['backend']['loginFootnote']),
+            'loginFootnote' => str_replace('%s', date('Y'), $extensionConfiguration['backend']['loginFootnote']),
             'loginHighlightColor' => $extensionConfiguration['backend']['loginHighlightColor'],
             'loginLogo' => $extensionConfiguration['backend']['loginLogo'],
-            'loginLogoAlt' => $extensionConfiguration['backend']['loginLogoAlt']
+            'loginLogoAlt' => $extensionConfiguration['backend']['loginLogoAlt'],
         ]
     );
 })();
