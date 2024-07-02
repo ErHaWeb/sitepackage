@@ -18,7 +18,6 @@ declare(strict_types=1);
 /**
  * https://docs.typo3.org/m/typo3/reference-coreapi/10.4/en-us/ExtensionArchitecture/FileStructure/ExtEmconf.html
  */
-
 $EM_CONF[$_EXTKEY] = [
     'title' => 'Sitepackage',
     'description' => 'Sitepackage for TYPO3 10',

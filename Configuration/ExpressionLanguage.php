@@ -26,5 +26,5 @@ use VendorName\Sitepackage\ExpressionLanguage\CustomTypoScriptConditionProvider;
 return [
     'typoscript' => [
         CustomTypoScriptConditionProvider::class,
-    ]
+    ],
 ];

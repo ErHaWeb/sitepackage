@@ -28,7 +28,7 @@ defined('TYPO3') or die();
 (static function () {
     /**
      * Adding the default Page TSconfig
-     * 
+     *
      * https://docs.typo3.org/c/typo3/cms-core/main/en-us/Changelog/12.0/Feature-96614-AutomaticInclusionOfPageTsConfigOfExtensions.html
      */
     $versionInformation = GeneralUtility::makeInstance(Typo3Version::class);
@@ -131,10 +131,10 @@ defined('TYPO3') or die();
             'backendFavicon' => $extensionConfiguration['backend']['backendFavicon'],
             'backendLogo' => $extensionConfiguration['backend']['backendLogo'],
             'loginBackgroundImage' => $extensionConfiguration['backend']['loginBackgroundImage'],
-            'loginFootnote' => str_replace('%s', date("Y"), $extensionConfiguration['backend']['loginFootnote']),
+            'loginFootnote' => str_replace('%s', date('Y'), $extensionConfiguration['backend']['loginFootnote']),
             'loginHighlightColor' => $extensionConfiguration['backend']['loginHighlightColor'],
             'loginLogo' => $extensionConfiguration['backend']['loginLogo'],
-            'loginLogoAlt' => $extensionConfiguration['backend']['loginLogoAlt']
+            'loginLogoAlt' => $extensionConfiguration['backend']['loginLogoAlt'],
         ]
     );
 })();
