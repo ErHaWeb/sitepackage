@@ -19,36 +19,6 @@ defined('TYPO3') or die();
 
 (static function () {
     /**
-     * Extension key
-     */
-    $extKey = 'sitepackage';
-
-    /**
-     * Page TSconfig file path
-     */
-    $filePath = 'Configuration/TsConfig/Page/staticInclude.tsconfig';
-
-    /**
-     * Page TSconfig include path
-     */
-    $includePath = 'EXT:' . $extKey . '/' . $filePath;
-
-    /**
-     * Locallang file path
-     */
-    $locallangFilePath = 'LLL:EXT:' . $extKey . '/Resources/Private/Language/locallang_db.xlf';
-
-    /**
-     * Static Page TSconfig include title
-     */
-    $title = $locallangFilePath . ':pages.PageTSconfig.' . $extKey . '_title';
-
-    /**
-     * Add static TSconfig directly through TCA instead of the API function to be able to translate the title
-     */
-    $GLOBALS['TCA']['pages']['columns']['tsconfig_includes']['config']['items'][] = [$title, $includePath];
-
-    /**
      * Add further columns to pages records
      */
     $tempColumns = [

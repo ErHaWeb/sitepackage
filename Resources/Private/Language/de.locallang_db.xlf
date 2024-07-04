@@ -3,10 +3,6 @@
         <header/>
         <body>
             <!-- pages -->
-            <trans-unit id="pages.PageTSconfig.sitepackage_title" xml:space="preserve">
-                <source>Static Page TSconfig for Sitepackage</source>
-                <target>Statisches Page TSconfig für das Sitepackage</target>
-            </trans-unit>
             <trans-unit id="pages.tx_sitepackage_colorscheme.title" xml:space="preserve">
                 <source>Color Scheme</source>
                 <target>Farbschema</target>
@@ -26,12 +22,6 @@
             <trans-unit id="pages.tx_sitepackage_colorscheme.I.2" xml:space="preserve">
                 <source>Color Scheme 2</source>
                 <target>Farbschema 2</target>
-            </trans-unit>
-
-            <!-- sys_template -->
-            <trans-unit id="sys_template.TypoScript.sitepackage_title" xml:space="preserve">
-                <source>Static TypoScript for Sitepackage</source>
-                <target>Statisches TypoScript für das Sitepackage</target>
             </trans-unit>
 
             <!-- tt_content -->
