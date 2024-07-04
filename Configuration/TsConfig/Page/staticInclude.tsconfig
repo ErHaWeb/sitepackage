@@ -1,4 +1,0 @@
-# This TSconfig can be used as a static include via the page properties. Please note that this method is obsolete since
-# v13, as the TSconfig of the sitepackage should now be included via site set.
-
-@import 'EXT:sitepackage/Configuration/Sets/Sitepackage/page.tsconfig'
