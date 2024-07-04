@@ -19,7 +19,8 @@
                                 <default>0</default>
                                 <items type="array">
                                     <numIndex index="0" type="array">
-                                        <numIndex index="0">LLL:EXT:sitepackage/Resources/Private/Language/locallang_be.xlf:setting.example.includeCategories.title</numIndex>
+                                        <numIndex index="label">LLL:EXT:sitepackage/Resources/Private/Language/locallang_be.xlf:setting.example.includeCategories.title</numIndex>
+                                        <numIndex index="value"/>
                                     </numIndex>
                                 </items>
                             </config>
