@@ -28,15 +28,6 @@ defined('TYPO3') or die();
 
 (static function () {
     /**
-     * Adding the default User TSconfig
-     */
-    ExtensionManagementUtility::addUserTSConfig(trim(
-        '
-                @import "EXT:sitepackage/Configuration/TsConfig/User/*.tsconfig"
-            '
-    ));
-
-    /**
      * Add further rootline fields
      */
     $rootlineFields = &$GLOBALS['TYPO3_CONF_VARS']['FE']['addRootLineFields'];
