@@ -44,5 +44,5 @@ defined('TYPO3') || die();
     /**
      * Add static TypoScript (constants and setup) directly through TCA instead of the API function to be able to translate the title
      */
-    $GLOBALS['TCA']['sys_template']['columns']['include_static_file']['config']['items'][] = [$title, $includePath];
+    $GLOBALS['TCA']['sys_template']['columns']['include_static_file']['config']['items'][] = ['label' => $title, 'value' => $includePath];
 })();

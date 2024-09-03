@@ -46,7 +46,7 @@ defined('TYPO3') or die();
     /**
      * Add static TSconfig directly through TCA instead of the API function to be able to translate the title
      */
-    $GLOBALS['TCA']['pages']['columns']['tsconfig_includes']['config']['items'][] = [$title, $includePath];
+    $GLOBALS['TCA']['pages']['columns']['tsconfig_includes']['config']['items'][] = ['label' => $title, 'value' => $includePath];
 
     /**
      * Add further columns to pages records
