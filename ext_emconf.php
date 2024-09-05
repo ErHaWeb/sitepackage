@@ -26,11 +26,10 @@ $EM_CONF[$_EXTKEY] = [
     'author_email' => 'email@author.name.com',
     'author_company' => 'Author Company',
     'state' => 'stable',
-    'clearCacheOnLoad' => true,
     'version' => '1.0.0',
     'constraints' => [
         'depends' => [
-            'typo3' => '10.0.0-10.4.99',
+            'typo3' => '10.4.0-10.4.99',
         ],
         'conflicts' => [
         ],
