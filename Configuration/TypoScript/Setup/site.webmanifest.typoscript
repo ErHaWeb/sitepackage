@@ -7,7 +7,6 @@ site\.webmanifest {
         admPanel = 0
         debug = 0
     }
-
     10 = COA
     10 {
         stdWrap.wrap = {|}
@@ -31,7 +30,6 @@ site\.webmanifest {
                 stdWrap.insertData = 1
                 wrap = {|},
             }
-
             20 < .10
             20.value = "src": "{path:EXT:sitepackage/Resources/Public/Icons/Favicon/android-chrome-48x48.png}","sizes": "48x48","type": "image/png"
 

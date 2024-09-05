@@ -3,6 +3,5 @@ menu {
     elements {
 
     }
-
     show := addToList()
 }
