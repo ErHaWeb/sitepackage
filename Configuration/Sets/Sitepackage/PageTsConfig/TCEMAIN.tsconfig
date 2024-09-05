@@ -11,14 +11,11 @@ TCEMAIN {
     permissions {
 
     }
-
     preview {
 
     }
-
     table {
 
     }
-
     # translateToMessage =
 }

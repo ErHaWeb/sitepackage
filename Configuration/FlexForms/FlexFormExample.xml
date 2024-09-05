@@ -1,36 +1,29 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <T3DataStructure>
     <sheets>
         <sDEF>
             <ROOT>
-                <TCEforms>
-                    <sheetTitle>LLL:EXT:sitepackage/Resources/Private/Language/locallang_be.xlf:settings.example.title</sheetTitle>
-                </TCEforms>
+                <sheetTitle>LLL:EXT:sitepackage/Resources/Private/Language/locallang_be.xlf:settings.example.title</sheetTitle>
                 <type>array</type>
                 <el>
                     <!-- Add settings here ... -->
-
-                    <!-- Example setting: input field with name settings.includeCategories -->
-                    <settings.includeCategories>
-                        <TCEforms>
-                            <label>LLL:EXT:sitepackage/Resources/Private/Language/locallang_be.xlf:settings.example.includeCategories</label>
-                            <config>
-                                <type>check</type>
-                                <default>0</default>
-                                <items type="array">
-                                    <numIndex index="0" type="array">
-                                        <numIndex index="label">LLL:EXT:sitepackage/Resources/Private/Language/locallang_be.xlf:setting.example.includeCategories.title</numIndex>
-                                        <numIndex index="value"/>
-                                    </numIndex>
-                                </items>
-                            </config>
-                        </TCEforms>
-                    </settings.includeCategories>
-
-                    <!-- end of settings -->
-
-                </el>
-            </ROOT>
-        </sDEF>
-    </sheets>
-</T3DataStructure>
+                        <!-- Example setting: input field with name settings.includeCategories -->
+                            <settings.includeCategories>
+                                <label>LLL:EXT:sitepackage/Resources/Private/Language/locallang_be.xlf:settings.example.includeCategories</label>
+                                <config>
+                                    <type>check</type>
+                                    <default>0</default>
+                                    <items type="array">
+                                        <numIndex index="0" type="array">
+                                            <numIndex index="label">LLL:EXT:sitepackage/Resources/Private/Language/locallang_be.xlf:setting.example.includeCategories.title</numIndex>
+                                            <numIndex index="value"/>
+                                        </numIndex>
+                                    </items>
+                                </config>
+                            </settings.includeCategories>
+                            <!-- end of settings -->
+                            </el>
+                        </ROOT>
+                    </sDEF>
+                </sheets>
+            </T3DataStructure>

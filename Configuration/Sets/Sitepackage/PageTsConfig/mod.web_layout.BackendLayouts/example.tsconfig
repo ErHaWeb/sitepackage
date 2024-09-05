@@ -10,10 +10,9 @@ mod.web_layout.BackendLayouts {
                     1 {
                         columns {
                             1 {
-                            name = LLL:EXT:sitepackage/Resources/Private/Language/locallang_be.xlf:backend_layout.column.content_left
-                            colPos = 0
+                                name = LLL:EXT:sitepackage/Resources/Private/Language/locallang_be.xlf:backend_layout.column.content_left
+                                colPos = 0
                             }
-
                             2 {
                                 name = LLL:EXT:sitepackage/Resources/Private/Language/locallang_be.xlf:backend_layout.column.content_right
                                 colPos = 1
