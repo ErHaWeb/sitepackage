@@ -4,33 +4,27 @@ mod {
     SHARED {
 
     }
-
     web_info {
 
     }
-
     web_layout {
         BackendLayouts {
-            @import './mod.web_layout.BackendLayouts/*.tsconfig'
+@import './mod.web_layout.BackendLayouts/*.tsconfig'
         }
     }
-
     web_list {
 
     }
-
     web_ts {
 
     }
-
     web_view {
 
     }
-
     wizards {
         newContentElement {
             wizardItems {
-                @import './mod.wizards.newContentElement.wizardItems/*.tsconfig'
+@import './mod.wizards.newContentElement.wizardItems/*.tsconfig'
             }
         }
     }

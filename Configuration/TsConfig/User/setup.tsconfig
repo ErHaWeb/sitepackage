@@ -4,15 +4,12 @@ setup {
     default {
 
     }
-
     override {
 
     }
-
     fields {
 
     }
-
     # backendTitleFormat = titleFirst
     # copyLevels = 999
     # edit_docModuleUpload = 1

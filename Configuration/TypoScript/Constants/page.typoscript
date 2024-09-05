@@ -4,13 +4,12 @@
 page {
     fluidtemplate {
         # cat=sitepackage/100/100; type=string; label=LLL:EXT:sitepackage/Resources/Private/Language/locallang_be.xlf:constants.page.fluidtemplate.layoutRootPath
-        layoutRootPath =
+        layoutRootPath = 
         # cat=sitepackage/100/110; type=string; label=LLL:EXT:sitepackage/Resources/Private/Language/locallang_be.xlf:constants.page.fluidtemplate.partialRootPath
-        partialRootPath =
+        partialRootPath = 
         # cat=sitepackage/100/120; type=string; label=LLL:EXT:sitepackage/Resources/Private/Language/locallang_be.xlf:constants.page.fluidtemplate.templateRootPath
-        templateRootPath =
+        templateRootPath = 
     }
-
     meta {
         # cat=sitepackage/110/100; type=string; label=LLL:EXT:sitepackage/Resources/Private/Language/locallang_be.xlf:constants.page.meta.viewport
         viewport = width=device-width, initial-scale=1, minimum-scale=1, shrink-to-fit=no
@@ -23,6 +22,6 @@ page {
         # cat=sitepackage/110/140; type=string; label=LLL:EXT:sitepackage/Resources/Private/Language/locallang_be.xlf:constants.page.meta.google
         google = notranslate
         # cat=sitepackage/110/150; type=string; label=LLL:EXT:sitepackage/Resources/Private/Language/locallang_be.xlf:constants.page.meta.google-site-verification
-        google-site-verification =
+        google-site-verification = 
     }
 }

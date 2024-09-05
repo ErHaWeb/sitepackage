@@ -4,7 +4,6 @@ RTE {
     default {
         preset = sitepackage
     }
-
     config {
 
     }

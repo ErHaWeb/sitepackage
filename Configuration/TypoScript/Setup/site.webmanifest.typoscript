@@ -7,7 +7,6 @@ site\.webmanifest {
     admPanel = 0
     debug = 0
   }
-
   10 = COA
   10 {
     stdWrap.wrap = {|}
@@ -36,7 +35,6 @@ site\.webmanifest {
             trim = 1
             dataWrap = "src":"{path:EXT:sitepackage/Resources/Public/Icons/Favicon/android-chrome-|.png}",
           }
-
           20 = TEXT
           20 {
             current = 1
