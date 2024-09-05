@@ -10,27 +10,21 @@ mod {
     SHARED {
 
     }
-
     web_info {
 
     }
-
     web_layout {
 
     }
-
     web_list {
 
     }
-
     web_ts {
 
     }
-
     web_view {
 
     }
-
     wizards {
 
     }

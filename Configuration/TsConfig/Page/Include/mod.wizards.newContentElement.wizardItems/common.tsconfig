@@ -11,7 +11,6 @@ mod.wizards.newContentElement.wizardItems {
                 }
             }
         }
-
         show := addToList(sitepackage_newcontentelement)
     }
 }

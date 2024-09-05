@@ -12,7 +12,6 @@ lib.dynamicContent {
             ifEmpty = 0
         }
     }
-
     20 = CONTENT
     20 {
         table = tt_content
@@ -22,6 +21,5 @@ lib.dynamicContent {
             where.insertData = 1
         }
     }
-
     90 = RESTORE_REGISTER
 }
