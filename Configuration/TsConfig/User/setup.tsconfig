@@ -1,22 +1,22 @@
 # https://docs.typo3.org/m/typo3/reference-tsconfig/main/en-us/UserTsconfig/Setup.html
 
 setup {
-    default {
+  default {
 
-    }
-    override {
+  }
+  override {
 
-    }
-    fields {
+  }
+  fields {
 
-    }
-    # backendTitleFormat = titleFirst
-    # copyLevels = 999
-    # edit_docModuleUpload = 1
-    # edit_RTE = 1
-    # emailMeAtLogin = 1
-    # lang = de
-    # neverHideAtCopy = 0
-    # startModule = list
-    # titleLen = 30
+  }
+  # backendTitleFormat = titleFirst
+  # copyLevels = 999
+  # edit_docModuleUpload = 1
+  # edit_RTE = 1
+  # emailMeAtLogin = 1
+  # lang = de
+  # neverHideAtCopy = 0
+  # startModule = list
+  # titleLen = 30
 }

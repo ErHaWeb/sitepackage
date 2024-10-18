@@ -1,8 +1,8 @@
 # https://docs.typo3.org/m/typo3/reference-tsconfig/main/en-us/UserTsconfig/html
 
 auth {
-    # BE.redirectToURL =
-    # mfa.required = 1
-    # mfa.disableProviders := addToList(totp)
-    # mfa.recommendedProvider = totp
+  # BE.redirectToURL =
+  # mfa.required = 1
+  # mfa.disableProviders := addToList(totp)
+  # mfa.recommendedProvider = totp
 }

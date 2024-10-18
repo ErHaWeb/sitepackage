@@ -1,8 +1,8 @@
 lib.getIndpEnv = TEXT
 lib.getIndpEnv {
-    data.cObject = TEXT
-    data.cObject {
-        current = 1
-        wrap = getIndpEnv:|
-    }
+  data.cObject = TEXT
+  data.cObject {
+    current = 1
+    wrap = getIndpEnv:|
+  }
 }

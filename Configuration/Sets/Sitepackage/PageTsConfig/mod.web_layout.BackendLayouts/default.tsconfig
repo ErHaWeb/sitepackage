@@ -1,22 +1,22 @@
 mod.web_layout.BackendLayouts {
-    default {
-        title = LLL:EXT:sitepackage/Resources/Private/Language/locallang_be.xlf:backend_layout.default
-        icon = EXT:sitepackage/Resources/Public/Icons/BackendLayouts/default.svg
-        config {
-            backend_layout {
-                colCount = 1
-                rowCount = 1
-                rows {
-                    1 {
-                        columns {
-                            1 {
-                                name = LLL:EXT:sitepackage/Resources/Private/Language/locallang_be.xlf:backend_layout.column.content
-                                colPos = 0
-                            }
-                        }
-                    }
-                }
+  default {
+    title = LLL:EXT:sitepackage/Resources/Private/Language/locallang_be.xlf:backend_layout.default
+    icon = EXT:sitepackage/Resources/Public/Icons/BackendLayouts/default.svg
+    config {
+      backend_layout {
+        colCount = 1
+        rowCount = 1
+        rows {
+          1 {
+            columns {
+              1 {
+                name = LLL:EXT:sitepackage/Resources/Private/Language/locallang_be.xlf:backend_layout.column.content
+                colPos = 0
+              }
             }
+          }
         }
+      }
     }
+  }
 }
