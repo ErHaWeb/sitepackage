@@ -1,78 +1,27 @@
-<xliff version="1.0" xmlns:t3="http://typo3.org/schemas/xliff">
-    <file source-language="en" target-language="de" datatype="plaintext" original="messages" date="2011-10-18T18:20:51Z" product-name="sitepackage">
-        <header/>
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" target-language="de" original="messages" datatype="plaintext" product-name="sitepackage" date="2024-10-18T10:57:21+02:00">
+        <header></header>
         <body>
-            <!-- BackendLayouts -->
-            <trans-unit id="backend_layout.default" xml:space="preserve">
+            <trans-unit id="backend_layout.default" resname="backend_layout.default">
                 <source>Default Backend Layout</source>
                 <target>Standard Backend Layout</target>
             </trans-unit>
-            <trans-unit id="backend_layout.example" xml:space="preserve">
+            <trans-unit id="backend_layout.example" resname="backend_layout.example">
                 <source>2 Columns Example Backend Layout</source>
                 <target>2 Spalten Beispiel Backend Layout</target>
             </trans-unit>
-            <trans-unit id="backend_layout.column.content" xml:space="preserve">
+            <trans-unit id="backend_layout.column.content" resname="backend_layout.column.content">
                 <source>Content</source>
                 <target>Inhalt</target>
             </trans-unit>
-            <trans-unit id="backend_layout.column.content_left" xml:space="preserve">
+            <trans-unit id="backend_layout.column.content_left" resname="backend_layout.column.content_left">
                 <source>Left Column Content</source>
                 <target>Inhalt der linken Spalte</target>
             </trans-unit>
-            <trans-unit id="backend_layout.column.content_right" xml:space="preserve">
+            <trans-unit id="backend_layout.column.content_right" resname="backend_layout.column.content_right">
                 <source>Right Column Content</source>
                 <target>Inhalt der rechten Spalte</target>
-            </trans-unit>
-
-            <!-- Constants -->
-            <trans-unit id="constants.customsubcategory.100" xml:space="preserve">
-                <source>Page Template</source>
-                <target>Seiten Template</target>
-            </trans-unit>
-            <trans-unit id="constants.customsubcategory.110" xml:space="preserve">
-                <source>HTML Meta Information</source>
-                <target>HTML-Metainformationen</target>
-            </trans-unit>
-            <trans-unit id="constants.page.fluidtemplate.layoutRootPath" xml:space="preserve">
-                <source>Layout Root Path: Add Custom Layout Root Path</source>
-                <target>Wurzelverzeichnis für Layouts: Erweiterung des Layout Wurzelverzeichnisses</target>
-            </trans-unit>
-            <trans-unit id="constants.page.fluidtemplate.partialRootPath" xml:space="preserve">
-                <source>Partial Root Path: Add Custom Partial Root Path</source>
-                <target>Wurzelverzeichnis für Partials: Erweiterung des Partial Wurzelverzeichnisses</target>
-            </trans-unit>
-            <trans-unit id="constants.page.fluidtemplate.templateRootPath" xml:space="preserve">
-                <source>Template Root Path: Add Custom Template Root Path</source>
-                <target>Wurzelverzeichnis für Templates: Erweiterung des Template Wurzelverzeichnisses</target>
-            </trans-unit>
-            <trans-unit id="constants.page.meta.viewport" xml:space="preserve">
-                <source>Viewport:Configuration of the viewport behavior like initial scale and scaling behavior</source>
-                <target>Viewport:Konfiguration des Viewport-Verhaltens wie Anfangsskalierung und Skalierungsverhalten</target>
-            </trans-unit>
-            <trans-unit id="constants.page.meta.robots" xml:space="preserve">
-                <source>Robots:The robots meta tag gives you a detailed, page-specific approach, specifying how a specific page should be indexed and displayed to users in Google search results.</source>
-                <target>Robots:Das Robots-Meta-Tag bietet Ihnen einen detaillierten, seitenspezifischen Ansatz, der angibt, wie eine bestimmte Seite indexiert und Nutzern in den Google-Suchergebnissen angezeigt werden soll.</target>
-            </trans-unit>
-            <trans-unit id="constants.page.meta.apple-mobile-web-app-capable" xml:space="preserve">
-                <source>apple-mobile-web-app-capable:Sets whether a web application runs in full-screen mode.</source>
-                <target>apple-mobile-web-app-capable:Legt fest, ob eine Webanwendung im Vollbildmodus ausgeführt wird.</target>
-            </trans-unit>
-            <trans-unit id="constants.page.meta.compatible" xml:space="preserve">
-                <source>X-UA-Compatibility:Choose what version of Internet Explorer the page should be rendered as</source>
-                <target>X-UA-Compatibility:Wählen Sie aus, mit welcher Version von Internet Explorer die Seite gerendert werden soll</target>
-            </trans-unit>
-            <trans-unit id="constants.page.meta.google" xml:space="preserve">
-                <source>Google:If you have an entire page that should not be translated by Google, then you can use this meta tag.</source>
-                <target>Google:Wenn Sie eine ganze Seite haben, die nicht von Google übersetzt werden soll, können Sie dieses Meta-Tag verwenden.</target>
-            </trans-unit>
-            <trans-unit id="constants.page.meta.google-site-verification" xml:space="preserve">
-                <source>Google Site Verification Code:Verify your site ownership</source>
-                <target>Google Site Verification Code:Bestätigen Sie Ihre Website-Inhaberschaft</target>
-            </trans-unit>
-
-			<trans-unit id="sets.sitepackage.label" xml:space="preserve">
-                <source>Sitepackage</source>
-				<target>Sitepackage</target>
             </trans-unit>
         </body>
     </file>
