@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file source-language="en" original="EXT:seo/Configuration/Sets/Sitemap/labels.xlf" datatype="plaintext" product-name="seo" date="2024-10-18T11:40:16+02:00">
+		<header></header>
+		<body>
+			<trans-unit id="label" resname="label">
+				<source>Sitepackage</source>
+			</trans-unit>
+			<trans-unit id="categories.sitepackage" resname="categories.sitepackage">
+				<source>Sitepackage</source>
+			</trans-unit>
+			<trans-unit id="categories.sitepackage.templates" resname="categories.sitepackage.templates">
+				<source>Page Template</source>
+			</trans-unit>
+			<trans-unit id="categories.sitepackage.meta" resname="categories.sitepackage.meta">
+				<source>HTML Meta Information</source>
+			</trans-unit>
+			<trans-unit id="settings.page.view.templateRootPath" resname="settings.page.view.templateRootPath">
+				<source>Template Root Path</source>
+			</trans-unit>
+			<trans-unit id="settings.description.page.view.templateRootPath" resname="settings.description.page.view.templateRootPath">
+				<source>Add Custom Template Root Path</source>
+			</trans-unit>
+			<trans-unit id="settings.page.view.partialRootPath" resname="settings.page.view.partialRootPath">
+				<source>Partial Root Path</source>
+			</trans-unit>
+			<trans-unit id="settings.description.page.view.partialRootPath" resname="settings.description.page.view.partialRootPath">
+				<source>Add Custom Partial Root Path</source>
+			</trans-unit>
+			<trans-unit id="settings.page.view.layoutRootPath" resname="settings.page.view.layoutRootPath">
+				<source>Path to template layouts (FE)</source>
+			</trans-unit>
+			<trans-unit id="settings.description.page.view.layoutRootPath" resname="settings.description.page.view.layoutRootPath">
+				<source>Add Custom Layout Root Path</source>
+			</trans-unit>
+			<trans-unit id="settings.page.meta.viewport" resname="settings.page.meta.viewport">
+				<source>Viewport</source>
+			</trans-unit>
+			<trans-unit id="settings.description.page.meta.viewport" resname="settings.description.page.meta.viewport">
+				<source>Configuration of the viewport behavior like initial scale and scaling behavior</source>
+			</trans-unit>
+			<trans-unit id="settings.page.meta.robots" resname="settings.page.meta.robots">
+				<source>Robots</source>
+			</trans-unit>
+			<trans-unit id="settings.description.page.meta.robots" resname="settings.description.page.meta.robots">
+				<source>The robots meta tag gives you a detailed, page-specific approach, specifying how a specific page should be indexed and displayed to users in Google search results.</source>
+			</trans-unit>
+			<trans-unit id="settings.page.meta.apple-mobile-web-app-capable" resname="settings.page.meta.apple-mobile-web-app-capable">
+				<source>apple-mobile-web-app-capable</source>
+			</trans-unit>
+			<trans-unit id="settings.description.page.meta.apple-mobile-web-app-capable" resname="settings.description.page.meta.apple-mobile-web-app-capable">
+				<source>Sets whether a web application runs in full-screen mode.</source>
+			</trans-unit>
+			<trans-unit id="settings.page.meta.compatible" resname="settings.page.meta.compatible">
+				<source>X-UA-Compatibility</source>
+			</trans-unit>
+			<trans-unit id="settings.description.page.meta.compatible" resname="settings.description.page.meta.compatible">
+				<source>Choose what version of Internet Explorer the page should be rendered as</source>
+			</trans-unit>
+			<trans-unit id="settings.page.meta.google" resname="settings.page.meta.google">
+				<source>Google</source>
+			</trans-unit>
+			<trans-unit id="settings.description.page.meta.google" resname="settings.description.page.meta.google">
+				<source>If you have an entire page that should not be translated by Google, then you can use this meta tag.</source>
+			</trans-unit>
+			<trans-unit id="settings.page.meta.google-site-verification" resname="settings.page.meta.google-site-verification">
+				<source>Google Site Verification Code</source>
+			</trans-unit>
+			<trans-unit id="settings.description.page.meta.google-site-verification" resname="settings.description.page.meta.google-site-verification">
+				<source>Verify your site ownership</source>
+			</trans-unit>
+			<trans-unit id="settings.page.meta.apple-mobile-web-app-title" resname="settings.page.meta.apple-mobile-web-app-title">
+				<source>Mobile web app title</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

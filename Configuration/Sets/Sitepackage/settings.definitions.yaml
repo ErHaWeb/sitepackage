@@ -1,37 +1,48 @@
+categories:
+  sitepackage: ~
+  sitepackage.templates:
+    parent: sitepackage
+  sitepackage.meta:
+    parent: sitepackage
+
 settings:
-  page.fluidtemplate.layoutRootPath:
-    label: 'LLL:EXT:sitepackage/Resources/Private/Language/locallang_be.xlf:constants.page.fluidtemplate.layoutRootPath'
+  page.view.layoutRootPath:
     type: string
     default: ''
-  page.fluidtemplate.partialRootPath:
-    label: 'LLL:EXT:sitepackage/Resources/Private/Language/locallang_be.xlf:constants.page.fluidtemplate.partialRootPath'
+    category: sitepackage.templates
+  page.view.partialRootPath:
     type: string
     default: ''
-  page.fluidtemplate.templateRootPath:
-    label: 'LLL:EXT:sitepackage/Resources/Private/Language/locallang_be.xlf:constants.page.fluidtemplate.templateRootPath'
+    category: sitepackage.templates
+  page.view.templateRootPath:
     type: string
     default: ''
+    category: sitepackage.templates
   page.meta.viewport:
-    label: 'LLL:EXT:sitepackage/Resources/Private/Language/locallang_be.xlf:constants.page.meta.viewport'
     type: string
     default: 'width=device-width, initial-scale=1, minimum-scale=1, shrink-to-fit=no'
+    category: sitepackage.meta
   page.meta.robots:
-    label: 'LLL:EXT:sitepackage/Resources/Private/Language/locallang_be.xlf:constants.page.meta.robots'
     type: string
     default: 'index,follow'
+    category: sitepackage.meta
   page.meta.apple-mobile-web-app-capable:
-    label: 'LLL:EXT:sitepackage/Resources/Private/Language/locallang_be.xlf:constants.page.meta.apple-mobile-web-app-capable'
     type: string
     default: 'no'
+    category: sitepackage.meta
   page.meta.compatible:
-    label: 'LLL:EXT:sitepackage/Resources/Private/Language/locallang_be.xlf:constants.page.meta.compatible'
     type: string
     default: 'IE=edge,chrome=1'
+    category: sitepackage.meta
   page.meta.google:
-    label: 'LLL:EXT:sitepackage/Resources/Private/Language/locallang_be.xlf:constants.page.meta.google'
     type: string
     default: 'notranslate'
+    category: sitepackage.meta
   page.meta.google-site-verification:
-    label: 'LLL:EXT:sitepackage/Resources/Private/Language/locallang_be.xlf:constants.page.meta.google-site-verification'
     type: string
     default: ''
+    category: sitepackage.meta
+  page.meta.apple-mobile-web-app-title:
+    type: string
+    default: 'Sitepackage'
+    category: sitepackage.meta

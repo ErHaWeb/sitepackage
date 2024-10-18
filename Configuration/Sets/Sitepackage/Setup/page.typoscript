@@ -73,15 +73,15 @@ page {
     }
     templateRootPaths {
       0 = EXT:sitepackage/Resources/Private/Templates/Page/
-      1 = {$page.fluidtemplate.templateRootPath}
+      1 = {$page.view.templateRootPath}
     }
     partialRootPaths {
       0 = EXT:sitepackage/Resources/Private/Partials/Page/
-      1 = {$page.fluidtemplate.partialRootPath}
+      1 = {$page.view.partialRootPath}
     }
     layoutRootPaths {
       0 = EXT:sitepackage/Resources/Private/Layouts/Page/
-      1 = {$page.fluidtemplate.layoutRootPath}
+      1 = {$page.view.layoutRootPath}
     }
     dataProcessing {
       # Language Navigation

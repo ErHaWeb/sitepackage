@@ -1,7 +1,5 @@
 # Name of the site set, you can use your composer package name, but this is not mandatory
 name: vendorname/sitepackage
-# The label key contains a short descriptive label for this site set
-label: 'LLL:EXT:sitepackage/Resources/Private/Language/locallang_be.xlf:sets.sitepackage.label'
 
 dependencies:
   - typo3/fluid-styled-content
