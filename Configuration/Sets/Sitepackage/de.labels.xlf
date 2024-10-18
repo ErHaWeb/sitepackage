@@ -95,6 +95,10 @@
 				<source>Mobile web app title</source>
 				<target>Titel der mobilen App</target>
 			</trans-unit>
+			<trans-unit id="settings.description.page.meta.apple-mobile-web-app-title" resname="settings.description.page.meta.apple-mobile-web-app-title">
+				<source>If empty, iOS will use the page title</source>
+				<target>Wenn leer, verwendet iOS den Seitentitel</target>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>
