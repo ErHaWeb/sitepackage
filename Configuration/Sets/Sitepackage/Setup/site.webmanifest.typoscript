@@ -7,41 +7,13 @@ site\.webmanifest {
     admPanel = 0
     debug = 0
   }
-  10 = COA
+  10 = FLUIDTEMPLATE
   10 {
-    stdWrap.wrap = {|}
-
-    10 = TEXT
-    10 {
-      dataWrap (
-"name":"{siteLanguage:websiteTitle // site:websiteTitle}",
-"short_name":"{siteLanguage:websiteTitle // site:websiteTitle}",
-"icons":[|],
-"theme_color":"#ffffff",
-"background_color":"#ffffff",
-"display":"standalone"
-      )
-
-      value = 36x36, 48x48, 72x72, 96x96, 144x144, 192x192, 256x256, 384x384, 512x512
-      split {
-        token = ,
-        wrap = {|},|*|{|},|*|{|}
-        cObjNum = 1
-        1.cObject = COA
-        1.cObject {
-          10 = TEXT
-          10 {
-            current = 1
-            trim = 1
-            dataWrap = "src":"{path:EXT:sitepackage/Resources/Public/Icons/Favicon/android-chrome-|.png}",
-          }
-          20 = TEXT
-          20 {
-            current = 1
-            trim = 1
-            wrap = "sizes":"|","type":"image/png"
-          }
-        }
+    file = EXT:sitepackage/Resources/Private/Templates/Pages/WebManifest.html
+    dataProcessing {
+      10 = site
+      10 {
+        as = site
       }
     }
   }

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-	<file source-language="en" original="EXT:seo/Configuration/Sets/Sitemap/labels.xlf" datatype="plaintext" product-name="seo" date="2024-10-18T11:40:16+02:00">
+	<file source-language="en" original="EXT:seo/Configuration/Sets/Sitemap/labels.xlf" datatype="plaintext" product-name="seo" date="2024-10-18T20:01:16+02:00">
 		<header></header>
 		<body>
 			<trans-unit id="label" resname="label">
@@ -14,6 +14,9 @@
 			</trans-unit>
 			<trans-unit id="categories.sitepackage.meta" resname="categories.sitepackage.meta">
 				<source>HTML Meta Information</source>
+			</trans-unit>
+			<trans-unit id="categories.sitepackage.webmanifest" resname="categories.sitepackage.webmanifest">
+				<source>Web App Manifest</source>
 			</trans-unit>
 			<trans-unit id="settings.page.view.templateRootPath" resname="settings.page.view.templateRootPath">
 				<source>Template Root Path</source>
@@ -70,10 +73,64 @@
 				<source>Verify your site ownership</source>
 			</trans-unit>
 			<trans-unit id="settings.page.meta.apple-mobile-web-app-title" resname="settings.page.meta.apple-mobile-web-app-title">
-				<source>Mobile web app title</source>
+				<source>Mobile web app title (iOS)</source>
 			</trans-unit>
 			<trans-unit id="settings.description.page.meta.apple-mobile-web-app-title" resname="settings.description.page.meta.apple-mobile-web-app-title">
 				<source>If empty, iOS will use the page title</source>
+			</trans-unit>
+			<trans-unit id="settings.page.webmanifest.name" resname="settings.page.webmanifest.name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="settings.description.page.webmanifest.name" resname="settings.description.page.webmanifest.name">
+				<source>Mobile web app name</source>
+			</trans-unit>
+			<trans-unit id="settings.page.webmanifest.short_name" resname="settings.page.webmanifest.short_name">
+				<source>Short Name</source>
+			</trans-unit>
+			<trans-unit id="settings.description.page.webmanifest.short_name" resname="settings.description.page.webmanifest.short_name">
+				<source>Mobile web app short name</source>
+			</trans-unit>
+			<trans-unit id="settings.page.webmanifest.icons.sizes" resname="settings.page.webmanifest.icons.sizes">
+				<source>Icon Sizes</source>
+			</trans-unit>
+			<trans-unit id="settings.description.page.webmanifest.icons.sizes" resname="settings.description.page.webmanifest.icons.sizes">
+				<source>Define the height and width of the icon dimensions to be used for mobile web apps in the form &lt;width&gt;x&lt;height&gt;</source>
+			</trans-unit>
+			<trans-unit id="settings.page.webmanifest.icons.file.type" resname="settings.page.webmanifest.icons.file.type">
+				<source>File Type</source>
+			</trans-unit>
+			<trans-unit id="settings.page.webmanifest.icons.file.prefix" resname="settings.page.webmanifest.icons.file.prefix">
+				<source>File Prefix</source>
+			</trans-unit>
+			<trans-unit id="settings.description.page.webmanifest.icons.file.prefix" resname="settings.description.page.webmanifest.icons.file.prefix">
+				<source>Prefix for icon files of the web manifest</source>
+			</trans-unit>
+			<trans-unit id="settings.description.page.webmanifest.icons.file.type" resname="settings.description.page.webmanifest.icons.file.type">
+				<source>Type of webmanifest referenced files</source>
+			</trans-unit>
+			<trans-unit id="settings.page.webmanifest.icons.file.purpose" resname="settings.page.webmanifest.icons.file.purpose">
+				<source>File Purpose</source>
+			</trans-unit>
+			<trans-unit id="settings.description.page.webmanifest.icons.file.purpose" resname="settings.description.page.webmanifest.icons.file.purpose">
+				<source>Context in which the symbol can be used by the browser or operating system</source>
+			</trans-unit>
+			<trans-unit id="settings.page.webmanifest.theme_color" resname="settings.page.webmanifest.theme_color">
+				<source>Theme Color</source>
+			</trans-unit>
+			<trans-unit id="settings.description.page.webmanifest.theme_color" resname="settings.description.page.webmanifest.theme_color">
+				<source>Default color of the web app</source>
+			</trans-unit>
+			<trans-unit id="settings.page.webmanifest.background_color" resname="settings.page.webmanifest.background_color">
+				<source>Background Color</source>
+			</trans-unit>
+			<trans-unit id="settings.description.page.webmanifest.background_color" resname="settings.description.page.webmanifest.background_color">
+				<source>Background color of the web application on initial load</source>
+			</trans-unit>
+			<trans-unit id="settings.page.webmanifest.display" resname="settings.page.webmanifest.display">
+				<source>Display</source>
+			</trans-unit>
+			<trans-unit id="settings.description.page.webmanifest.display" resname="settings.description.page.webmanifest.display">
+				<source>Preferred display mode for the web application</source>
 			</trans-unit>
 		</body>
 	</file>

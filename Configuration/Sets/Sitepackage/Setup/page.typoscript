@@ -28,17 +28,11 @@ page {
     10 = TEXT
     10 {
       value (
-<link rel="apple-touch-icon" sizes="180x180" href="{path:EXT:sitepackage/Resources/Public/Icons/Favicon/apple-touch-icon.png}">
-<link rel="icon" type="image/png" sizes="32x32" href="{path:EXT:sitepackage/Resources/Public/Icons/Favicon/favicon-32x32.png}">
-<link rel="icon" type="image/png" sizes="194x194" href="{path:EXT:sitepackage/Resources/Public/Icons/Favicon/favicon-194x194.png}">
-<link rel="icon" type="image/png" sizes="192x192" href="{path:EXT:sitepackage/Resources/Public/Icons/Favicon/android-chrome-192x192.png}">
-<link rel="icon" type="image/png" sizes="16x16" href="{path:EXT:sitepackage/Resources/Public/Icons/Favicon/favicon-16x16.png}">
-<link rel="manifest" href="/site.webmanifest">
-<link rel="mask-icon" href="{path:EXT:sitepackage/Resources/Public/Icons/Favicon/safari-pinned-tab.svg}" color="#5bbad5">
-<meta name="msapplication-config" content="/browserconfig.xml">
-<meta name="msapplication-TileColor" content="#da532c">
-<meta name="msapplication-TileImage" content="{path:EXT:sitepackage/Resources/Public/Icons/Favicon/mstile-144x144.png}">
-<meta name="theme-color" content="#ffffff">
+<link rel="icon" type="image/png" href="/favicon-48x48.png" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
       )
       insertData = 1
     }

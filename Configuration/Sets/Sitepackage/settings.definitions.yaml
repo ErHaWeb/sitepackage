@@ -4,6 +4,8 @@ categories:
     parent: sitepackage
   sitepackage.meta:
     parent: sitepackage
+  sitepackage.webmanifest:
+    parent: sitepackage
 
 settings:
   page.view.layoutRootPath:
@@ -46,3 +48,61 @@ settings:
     type: string
     default: 'Sitepackage'
     category: sitepackage.meta
+  page.webmanifest.name:
+    type: string
+    default: 'TYPO3 Sitepackage'
+    category: sitepackage.webmanifest
+  page.webmanifest.short_name:
+    type: string
+    default: 'Sitepackage'
+    category: sitepackage.webmanifest
+  page.webmanifest.icons.sizes:
+    type: stringlist
+    default:
+      - 192x192
+      - 512x512
+    category: sitepackage.webmanifest
+  page.webmanifest.icons.file.prefix:
+    type: string
+    default: 'web-app-manifest-'
+    category: sitepackage.webmanifest
+  page.webmanifest.icons.file.type:
+    type: string
+    default: 'png'
+    category: sitepackage.webmanifest
+    enum:
+      'apng': 'Animated Portable Network Graphics (APNG) image'
+      'avif': 'Archive document (multiple files embedded)'
+      'bmp': 'Windows OS/2 Bitmap Graphics'
+      'gif': 'Graphics Interchange Format (GIF)'
+      'ico': 'Icon format'
+      'jpg': 'JPEG images'
+      'png': 'Portable Network Graphics'
+      'svg': 'Scalable Vector Graphics (SVG)'
+      'tif': 'Tagged Image File Format (TIFF)'
+      'webp': 'WEBP image'
+  page.webmanifest.icons.file.purpose:
+    type: string
+    default: 'maskable'
+    category: sitepackage.webmanifest
+    enum:
+      'maskable': 'Maskable'
+      'monochrome': 'Monochrome'
+      'any': 'Any'
+  page.webmanifest.theme_color:
+    type: color
+    default: '#ffffff'
+    category: sitepackage.webmanifest
+  page.webmanifest.background_color:
+    type: color
+    default: '#ffffff'
+    category: sitepackage.webmanifest
+  page.webmanifest.display:
+    type: string
+    default: 'standalone'
+    category: sitepackage.webmanifest
+    enum:
+      'fullscreen': 'Fullscreen'
+      'standalone': 'Standalone'
+      'minimal-ui': 'Minimal UI'
+      'browser': 'Browser'
