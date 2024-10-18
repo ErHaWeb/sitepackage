@@ -1,0 +1,31 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:alias map="{lb: '{', rb: '}', webmanifest:site.settings.page.webmanifest}">
+    <f:variable name="imageMimeType">
+        <f:switch expression="{webmanifest.icons.file.type}">
+            <f:case value="ico">vnd.microsoft.icon</f:case>
+            <f:case value="jpg">jpeg</f:case>
+            <f:case value="svg">svg+xml</f:case>
+            <f:case value="tif">tiff</f:case>
+            <f:defaultCase>{webmanifest.icons.file.type}</f:defaultCase>
+        </f:switch>
+    </f:variable>
+    {lb}
+    "name": "{webmanifest.name}",
+    "short_name": "{webmanifest.short_name}",
+    "icons": [
+    <f:for each="{webmanifest.icons.sizes}" as="size" iteration="iterator">
+        {lb}
+        "src": "/{webmanifest.icons.file.prefix}{size}.{webmanifest.icons.file.type}",
+        "sizes": "{size}",
+        "type": "image/{imageMimeType -> f:format.trim()}",
+        "purpose": "{webmanifest.icons.file.purpose}"
+        {rb}
+        <f:if condition="!({iterator.isLast})">,</f:if>
+    </f:for>
+    ],
+    "theme_color": "{webmanifest.theme_color}",
+    "background_color": "{webmanifest.background_color}",
+    "display": "{webmanifest.display}"
+    {rb}
+</f:alias>
+</html>

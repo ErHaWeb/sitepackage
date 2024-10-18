@@ -42,11 +42,34 @@ routeEnhancers:
     type: PageType
     map:
       sitemap.xml: 1533906435
-      browserconfig.xml: 2943879438
       site.webmanifest: 3478304621
 routes:
   -
     route: robots.txt
     type: staticText
     content: "User-agent: *\r\nDisallow: /typo3/\r\nDisallow: /typo3_src/\r\nAllow: /typo3/sysext/frontend/Resources/Public/*\r\n"
+  -
+    route: favicon.ico
+    type: asset
+    asset: 'EXT:sitepackage/Resources/Public/Icons/Favicon/favicon.ico'
+  -
+    route: favicon.svg
+    type: asset
+    asset: 'EXT:sitepackage/Resources/Public/Icons/Favicon/favicon.svg'
+  -
+    route: favicon-48x48.png
+    type: asset
+    asset: 'EXT:sitepackage/Resources/Public/Icons/Favicon/favicon-48x48.png'
+  -
+    route: apple-touch-icon.png
+    type: asset
+    asset: 'EXT:sitepackage/Resources/Public/Icons/Favicon/apple-touch-icon.png'
+  -
+    route: web-app-manifest-192x192.png
+    type: asset
+    asset: 'EXT:sitepackage/Resources/Public/Icons/Favicon/web-app-manifest-192x192.png'
+  -
+    route: web-app-manifest-512x512.png
+    type: asset
+    asset: 'EXT:sitepackage/Resources/Public/Icons/Favicon/web-app-manifest-512x512.png'
 websiteTitle: 'TYPO3 Sitepackage'
