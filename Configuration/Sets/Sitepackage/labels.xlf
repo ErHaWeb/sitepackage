@@ -72,6 +72,9 @@
 			<trans-unit id="settings.page.meta.apple-mobile-web-app-title" resname="settings.page.meta.apple-mobile-web-app-title">
 				<source>Mobile web app title</source>
 			</trans-unit>
+			<trans-unit id="settings.description.page.meta.apple-mobile-web-app-title" resname="settings.description.page.meta.apple-mobile-web-app-title">
+				<source>If empty, iOS will use the page title</source>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>
