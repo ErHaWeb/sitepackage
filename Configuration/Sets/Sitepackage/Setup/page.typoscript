@@ -43,57 +43,20 @@ page {
       insertData = 1
     }
   }
-  10 = FLUIDTEMPLATE
+  10 = PAGEVIEW
   10 {
-    # Template names will be generated automatically by converting the applied
-    # backend_layout, there is no explicit mapping necessary anymore.
-    #
-    # BackendLayout Key
-    # subnavigation_right_2_columns -> SubnavigationRight2Columns.html
-    #
-    # Backend Record
-    # uid: 1 -> 1.html
-    #
-    # Database Entry
-    # value: -1 -> None.html
-    # value: pagets__subnavigation_right_2_columns -> SubnavigationRight2Columns.html
-
-    templateName = TEXT
-    templateName {
-      cObject = TEXT
-      cObject {
-        data = pagelayout
-        required = 1
-        case = uppercamelcase
-        split {
-          token = pagets__
-          cObjNum = 1
-          1.current = 1
-        }
-      }
-      ifEmpty = Default
-    }
-    templateRootPaths {
-      0 = EXT:sitepackage/Resources/Private/Templates/Page/
-      1 = {$page.view.templateRootPath}
-    }
-    partialRootPaths {
-      0 = EXT:sitepackage/Resources/Private/Partials/Page/
-      1 = {$page.view.partialRootPath}
-    }
-    layoutRootPaths {
-      0 = EXT:sitepackage/Resources/Private/Layouts/Page/
-      1 = {$page.view.layoutRootPath}
+    paths {
+      100 = EXT:sitepackage/Resources/Private/Templates/
     }
     dataProcessing {
       # Language Navigation
-      10 = TYPO3\CMS\Frontend\DataProcessing\LanguageMenuProcessor
+      10 = language-menu
       10 {
         as = navigationLanguage
         languages = auto
       }
       # Main Navigation
-      20 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+      20 = menu
       20 {
         as = navigationMain
         expandAll = 1
@@ -101,7 +64,7 @@ page {
         titleField = nav_title // title
       }
       # Rootline Navigation
-      30 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+      30 = menu
       30 {
         as = navigationRootline
         special = rootline
