@@ -1,9 +1,9 @@
 mod.wizards.newContentElement.wizardItems {
-    # add the content element to the tab "menu"
-    menu {
-        elements {
+  # add the content element to the tab "menu"
+  menu {
+    elements {
 
-        }
-        show := addToList()
     }
+    show := addToList()
+  }
 }

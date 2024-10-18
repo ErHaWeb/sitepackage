@@ -1,9 +1,9 @@
 mod.wizards.newContentElement.wizardItems {
-    # add the content element to the tab "special"
-    special {
-        elements {
+  # add the content element to the tab "special"
+  special {
+    elements {
 
-        }
-        show := addToList()
     }
+    show := addToList()
+  }
 }

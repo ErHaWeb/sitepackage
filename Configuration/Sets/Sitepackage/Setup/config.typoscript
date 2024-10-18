@@ -1,97 +1,97 @@
 # https://docs.typo3.org/m/typo3/reference-typoscript/main/en-us/Setup/Config/Index.html
 
 config {
-    # absRefPrefix =
-    additionalHeaders {
+  # absRefPrefix =
+  additionalHeaders {
 
-    }
-    # admPanel =
-    # ATagParams =
-    # baseURL =
-    cache {
+  }
+  # admPanel =
+  # ATagParams =
+  # baseURL =
+  cache {
 
-    }
-    # cache_clearAtMidnight = false
-    # cache_period = 86400
-    # compressCss = 0
-    # compressJs = 0
-    # concatenateCss = 0
-    # concatenateJs = 0
-    # contentObjectExceptionHandler = 0
-    contentObjectExceptionHandler {
+  }
+  # cache_clearAtMidnight = false
+  # cache_period = 86400
+  # compressCss = 0
+  # compressJs = 0
+  # concatenateCss = 0
+  # concatenateJs = 0
+  # contentObjectExceptionHandler = 0
+  contentObjectExceptionHandler {
 
-    }
-    # debug =
-    # disableAllHeaderCode = false
-    # disableBodyTag = 0
-    # disablePrefixComment =
-    # disablePreviewNotification = 0
-    # disableLanguageHeader = 0
-    # doctype =
-    # enableContentLengthHeader = 1
-    # extTarget = _top
-    # fileTarget =
-    # forceTypeValue =
-    # headerComment =
-    htmlTag.attributes {
+  }
+  # debug =
+  # disableAllHeaderCode = false
+  # disableBodyTag = 0
+  # disablePrefixComment =
+  # disablePreviewNotification = 0
+  # disableLanguageHeader = 0
+  # doctype =
+  # enableContentLengthHeader = 1
+  # extTarget = _top
+  # fileTarget =
+  # forceTypeValue =
+  # headerComment =
+  htmlTag.attributes {
 
-    }
-    # htmlTag_setParams =
-    htmlTag_stdWrap {
+  }
+  # htmlTag_setParams =
+  htmlTag_stdWrap {
 
-    }
-    # index_descrLgd = 200
-    # index_enable =
-    # index_externals =
-    # index_metatags = true
-    # inlineStyle2TempFile =
-    # intTarget =
-    # linkVars =
-    # message_preview =
-    # message_preview_workspace =
-    # moveJsFromHeaderToFooter =
-    # MP_defaults =
-    # MP_disableTypolinkClosestMPvalue =
-    # MP_mapRootPoints =
-    namespaces {
+  }
+  # index_descrLgd = 200
+  # index_enable =
+  # index_externals =
+  # index_metatags = true
+  # inlineStyle2TempFile =
+  # intTarget =
+  # linkVars =
+  # message_preview =
+  # message_preview_workspace =
+  # moveJsFromHeaderToFooter =
+  # MP_defaults =
+  # MP_disableTypolinkClosestMPvalue =
+  # MP_mapRootPoints =
+  namespaces {
 
-    }
-    # no_cache = 0
-    # noPageTitle = 0
-    # pageRendererTemplateFile =
-    pageTitle {
+  }
+  # no_cache = 0
+  # noPageTitle = 0
+  # pageRendererTemplateFile =
+  pageTitle {
 
 
-    }
-    # pageTitleFirst = 0
-    pageTitleProviders {
+  }
+  # pageTitleFirst = 0
+  pageTitleProviders {
 
-    }
-    # pageTitleSeparator = ": "
-    pageTitleSeparator {
+  }
+  # pageTitleSeparator = ": "
+  pageTitleSeparator {
 
-    }
-    # removeDefaultCss =
-    # removeDefaultJS =
-    # removePageCss =
-    # sendCacheHeaders =
-    # showWebsiteTitle = 1
-    spamProtectEmailAddresses = 1
-    # spamProtectEmailAddresses_atSubst = (at)
-    # spamProtectEmailAddresses_lastDotSubst = .
-    # typolinkLinkAccessRestrictedPages =
-    # typolinkLinkAccessRestrictedPages_addParams =
-    # xhtmlDoctype =
-    # xhtmlDoctype =
-    # xmlprologue =
+  }
+  # removeDefaultCss =
+  # removeDefaultJS =
+  # removePageCss =
+  # sendCacheHeaders =
+  # showWebsiteTitle = 1
+  spamProtectEmailAddresses = 1
+  # spamProtectEmailAddresses_atSubst = (at)
+  # spamProtectEmailAddresses_lastDotSubst = .
+  # typolinkLinkAccessRestrictedPages =
+  # typolinkLinkAccessRestrictedPages_addParams =
+  # xhtmlDoctype =
+  # xhtmlDoctype =
+  # xmlprologue =
 }
 
 [applicationContext !== "Development"]
 config {
-    compressCss = 1
-    compressJs = 1
-    concatenateCss = 1
-    concatenateJs = 1
-    contentObjectExceptionHandler = 1
+  compressCss = 1
+  compressJs = 1
+  concatenateCss = 1
+  concatenateJs = 1
+  contentObjectExceptionHandler = 1
 }
 [global]
