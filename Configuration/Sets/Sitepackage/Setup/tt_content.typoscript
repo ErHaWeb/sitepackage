@@ -1,8 +1,5 @@
 # https://docs.typo3.org/m/typo3/reference-typoscript/main/en-us/TopLevelObjects/Other.html#tlo-tt_content
 
 tt_content {
-  sitepackage_newcontentelement =< lib.contentElement
-  sitepackage_newcontentelement {
-    templateName = NewContentElement
-  }
+
 }
