@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file source-language="en" target-language="de" original="labels.xlf" datatype="plaintext" product-name="sitepackage/newcontentelement" date="2024-10-20T14:34:58+02:00">
+		<header></header>
+		<body>
+			<trans-unit id="title" resname="title">
+				<source>Custom content element</source>
+				<target>Benutzerdefiniertes Inhaltselement</target>
+			</trans-unit>
+			<trans-unit id="description" resname="description">
+				<source>This is the description of the example custom content element</source>
+				<target>Dies ist die Beschreibung des Beispiels eines benutzerdefinierten Inhaltselements</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

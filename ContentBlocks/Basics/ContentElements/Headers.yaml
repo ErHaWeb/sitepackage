@@ -1,0 +1,34 @@
+# To be used within ContentElements
+# Beside basic "TYPO3/Header" this is Basic also includes the default fields `date`, `header_link` and `subheader`
+
+identifier: TYPO3/Headers
+fields:
+  -
+    identifier: header_palette
+    type: Palette
+    label: LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.headers
+    fields:
+      -
+        identifier: header
+        useExistingField: true
+      -
+        type: Linebreak
+      -
+        identifier: header_layout
+        useExistingField: true
+      -
+        identifier: header_position
+        useExistingField: true
+      -
+        identifier: date
+        useExistingField: true
+      -
+        type: Linebreak
+      -
+        identifier: header_link
+        useExistingField: true
+      -
+        type: Linebreak
+      -
+        identifier: subheader
+        useExistingField: true
