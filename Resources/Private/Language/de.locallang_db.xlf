@@ -1,37 +1,27 @@
-<xliff version="1.0" xmlns:t3="http://typo3.org/schemas/xliff">
-    <file source-language="en" target-language="de" datatype="plaintext" original="messages" date="2011-10-18T18:20:51Z" product-name="sitepackage">
-        <header/>
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" target-language="de" original="messages" datatype="plaintext" product-name="sitepackage" date="2024-10-20T14:34:26+02:00">
+        <header></header>
         <body>
-            <!-- pages -->
-            <trans-unit id="pages.tx_sitepackage_colorscheme.title" xml:space="preserve">
+            <trans-unit id="pages.tx_sitepackage_colorscheme.title" resname="pages.tx_sitepackage_colorscheme.title">
                 <source>Color Scheme</source>
                 <target>Farbschema</target>
             </trans-unit>
-            <trans-unit id="pages.tx_sitepackage_colorscheme.description" xml:space="preserve">
+            <trans-unit id="pages.tx_sitepackage_colorscheme.description" resname="pages.tx_sitepackage_colorscheme.description">
                 <source>This is provided by the Sitepackage</source>
                 <target>Dies wird durch das Sitepackage bereit gestellt</target>
             </trans-unit>
-            <trans-unit id="pages.tx_sitepackage_colorscheme.I.0" xml:space="preserve">
+            <trans-unit id="pages.tx_sitepackage_colorscheme.I.0" resname="pages.tx_sitepackage_colorscheme.I.0">
                 <source>Default</source>
                 <target>Standard</target>
             </trans-unit>
-            <trans-unit id="pages.tx_sitepackage_colorscheme.I.1" xml:space="preserve">
+            <trans-unit id="pages.tx_sitepackage_colorscheme.I.1" resname="pages.tx_sitepackage_colorscheme.I.1">
                 <source>Color Scheme 1</source>
                 <target>Farbschema 1</target>
             </trans-unit>
-            <trans-unit id="pages.tx_sitepackage_colorscheme.I.2" xml:space="preserve">
+            <trans-unit id="pages.tx_sitepackage_colorscheme.I.2" resname="pages.tx_sitepackage_colorscheme.I.2">
                 <source>Color Scheme 2</source>
                 <target>Farbschema 2</target>
-            </trans-unit>
-
-            <!-- tt_content -->
-            <trans-unit id="tt_content.sitepackage_newcontentelement.title" xml:space="preserve">
-                <source>Custom content element</source>
-                <target>Benutzerdefiniertes Inhaltselement</target>
-            </trans-unit>
-            <trans-unit id="tt_content.sitepackage_newcontentelement.description" xml:space="preserve">
-                <source>This is the description of the example custom content element</source>
-                <target>Dies ist die Beschreibung des Beispiels eines benutzerdefinierten Inhaltselements</target>
             </trans-unit>
         </body>
     </file>

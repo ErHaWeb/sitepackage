@@ -1,0 +1,17 @@
+name: sitepackage/newcontentelement
+typeName: sitepackage_newcontentelement
+group: default
+prefixFields: true
+prefixType: full
+basics:
+  - TYPO3/Appearance
+  - TYPO3/Links
+  - TYPO3/Categories
+fields:
+  -
+    identifier: TYPO3/Headers
+    type: Basic
+  -
+    identifier: bodytext
+    useExistingField: true
+    enableRichtext: true
