@@ -28,7 +28,11 @@ Example BackendLayouts can be found here `Configuration/Sets/Sitepackage/PageTsC
 
 ### Example Custom Content Element
 
-This sitepackage includes an example of a custom content element. Its icon has been defined in `Configuration/Icons.php`, it is registered and configured in `Configuration/TCA/Overrides/tt_content.php` and added to the new content element wizard in `Configuration/Sets/Sitepackage/PageTsConfig/mod.wizards.newContentElement.wizardItems/common.tsconfig`. The frontend rendering based on `EXT:fluid_styled_content` is configured in `Configuration/Sets/Sitepackage/Setup/tt_content.typoscript` and finally rendered by Fluid template `Resources/Private/Templates/Page/Example.html`.
+This sitepackage contains an example of a custom content element based on the [extension “Content Blocks”](https://extensions.typo3.org/extension/content_blocks), which will be integrated into the core in the future.
+
+The required TCA, database updates and registration in the “New Content Element Wizard” are handled by Content Blocks automatically based on a YAML configuration (Example: `ContentBlocks/ContentElements/newcontentelement/config.yaml`).
+
+This sitepackage additionally provides a new Content Blocks [Basic](https://docs.typo3.org/p/friendsoftypo3/content-blocks/main/en-us/YamlReference/Basics/Index.html#basics) `TYPO3/Headers` (note the plural spelling) for the output of the header**s** palette including the fields `date`, `header_link` and `subheader`, which are not included in the Standard Basic `TYPO3/Header`.
 
 ### Custom ViewHelper
 
