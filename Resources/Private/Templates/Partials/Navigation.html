@@ -17,17 +17,16 @@
             <f:if condition="{item.hasSubpages}">
                 <f:variable name="itemClasses" value="{itemClasses} hasSubpages"/>
             </f:if>
-            <f:if condition="{item.available}">
-                <f:variable name="itemClasses" value="{itemClasses} available"/>
+            <f:if condition="{item.available -> f:or(alternative:'1')}">
+                <li{f:if(condition:itemClasses,then:' class="{itemClasses -> f:spaceless()}"')}>
+                    <a href="{item.link}" {f:if(condition:item.target,then:' target="{item.target}"')}>
+                        <f:if condition="{item.navigationTitle}">
+                            <f:then>{item.navigationTitle}</f:then>
+                            <f:else>{item.title}</f:else>
+                        </f:if>
+                    </a>
+                </li>
             </f:if>
-            <li{f:if(condition:itemClasses,then:' class="{itemClasses -> f:spaceless()}"')}>
-                <a href="{item.link}" {f:if(condition:item.target,then:' target="{item.target}"')}>
-                <f:if condition="{item.navigationTitle}">
-                    <f:then>{item.navigationTitle}</f:then>
-                    <f:else>{item.title}</f:else>
-                </f:if>
-                </a>
-            </li>
         </f:for>
     </ul>
 </f:if>
