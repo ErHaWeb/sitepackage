@@ -17,8 +17,16 @@
         <f:comment><!--TYPO3SEARCH_end--></f:comment>
     </main>
     <footer>
-        &copy; <f:format.date format="Y">now</f:format.date>
-        <f:cObject typoscriptObjectPath="lib.getIndpEnv" data="TYPO3_HOST_ONLY"/>
+        &copy;
+        <f:format.date format="Y">now</f:format.date>
+        <f:alias map="{
+            languageWebsiteTitle: '{site.languages.{language.languageId}.websiteTitle}',
+            websiteTitle: site.configuration.websiteTitle,
+            host: '{f:cObject(typoscriptObjectPath: \'lib.getIndpEnv\', data: \'TYPO3_HOST_ONLY\')}'
+        }">
+            <f:variable name="websiteTitle" value="{languageWebsiteTitle ?: websiteTitle}"/>
+            {websiteTitle ?: host}
+        </f:alias>
     </footer>
 </f:spaceless>
 </html>
