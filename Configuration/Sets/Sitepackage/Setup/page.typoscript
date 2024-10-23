@@ -42,23 +42,27 @@ page {
       100 = EXT:sitepackage/Resources/Private/Templates/
     }
     dataProcessing {
-      # Language Navigation
-      10 = language-menu
+      10 = page-content
       10 {
+        as = content
+      }
+      # Language Navigation
+      20 = language-menu
+      20 {
         as = navigationLanguage
         languages = auto
       }
       # Main Navigation
-      20 = menu
-      20 {
+      30 = menu
+      30 {
         as = navigationMain
         expandAll = 1
         levels = 99
         titleField = nav_title // title
       }
       # Rootline Navigation
-      30 = menu
-      30 {
+      40 = menu
+      40 {
         as = navigationRootline
         special = rootline
         special.range = 0|-1
