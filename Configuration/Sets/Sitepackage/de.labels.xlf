@@ -3,175 +3,175 @@
 	<file source-language="en" target-language="de" original="messages" datatype="plaintext" product-name="sitepackage" date="2024-10-18T20:01:16+02:00">
 		<header></header>
 		<body>
-			<trans-unit id="label" resname="label">
+			<trans-unit id="label">
 				<source>Sitepackage</source>
 				<target>Sitepackage</target>
 			</trans-unit>
-			<trans-unit id="categories.sitepackage" resname="categories.sitepackage">
+			<trans-unit id="categories.sitepackage">
 				<source>Sitepackage</source>
 				<target>Sitepackage</target>
 			</trans-unit>
-			<trans-unit id="categories.sitepackage.templates" resname="categories.sitepackage.templates">
+			<trans-unit id="categories.sitepackage.templates">
 				<source>Page Template</source>
 				<target>Seiten Template</target>
 			</trans-unit>
-			<trans-unit id="categories.sitepackage.meta" resname="categories.sitepackage.meta">
+			<trans-unit id="categories.sitepackage.meta">
 				<source>HTML Meta Information</source>
 				<target>HTML-Metainformationen</target>
 			</trans-unit>
-			<trans-unit id="categories.sitepackage.webmanifest" resname="categories.sitepackage.webmanifest">
+			<trans-unit id="categories.sitepackage.webmanifest">
 				<source>Web App Manifest</source>
 				<target>Web App Manifest</target>
 			</trans-unit>
-			<trans-unit id="settings.page.view.templateRootPath" resname="settings.page.view.templateRootPath">
+			<trans-unit id="settings.page.view.templateRootPath">
 				<source>Template Root Path</source>
 				<target>Wurzelverzeichnis für Templates</target>
 			</trans-unit>
-			<trans-unit id="settings.description.page.view.templateRootPath" resname="settings.description.page.view.templateRootPath">
+			<trans-unit id="settings.description.page.view.templateRootPath">
 				<source>Add Custom Template Root Path</source>
 				<target>Erweiterung des Template Wurzelverzeichnisses</target>
 			</trans-unit>
-			<trans-unit id="settings.page.view.partialRootPath" resname="settings.page.view.partialRootPath">
+			<trans-unit id="settings.page.view.partialRootPath">
 				<source>Partial Root Path</source>
 				<target>Wurzelverzeichnis für Partials</target>
 			</trans-unit>
-			<trans-unit id="settings.description.page.view.partialRootPath" resname="settings.description.page.view.partialRootPath">
+			<trans-unit id="settings.description.page.view.partialRootPath">
 				<source>Add Custom Partial Root Path</source>
 				<target>Erweiterung des Partial Wurzelverzeichnisses</target>
 			</trans-unit>
-			<trans-unit id="settings.page.view.layoutRootPath" resname="settings.page.view.layoutRootPath">
+			<trans-unit id="settings.page.view.layoutRootPath">
 				<source>Path to template layouts (FE)</source>
 				<target>Wurzelverzeichnis für Layouts</target>
 			</trans-unit>
-			<trans-unit id="settings.description.page.view.layoutRootPath" resname="settings.description.page.view.layoutRootPath">
+			<trans-unit id="settings.description.page.view.layoutRootPath">
 				<source>Add Custom Layout Root Path</source>
 				<target>Erweiterung des Layout Wurzelverzeichnisses</target>
 			</trans-unit>
-			<trans-unit id="settings.page.meta.viewport" resname="settings.page.meta.viewport">
+			<trans-unit id="settings.page.meta.viewport">
 				<source>Viewport</source>
 				<target>Viewport</target>
 			</trans-unit>
-			<trans-unit id="settings.description.page.meta.viewport" resname="settings.description.page.meta.viewport">
+			<trans-unit id="settings.description.page.meta.viewport">
 				<source>Configuration of the viewport behavior like initial scale and scaling behavior</source>
 				<target>Konfiguration des Viewport-Verhaltens wie Anfangsskalierung und Skalierungsverhalten</target>
 			</trans-unit>
-			<trans-unit id="settings.page.meta.robots" resname="settings.page.meta.robots">
+			<trans-unit id="settings.page.meta.robots">
 				<source>Robots</source>
 				<target>Robots</target>
 			</trans-unit>
-			<trans-unit id="settings.description.page.meta.robots" resname="settings.description.page.meta.robots">
+			<trans-unit id="settings.description.page.meta.robots">
 				<source>The robots meta tag gives you a detailed, page-specific approach, specifying how a specific page should be indexed and displayed to users in Google search results.</source>
 				<target>Das Robots-Meta-Tag bietet Ihnen einen detaillierten, seitenspezifischen Ansatz, der angibt, wie eine bestimmte Seite indexiert und Nutzern in den Google-Suchergebnissen angezeigt werden soll.</target>
 			</trans-unit>
-			<trans-unit id="settings.page.meta.apple-mobile-web-app-capable" resname="settings.page.meta.apple-mobile-web-app-capable">
+			<trans-unit id="settings.page.meta.apple-mobile-web-app-capable">
 				<source>apple-mobile-web-app-capable</source>
 				<target>apple-mobile-web-app-capable</target>
 			</trans-unit>
-			<trans-unit id="settings.description.page.meta.apple-mobile-web-app-capable" resname="settings.description.page.meta.apple-mobile-web-app-capable">
+			<trans-unit id="settings.description.page.meta.apple-mobile-web-app-capable">
 				<source>Sets whether a web application runs in full-screen mode.</source>
 				<target>Legt fest, ob eine Webanwendung im Vollbildmodus ausgeführt wird.</target>
 			</trans-unit>
-			<trans-unit id="settings.page.meta.compatible" resname="settings.page.meta.compatible">
+			<trans-unit id="settings.page.meta.compatible">
 				<source>X-UA-Compatibility</source>
 				<target>X-UA-Compatibility</target>
 			</trans-unit>
-			<trans-unit id="settings.description.page.meta.compatible" resname="settings.description.page.meta.compatible">
+			<trans-unit id="settings.description.page.meta.compatible">
 				<source>Choose what version of Internet Explorer the page should be rendered as</source>
 				<target>Wählen Sie aus, mit welcher Version von Internet Explorer die Seite gerendert werden soll</target>
 			</trans-unit>
-			<trans-unit id="settings.page.meta.google" resname="settings.page.meta.google">
+			<trans-unit id="settings.page.meta.google">
 				<source>Google</source>
 				<target>Google</target>
 			</trans-unit>
-			<trans-unit id="settings.description.page.meta.google" resname="settings.description.page.meta.google">
+			<trans-unit id="settings.description.page.meta.google">
 				<source>If you have an entire page that should not be translated by Google, then you can use this meta tag.</source>
 				<target>Wenn Sie eine ganze Seite haben, die nicht von Google übersetzt werden soll, können Sie dieses Meta-Tag verwenden.</target>
 			</trans-unit>
-			<trans-unit id="settings.page.meta.google-site-verification" resname="settings.page.meta.google-site-verification">
+			<trans-unit id="settings.page.meta.google-site-verification">
 				<source>Google Site Verification Code</source>
 				<target>Google Site Verification Code</target>
 			</trans-unit>
-			<trans-unit id="settings.description.page.meta.google-site-verification" resname="settings.description.page.meta.google-site-verification">
+			<trans-unit id="settings.description.page.meta.google-site-verification">
 				<source>Verify your site ownership</source>
 				<target>Bestätigen Sie Ihre Website-Inhaberschaft</target>
 			</trans-unit>
-			<trans-unit id="settings.page.meta.apple-mobile-web-app-title" resname="settings.page.meta.apple-mobile-web-app-title">
+			<trans-unit id="settings.page.meta.apple-mobile-web-app-title">
 				<source>Mobile web app title (iOS)</source>
 				<target>Titel der mobilen App (iOS)</target>
 			</trans-unit>
-			<trans-unit id="settings.description.page.meta.apple-mobile-web-app-title" resname="settings.description.page.meta.apple-mobile-web-app-title">
+			<trans-unit id="settings.description.page.meta.apple-mobile-web-app-title">
 				<source>If empty, iOS will use the page title</source>
 				<target>Wenn leer, verwendet iOS den Seitentitel</target>
 			</trans-unit>
-			<trans-unit id="settings.page.webmanifest.name" resname="settings.page.webmanifest.name">
+			<trans-unit id="settings.page.webmanifest.name">
 				<source>Name</source>
 				<target>Name</target>
 			</trans-unit>
-			<trans-unit id="settings.description.page.webmanifest.name" resname="settings.description.page.webmanifest.name">
+			<trans-unit id="settings.description.page.webmanifest.name">
 				<source>Mobile web app name</source>
 				<target>Name der mobilen Web App</target>
 			</trans-unit>
-			<trans-unit id="settings.page.webmanifest.short_name" resname="settings.page.webmanifest.short_name">
+			<trans-unit id="settings.page.webmanifest.short_name">
 				<source>Short Name</source>
 				<target>Kurzname</target>
 			</trans-unit>
-			<trans-unit id="settings.description.page.webmanifest.short_name" resname="settings.description.page.webmanifest.short_name">
+			<trans-unit id="settings.description.page.webmanifest.short_name">
 				<source>Mobile web app short name</source>
 				<target>Kurzname der mobilen Web App</target>
 			</trans-unit>
-			<trans-unit id="settings.page.webmanifest.icons.sizes" resname="settings.page.webmanifest.icons.sizes">
+			<trans-unit id="settings.page.webmanifest.icons.sizes">
 				<source>Icon Sizes</source>
 				<target>Icon-Abmessungen</target>
 			</trans-unit>
-			<trans-unit id="settings.description.page.webmanifest.icons.sizes" resname="settings.description.page.webmanifest.icons.sizes">
+			<trans-unit id="settings.description.page.webmanifest.icons.sizes">
 				<source>Define the height and width of the icon dimensions to be used for mobile web apps in the form &lt;width&gt;x&lt;height&gt;</source>
 				<target>Definieren Sie die Höhe und Breite der für mobile Web Apps zu verwendenden Icon-Abmessungen in der Form &lt;Breite&gt;x&lt;Höhe&gt;.</target>
 			</trans-unit>
-			<trans-unit id="settings.page.webmanifest.icons.file.type" resname="settings.page.webmanifest.icons.file.type">
+			<trans-unit id="settings.page.webmanifest.icons.file.type">
 				<source>File Type</source>
 				<target>Datei-Typ</target>
 			</trans-unit>
-			<trans-unit id="settings.page.webmanifest.icons.file.prefix" resname="settings.page.webmanifest.icons.file.prefix">
+			<trans-unit id="settings.page.webmanifest.icons.file.prefix">
 				<source>File Prefix</source>
 				<target>Datei-Präfix</target>
 			</trans-unit>
-			<trans-unit id="settings.description.page.webmanifest.icons.file.prefix" resname="settings.description.page.webmanifest.icons.file.prefix">
+			<trans-unit id="settings.description.page.webmanifest.icons.file.prefix">
 				<source>Prefix for icon files of the web manifest</source>
 				<target>Präfix für Icon Dateien des Webmanifests</target>
 			</trans-unit>
-			<trans-unit id="settings.description.page.webmanifest.icons.file.type" resname="settings.description.page.webmanifest.icons.file.type">
+			<trans-unit id="settings.description.page.webmanifest.icons.file.type">
 				<source>Type of webmanifest referenced files</source>
 				<target>Typ der referenzierten Webmanifest-Dateien</target>
 			</trans-unit>
-			<trans-unit id="settings.page.webmanifest.icons.file.purpose" resname="settings.page.webmanifest.icons.file.purpose">
+			<trans-unit id="settings.page.webmanifest.icons.file.purpose">
 				<source>File Purpose</source>
 				<target>Datei-Zweck</target>
 			</trans-unit>
-			<trans-unit id="settings.description.page.webmanifest.icons.file.purpose" resname="settings.description.page.webmanifest.icons.file.purpose">
+			<trans-unit id="settings.description.page.webmanifest.icons.file.purpose">
 				<source>Context in which the symbol can be used by the browser or operating system</source>
 				<target>Kontext, in dem das Symbol vom Browser oder Betriebssystem verwendet werden kann</target>
 			</trans-unit>
-			<trans-unit id="settings.page.webmanifest.theme_color" resname="settings.page.webmanifest.theme_color">
+			<trans-unit id="settings.page.webmanifest.theme_color">
 				<source>Theme Color</source>
 				<target>Theme-Farbe</target>
 			</trans-unit>
-			<trans-unit id="settings.description.page.webmanifest.theme_color" resname="settings.description.page.webmanifest.theme_color">
+			<trans-unit id="settings.description.page.webmanifest.theme_color">
 				<source>Default color of the web app</source>
 				<target>Standardfarbe der Web App</target>
 			</trans-unit>
-			<trans-unit id="settings.page.webmanifest.background_color" resname="settings.page.webmanifest.background_color">
+			<trans-unit id="settings.page.webmanifest.background_color">
 				<source>Background Color</source>
 				<target>Hintergrundfarbe</target>
 			</trans-unit>
-			<trans-unit id="settings.description.page.webmanifest.background_color" resname="settings.description.page.webmanifest.background_color">
+			<trans-unit id="settings.description.page.webmanifest.background_color">
 				<source>Background color of the web application on initial load</source>
 				<target>Hintergrundfarbe der Webanwendung beim anfänglichen laden</target>
 			</trans-unit>
-			<trans-unit id="settings.page.webmanifest.display" resname="settings.page.webmanifest.display">
+			<trans-unit id="settings.page.webmanifest.display">
 				<source>Display</source>
 				<target>Anzeige</target>
 			</trans-unit>
-			<trans-unit id="settings.description.page.webmanifest.display" resname="settings.description.page.webmanifest.display">
+			<trans-unit id="settings.description.page.webmanifest.display">
 				<source>Preferred display mode for the web application</source>
 				<target>Bevorzugter Anzeigemodus für die Webanwendung</target>
 			</trans-unit>
