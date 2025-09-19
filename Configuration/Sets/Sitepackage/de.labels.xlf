@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-	<file source-language="en" target-language="de" original="messages" datatype="plaintext" product-name="sitepackage" date="2024-10-18T20:01:16+02:00">
+	<file source-language="en" target-language="de" original="EXT:sitepackage/Configuration/Sets/Sitepackage/de.labels.xlf" datatype="plaintext" product-name="sitepackage" date="2025-09-19T16:58:40+02:00">
 		<header></header>
 		<body>
 			<trans-unit id="label">
