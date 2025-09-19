@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-    <file source-language="en" target-language="de" original="messages" datatype="plaintext" product-name="sitepackage" date="2024-10-20T14:34:26+02:00">
+    <file source-language="en" target-language="de" original="messages" datatype="plaintext" product-name="sitepackage" date="2025-09-19T17:04:00+02:00">
         <header></header>
         <body>
-            <trans-unit id="pages.tx_sitepackage_colorscheme.title" resname="pages.tx_sitepackage_colorscheme.title">
+            <trans-unit id="pages.tx_sitepackage_colorscheme.title">
                 <source>Color Scheme</source>
                 <target>Farbschema</target>
             </trans-unit>
-            <trans-unit id="pages.tx_sitepackage_colorscheme.description" resname="pages.tx_sitepackage_colorscheme.description">
+            <trans-unit id="pages.tx_sitepackage_colorscheme.description">
                 <source>This is provided by the Sitepackage</source>
                 <target>Dies wird durch das Sitepackage bereit gestellt</target>
             </trans-unit>
-            <trans-unit id="pages.tx_sitepackage_colorscheme.I.0" resname="pages.tx_sitepackage_colorscheme.I.0">
+            <trans-unit id="pages.tx_sitepackage_colorscheme.I.0">
                 <source>Default</source>
                 <target>Standard</target>
             </trans-unit>
-            <trans-unit id="pages.tx_sitepackage_colorscheme.I.1" resname="pages.tx_sitepackage_colorscheme.I.1">
+            <trans-unit id="pages.tx_sitepackage_colorscheme.I.1">
                 <source>Color Scheme 1</source>
                 <target>Farbschema 1</target>
             </trans-unit>
-            <trans-unit id="pages.tx_sitepackage_colorscheme.I.2" resname="pages.tx_sitepackage_colorscheme.I.2">
+            <trans-unit id="pages.tx_sitepackage_colorscheme.I.2">
                 <source>Color Scheme 2</source>
                 <target>Farbschema 2</target>
             </trans-unit>
