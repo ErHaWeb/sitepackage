@@ -34,10 +34,6 @@ The required TCA, database updates and registration in the “New Content Elemen
 
 This sitepackage additionally provides a new Content Blocks [Basic](https://docs.typo3.org/p/friendsoftypo3/content-blocks/main/en-us/YamlReference/Basics/Index.html#basics) `TYPO3/Headers` (note the plural spelling) for the output of the header**s** palette including the fields `date`, `header_link` and `subheader`, which are not included in the Standard Basic `TYPO3/Header`.
 
-### Custom ViewHelper
-
-As an example of how to add custom ViewHelpers this sitepackage adds the possibility to modify attributes of the html tag by the `HtmlTagAttributesViewHelper` in file `Classes/ViewHelpers/HtmlTagAttributesViewHelper.php`. The ViewHelper namespace `xmlns:s="http://typo3.org/ns/VendorName/Sitepackage/ViewHelpers"` has been added to the Fluid Template file `Resources/Private/Layouts/Page/Default.html` and it is used to add information about the currently selected layout as data attribute with tag `<s:htmlTagAttributes data="{data-layout:current}"/>`.
-
 ### Custom Symfony Command
 
 If you want to run any process from your sitepackage using the command line interface (CLI) such as a time-consuming import of data from an external system, symfony commands are the way to go. A simple example is shown in this sitepackage under `Classes/Command/DoSomethingCommand.php`. Command Classes like this are registered under `Configuration/Services.yaml`.
