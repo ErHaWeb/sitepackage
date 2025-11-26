@@ -4,8 +4,8 @@
   "description": "Sitepackage for TYPO3 13",
   "license": "GPL-2.0-or-later",
   "require": {
-    "typo3/minimal": "^13.4",
-    "friendsoftypo3/content-blocks": "^1.0.0"
+    "typo3/minimal": "^14.0",
+    "friendsoftypo3/content-blocks": "^2.0.0"
   },
   "authors": [
     {
