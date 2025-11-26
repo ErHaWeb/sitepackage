@@ -1,4 +1,4 @@
-# https://docs.typo3.org/m/typo3/reference-tsconfig/main/en-us/UserTsconfig/Permissions.html
+# https://docs.typo3.org/m/typo3/reference-tsconfig/13.4/en-us/UserTsconfig/Permissions.html
 
 permissions {
   # file.default.addFile = 1

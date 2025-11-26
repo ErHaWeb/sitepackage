@@ -1,7 +1,7 @@
-# https://docs.typo3.org/m/typo3/reference-coreapi/main/en-us/Configuration/Yaml/ServicesYaml.html
+# https://docs.typo3.org/m/typo3/reference-coreapi/13.4/en-us/Configuration/Yaml/ServicesYaml.html
 
 services:
-  # https://docs.typo3.org/m/typo3/reference-coreapi/main/en-us/ApiOverview/DependencyInjection/Index.html#id7
+  # https://docs.typo3.org/m/typo3/reference-coreapi/13.4/en-us/ApiOverview/DependencyInjection/Index.html#id7
   _defaults:
     autowire: true
     autoconfigure: true

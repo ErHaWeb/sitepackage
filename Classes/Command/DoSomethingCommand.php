@@ -16,7 +16,7 @@
 declare(strict_types=1);
 
 /**
- * https://docs.typo3.org/m/typo3/reference-coreapi/main/en-us/ApiOverview/CommandControllers/Tutorial.html
+ * https://docs.typo3.org/m/typo3/reference-coreapi/13.4/en-us/ApiOverview/CommandControllers/Tutorial.html
  */
 
 namespace VendorName\Sitepackage\Command;
@@ -36,7 +36,7 @@ use Symfony\Component\Console\Style\SymfonyStyle;
  */
 
 /**
- * https://docs.typo3.org/m/typo3/reference-coreapi/main/en-us/ApiOverview/CommandControllers/Tutorial.html#console-command-tutorial-registration-attribute
+ * https://docs.typo3.org/m/typo3/reference-coreapi/13.4/en-us/ApiOverview/CommandControllers/Tutorial.html#console-command-tutorial-registration-attribute
  */
 #[AsCommand(
     name: 'sitepackage:dosomething',

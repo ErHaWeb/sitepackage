@@ -16,6 +16,6 @@
 declare(strict_types=1);
 
 /**
- * https://docs.typo3.org/m/typo3/reference-coreapi/main/en-us/ExtensionArchitecture/FileStructure/ExtTables.html
+ * https://docs.typo3.org/m/typo3/reference-coreapi/13.4/en-us/ExtensionArchitecture/FileStructure/ExtTables.html
  */
 (static function () {})();

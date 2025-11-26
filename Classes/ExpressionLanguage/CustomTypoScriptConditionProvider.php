@@ -16,7 +16,7 @@
 declare(strict_types=1);
 
 /**
- * https://docs.typo3.org/m/typo3/reference-coreapi/main/en-us/ApiOverview/SymfonyExpressionLanguage/Index.html#registering-new-provider-within-an-extension
+ * https://docs.typo3.org/m/typo3/reference-coreapi/13.4/en-us/ApiOverview/SymfonyExpressionLanguage/Index.html#registering-new-provider-within-an-extension
  */
 
 namespace VendorName\Sitepackage\ExpressionLanguage;

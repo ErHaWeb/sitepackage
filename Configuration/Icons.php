@@ -18,7 +18,7 @@ declare(strict_types=1);
 /**
  * Registers custom Icons in the IconRegistry provided by EXT:sitepackage
  *
- * https://docs.typo3.org/m/typo3/reference-coreapi/main/en-us/ExtensionArchitecture/FileStructure/Configuration/Icons.html
+ * https://docs.typo3.org/m/typo3/reference-coreapi/13.4/en-us/ExtensionArchitecture/FileStructure/Configuration/Icons.html
  */
 
 return [

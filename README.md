@@ -32,7 +32,7 @@ This sitepackage contains an example of a custom content element based on the [e
 
 The required TCA, database updates and registration in the “New Content Element Wizard” are handled by Content Blocks automatically based on a YAML configuration (Example: `ContentBlocks/ContentElements/newcontentelement/config.yaml`).
 
-This sitepackage additionally provides a new Content Blocks [Basic](https://docs.typo3.org/p/friendsoftypo3/content-blocks/main/en-us/YamlReference/Basics/Index.html#basics) `TYPO3/Headers` (note the plural spelling) for the output of the header**s** palette including the fields `date`, `header_link` and `subheader`, which are not included in the Standard Basic `TYPO3/Header`.
+This sitepackage additionally provides a new Content Blocks [Basic](https://docs.typo3.org/p/friendsoftypo3/content-blocks/13.4/en-us/YamlReference/Basics/Index.html#basics) `TYPO3/Headers` (note the plural spelling) for the output of the header**s** palette including the fields `date`, `header_link` and `subheader`, which are not included in the Standard Basic `TYPO3/Header`.
 
 ### Custom ViewHelper
 
