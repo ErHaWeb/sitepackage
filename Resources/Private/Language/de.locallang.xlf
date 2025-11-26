@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xliff version="1.0" xmlns:t3="http://typo3.org/schemas/xliff">
-    <file source-language="en" target-language="de" datatype="plaintext" original="messages" date="2011-10-18T18:20:51Z" product-name="sitepackage">
-        <header/>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" target-language="de" original="EXT:sitepackage/Resources/Private/Language/de.locallang.xlf" datatype="plaintext" product-name="sitepackage" date="2025-09-19T17:03:45+02:00">
+        <header></header>
         <body>
-            
+            <trans-unit id="any_frontend_label">
+                <source>Any frontend label</source>
+                <target>Irgendein Frontend-Label</target>
+            </trans-unit>
         </body>
     </file>
 </xliff>

@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-    <file source-language="en" target-language="de" original="messages" datatype="plaintext" product-name="sitepackage" date="2024-10-18T10:57:21+02:00">
+    <file source-language="en" target-language="de" original="messages" datatype="plaintext" product-name="sitepackage" date="2025-09-19T17:04:10+02:00">
         <header></header>
         <body>
-            <trans-unit id="backend_layout.default" resname="backend_layout.default">
+            <trans-unit id="backend_layout.default">
                 <source>Default Backend Layout</source>
                 <target>Standard Backend Layout</target>
             </trans-unit>
-            <trans-unit id="backend_layout.example" resname="backend_layout.example">
+            <trans-unit id="backend_layout.example">
                 <source>2 Columns Example Backend Layout</source>
                 <target>2 Spalten Beispiel Backend Layout</target>
             </trans-unit>
-            <trans-unit id="backend_layout.column.content" resname="backend_layout.column.content">
+            <trans-unit id="backend_layout.column.content">
                 <source>Content</source>
                 <target>Inhalt</target>
             </trans-unit>
-            <trans-unit id="backend_layout.column.content_left" resname="backend_layout.column.content_left">
+            <trans-unit id="backend_layout.column.content_left">
                 <source>Left Column Content</source>
                 <target>Inhalt der linken Spalte</target>
             </trans-unit>
-            <trans-unit id="backend_layout.column.content_right" resname="backend_layout.column.content_right">
+            <trans-unit id="backend_layout.column.content_right">
                 <source>Right Column Content</source>
                 <target>Inhalt der rechten Spalte</target>
             </trans-unit>

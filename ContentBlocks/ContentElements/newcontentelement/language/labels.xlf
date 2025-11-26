@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-	<file source-language="en" original="labels.xlf" datatype="plaintext" product-name="sitepackage/newcontentelement" date="2024-10-20T14:34:57+02:00">
+	<file source-language="en" original="EXT:sitepackage/ContentBlocks/ContentElements/newcontentelement/language/labels.xlf" datatype="plaintext" product-name="sitepackage/newcontentelement" date="2024-10-20T14:34:57+02:00">
 		<header></header>
 		<body>
 			<trans-unit id="title" resname="title">
