@@ -1,7 +1,7 @@
 {
   "name": "vendorname/sitepackage",
   "type": "typo3-cms-extension",
-  "description": "Sitepackage for TYPO3 13",
+  "description": "Sitepackage - Sitepackage for TYPO3 14",
   "license": "GPL-2.0-or-later",
   "require": {
     "typo3/minimal": "^14.0",

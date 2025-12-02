@@ -20,7 +20,7 @@ declare(strict_types=1);
  */
 $EM_CONF[$_EXTKEY] = [
     'title' => 'Sitepackage',
-    'description' => 'Sitepackage for TYPO3 13',
+    'description' => 'Sitepackage for TYPO3 14',
     'category' => 'templates',
     'author' => 'Author Name',
     'author_email' => 'email@author.name.com',
