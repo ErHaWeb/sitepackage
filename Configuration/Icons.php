@@ -15,6 +15,8 @@
 
 declare(strict_types=1);
 
+use TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider;
+
 /**
  * Registers custom Icons in the IconRegistry provided by EXT:sitepackage
  *
@@ -24,7 +26,7 @@ declare(strict_types=1);
 return [
     'sitepackage-icon' => [
         // icon provider class
-        'provider' => \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
+        'provider' => SvgIconProvider::class,
         // the source SVG for the SvgIconProvider
         'source' => 'EXT:sitepackage/Resources/Public/Icons/Sitepackage.svg',
     ],
