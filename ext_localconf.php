@@ -23,7 +23,7 @@ use TYPO3\CMS\Core\Configuration\ExtensionConfiguration;
 use TYPO3\CMS\Core\Utility\ArrayUtility;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 
-defined('TYPO3') or die();
+defined('TYPO3') || die();
 
 (static function () {
     /**
