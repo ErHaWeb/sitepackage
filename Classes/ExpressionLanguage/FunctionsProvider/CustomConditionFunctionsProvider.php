@@ -26,6 +26,9 @@ use Symfony\Component\ExpressionLanguage\ExpressionFunctionProviderInterface;
 
 final class CustomConditionFunctionsProvider implements ExpressionFunctionProviderInterface
 {
+    /**
+     * @return ExpressionFunction[]
+     */
     public function getFunctions(): array
     {
         return [
@@ -33,20 +36,21 @@ final class CustomConditionFunctionsProvider implements ExpressionFunctionProvid
         ];
     }
 
-    /**
-     * @return ExpressionFunction
-     */
     protected function getRootlineFieldFunction(): ExpressionFunction
     {
-        return new ExpressionFunction('rootlineField', static function ($str): void {}, static function (...$args) {
-            $rootlinePages = array_reverse($args[0]['tree']->rootLine);
-            foreach ($rootlinePages as $rootlinePage) {
-                $val = $rootlinePage[$args[1]] ?? null;
-                if (isset($val) && $val) {
-                    return $val;
+        return new ExpressionFunction(
+            'rootlineField',
+            static fn(): null => null,
+            static function (array $arguments, string $field): string|false {
+                $rootlinePages = array_reverse($arguments['tree']->rootLine);
+                foreach ($rootlinePages as $rootlinePage) {
+                    $value = $rootlinePage[$field] ?? null;
+                    if ($value) {
+                        return (string) $value;
+                    }
                 }
+                return false;
             }
-            return false;
-        });
+        );
     }
 }
