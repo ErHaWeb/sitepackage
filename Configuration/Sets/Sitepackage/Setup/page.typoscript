@@ -13,17 +13,21 @@ page {
     X-UA-Compatible {
       attribute = http-equiv
     }
+
     google = {$page.meta.google}
     google-site-verification = {$page.meta.google-site-verification}
 
     apple-mobile-web-app-title = {$page.meta.apple-mobile-web-app-title}
   }
+
   includeCSS {
     main = EXT:sitepackage/Resources/Public/Css/Frontend/main.min.css
   }
+
   includeJSFooter {
     main = EXT:sitepackage/Resources/Public/JavaScript/Dist/main.min.js
   }
+
   headerData {
     10 = TEXT
     10 {
@@ -36,22 +40,26 @@ page {
       )
     }
   }
+
   10 = PAGEVIEW
   10 {
     paths {
       100 = EXT:sitepackage/Resources/Private/Templates/
     }
+
     dataProcessing {
       10 = page-content
       10 {
         as = content
       }
+
       # Language Navigation
       20 = language-menu
       20 {
         as = navigationLanguage
         languages = auto
       }
+
       # Main Navigation
       30 = menu
       30 {
@@ -60,6 +68,7 @@ page {
         levels = 99
         titleField = nav_title // title
       }
+
       # Rootline Navigation
       40 = menu
       40 {
@@ -73,7 +82,7 @@ page {
   }
 }
 
-# Use custom "rootlineField" Symfony Condition defined under ./Classes/TypoScript/CustomConditionFunctionsProvider.php
+# Use custom "rootlineField" Symfony Condition defined under ./Classes/ExpressionLanguage/FunctionsProvider/CustomConditionFunctionsProvider.php
 # to include specific CSS files based on a color scheme selection
 [rootlineField('tx_sitepackage_colorscheme') === '1']
 page {
@@ -82,6 +91,7 @@ page {
   }
 }
 [global]
+
 [rootlineField('tx_sitepackage_colorscheme') === '2']
 page {
   includeCSS {

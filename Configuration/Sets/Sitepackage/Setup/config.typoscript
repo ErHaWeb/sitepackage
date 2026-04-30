@@ -5,18 +5,21 @@ config {
   additionalHeaders {
 
   }
+
   # admPanel =
   # ATagParams =
   # baseURL =
   cache {
 
   }
+
   # cache_clearAtMidnight = false
   # cache_period = 86400
   # contentObjectExceptionHandler = 0
   contentObjectExceptionHandler {
 
   }
+
   # debug =
   # disableAllHeaderCode = false
   # disableBodyTag = 0
@@ -32,10 +35,12 @@ config {
   htmlTag.attributes {
 
   }
+
   # htmlTag_setParams =
   htmlTag_stdWrap {
 
   }
+
   # index_descrLgd = 200
   # index_enable =
   # index_externals =
@@ -52,6 +57,7 @@ config {
   namespaces {
 
   }
+
   # no_cache = 0
   # noPageTitle = 0
   # pageRendererTemplateFile =
@@ -59,14 +65,17 @@ config {
 
 
   }
+
   # pageTitleFirst = 0
   pageTitleProviders {
 
   }
+
   # pageTitleSeparator = ": "
   pageTitleSeparator {
 
   }
+
   # removeDefaultCss =
   # removeDefaultJS =
   # removePageCss =
