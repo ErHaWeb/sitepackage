@@ -32,7 +32,7 @@ Example BackendLayouts can be found here `Configuration/Sets/Sitepackage/PageTsC
 
 ### Example Custom Content Element
 
-This sitepackage contains an example of a custom content element based on the [extension “Content Blocks”](https://extensions.typo3.org/extension/content_blocks), which will be integrated into the core in the future.
+This sitepackage contains an example of a custom content element based on the [extension “Content Blocks”](https://docs.typo3.org/p/friendsoftypo3/content-blocks/main/en-us/).
 
 The required TCA, database updates and registration in the “New Content Element Wizard” are handled by Content Blocks automatically based on a YAML configuration (Example: `ContentBlocks/ContentElements/newcontentelement/config.yaml`).
 
