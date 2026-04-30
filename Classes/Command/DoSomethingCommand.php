@@ -43,7 +43,7 @@ use Symfony\Component\Console\Style\SymfonyStyle;
     description: 'A command that does nothing and always succeeds.',
     aliases: ['examples:dosomethingalias'],
 )]
-class DoSomethingCommand extends Command
+final class DoSomethingCommand extends Command
 {
     protected function configure(): void
     {

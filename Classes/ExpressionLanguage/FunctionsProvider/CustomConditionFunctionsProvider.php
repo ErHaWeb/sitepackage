@@ -24,7 +24,7 @@ namespace VendorName\Sitepackage\ExpressionLanguage\FunctionsProvider;
 use Symfony\Component\ExpressionLanguage\ExpressionFunction;
 use Symfony\Component\ExpressionLanguage\ExpressionFunctionProviderInterface;
 
-class CustomConditionFunctionsProvider implements ExpressionFunctionProviderInterface
+final class CustomConditionFunctionsProvider implements ExpressionFunctionProviderInterface
 {
     public function getFunctions(): array
     {

@@ -24,7 +24,7 @@ namespace VendorName\Sitepackage\ExpressionLanguage;
 use TYPO3\CMS\Core\ExpressionLanguage\AbstractProvider;
 use VendorName\Sitepackage\ExpressionLanguage\FunctionsProvider\CustomConditionFunctionsProvider;
 
-class CustomTypoScriptConditionProvider extends AbstractProvider
+final class CustomTypoScriptConditionProvider extends AbstractProvider
 {
     public function __construct()
     {
