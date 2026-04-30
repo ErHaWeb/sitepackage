@@ -4,8 +4,9 @@
   "description": "Sitepackage - Sitepackage for TYPO3 14",
   "license": "GPL-2.0-or-later",
   "require": {
-    "typo3/minimal": "^14.0",
-    "friendsoftypo3/content-blocks": "^2.0.0"
+    "php": "^8.2",
+    "friendsoftypo3/content-blocks": "^2.3",
+    "typo3/minimal": "^14.3"
   },
   "authors": [
     {
@@ -25,7 +26,7 @@
   "funding": [
     {
       "type": "other",
-      "url:": "myfundpage.org/vendorname"
+      "url": "https://myfundpage.org/vendorname"
     }
   ],
   "homepage": "https://typo3.org",
