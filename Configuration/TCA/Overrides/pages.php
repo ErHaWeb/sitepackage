@@ -25,7 +25,7 @@ defined('TYPO3') || die();
      */
     $tempColumns = [
         'tx_sitepackage_colorscheme' => [
-            'exclude' => 1,
+            'exclude' => true,
             'label' => 'LLL:EXT:sitepackage/Resources/Private/Language/locallang_db.xlf:pages.tx_sitepackage_colorscheme.title',
             'description' => 'LLL:EXT:sitepackage/Resources/Private/Language/locallang_db.xlf:pages.tx_sitepackage_colorscheme.description',
             'config' => [
