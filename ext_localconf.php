@@ -25,7 +25,7 @@ use TYPO3\CMS\Core\Utility\GeneralUtility;
 
 defined('TYPO3') || die();
 
-(static function () {
+(static function (): void {
     /**
      * Add sitepackage preset for RTE
      */
