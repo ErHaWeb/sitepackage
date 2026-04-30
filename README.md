@@ -95,12 +95,11 @@ By default the language en-US is used. If you want to change it, just edit the s
 This site package provides a [Gulp](https://gulpjs.com/) task runner that handles the following tasks:
 
 - Compile SCSS from `Resources/Public/Scss/` to CSS directory `Resources/Public/Css/`
-- Improve backwards compatibility of your CSS code by using the well known [Autoprefixer PostCSS plugin](https://github.com/postcss/autoprefixer)
-- Minify JavaScript and CSS files and save them as separate files with ending `*.min.css` / `*.min.js`
-- Static JavaScript code analysis with ([JSHint Documentation](https://jshint.com/docs/)), feel free to adjust the configuration file `.jshintrc` to your needs
-- Concatenate and minify all JavaScript files from directory `Resources/Public/JavaScript/Src` and save the result under `Resources/Public/JavaScript/Dist`
+- Compile compressed CSS files and save them as separate files with ending `*.min.css`
+- Concatenate all JavaScript files from directory `Resources/Public/JavaScript/Src` and save the result under `Resources/Public/JavaScript/Dist`
+- Clean generated CSS and JavaScript files before rebuilding
 
-To initially install Gulp and all necessary modules execute command `npm install`. Now you are able to run all tasks at once by executing command `gulp`. To run specific tasks use `gulp <taskname>`. To get an overview wich tasks can be executed run `gulp --tasks`.
+To initially install Gulp and all necessary modules execute command `npm install`. Now you are able to run all tasks at once by executing command `npm run build`. To run specific tasks use `npm run build:css`, `npm run build:js`, `npm run clean` or `npm run watch`. To get an overview which tasks can be executed run `npx gulp --tasks`.
 
 ## FAQ:
 

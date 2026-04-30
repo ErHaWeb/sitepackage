@@ -1,5 +1,4 @@
-// Example customization for Color Scheme 2
-$color-primary: green;
-
-// Import main Styles
-@import "main";
+@use "variables" with (
+  $color-primary: green
+);
+@use "rte";

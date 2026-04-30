@@ -2,9 +2,9 @@
  * This sample is intended to show that custom CSS has been added to the RTE by the sitepackage
  */
 
-// Import Frontent RTE styles
-@import "../Frontend/variables";
-@import "../Frontend/rte";
+// Import Frontend RTE styles
+@use "../Frontend/variables";
+@use "../Frontend/rte";
 
 // Default RTE styles from EXT:rte_ckeditor/Resources/Public/Css/contents.css
 body {

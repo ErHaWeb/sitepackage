@@ -1,3 +1,5 @@
+@use "variables";
+
 // Default RTE styles from EXT:rte_ckeditor/Resources/Public/Css/contents.css
 body {
   /* Font */
@@ -15,7 +17,7 @@ blockquote {
 }
 
 a {
-  color: $color-primary;
+  color: variables.$color-primary;
 }
 
 ol, ul, dl {
@@ -103,7 +105,7 @@ a > img {
   padding: 1px;
   margin: 1px;
   border: none;
-  outline: 1px solid $color-primary;
+  outline: 1px solid variables.$color-primary;
 }
 
 /* Widget Styles */

@@ -1,5 +1,2 @@
-// Import configuration files
-@import "variables";
-
-// Import styles for each task
-@import "rte";
+@use "variables";
+@use "rte";
