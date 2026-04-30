@@ -90,7 +90,7 @@ You can read more about the integration of app icons in TYPO3 [here](https://gis
 
 ### Site Configuration Auto Initialization
 
-If you install this sitepackage in an empty TYPO3 CMS installation it will create a new site configuration with configuration for `sitemap.xml` and `site.webmanifest`, a first root page with a link to the static TSconfig of this sitepackage, a template record with a link to the static TypoScript of this sitepackage and pages records for various HTTP error codes (404, 403, 500, 503 and undefined), which are referenced in the site configuration.
+If you install this sitepackage in an empty TYPO3 CMS installation it will create a new site configuration with configuration for `sitemap.xml` and `site.webmanifest`, activate the sitepackage Site Set, create a first root page and add page records for various HTTP error codes (404, 403, 500, 503 and undefined), which are referenced in the site configuration.
 
 By default the language en-US is used. If you want to change it, just edit the site configuration in your TYPO3 installation under `config/sites/sitepackage/config.yaml`or via the `Site Management > Sites` module in the TYPO3 backend.
 
