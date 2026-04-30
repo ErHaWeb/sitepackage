@@ -28,6 +28,7 @@ use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Style\SymfonyStyle;
+use TYPO3\CMS\Core\Attribute\AsNonSchedulableCommand;
 
 /**
  * Call this command with:
@@ -43,6 +44,7 @@ use Symfony\Component\Console\Style\SymfonyStyle;
     description: 'A command that does nothing and always succeeds.',
     aliases: ['examples:dosomethingalias'],
 )]
+#[AsNonSchedulableCommand]
 final class DoSomethingCommand extends Command
 {
     protected function configure(): void
