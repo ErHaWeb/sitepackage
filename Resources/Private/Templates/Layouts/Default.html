@@ -1,5 +1,4 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
-      xmlns:s="http://typo3.org/ns/VendorName/Sitepackage/ViewHelpers"
       data-namespace-typo3-fluid="true">
 <f:spaceless>
     <header id="">
@@ -18,14 +17,8 @@
     <footer>
         &copy;
         <f:format.date format="Y">now</f:format.date>
-        <f:alias map="{
-            languageWebsiteTitle: '{site.languages.{language.languageId}.websiteTitle}',
-            websiteTitle: site.configuration.websiteTitle,
-            host: '{f:cObject(typoscriptObjectPath: \'lib.getIndpEnv\', data: \'TYPO3_HOST_ONLY\')}'
-        }">
-            <f:variable name="websiteTitle" value="{languageWebsiteTitle ?: websiteTitle}"/>
-            {websiteTitle ?: host}
-        </f:alias>
+        <f:variable name="websiteTitle" value="{language.websiteTitle ?: site.configuration.websiteTitle}"/>
+        {websiteTitle ?: site.identifier}
     </footer>
 </f:spaceless>
 </html>
