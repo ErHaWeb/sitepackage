@@ -12,7 +12,11 @@ This sitepackage contains almost all the directories and files (except resource 
 
 ### Usage of a Site Set
 
-In order to achieve a clear separation of the sitepackage configurations between the sites of a TYPO3 instance, this sitepackage uses all elementary components via its own Site Set since v13.
+In order to achieve a clear separation of the sitepackage configurations between the sites of a TYPO3 instance, this sitepackage uses all elementary components via its own Site Set.
+
+### Content rendering with Content Areas
+
+Page rendering uses `PAGEVIEW` together with the `page-content` data processor. Backend layout columns define Content Area identifiers such as `main` and `sidebar`, and Fluid templates render them with TYPO3 v14's `<f:render.contentArea>` ViewHelper.
 
 ### Color scheme selector
 
