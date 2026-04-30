@@ -27,15 +27,6 @@ defined('TYPO3') || die();
 
 (static function () {
     /**
-     * Add further rootline fields
-     */
-    $rootlineFields = &$GLOBALS['TYPO3_CONF_VARS']['FE']['addRootLineFields'];
-    if ($rootlineFields !== '') {
-        $rootlineFields .= ',';
-    }
-    $rootlineFields .= 'tx_sitepackage_colorscheme';
-
-    /**
      * Add sitepackage preset for RTE
      */
     $GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['sitepackage'] = 'EXT:sitepackage/Configuration/RTE/RteConfig.yaml';
