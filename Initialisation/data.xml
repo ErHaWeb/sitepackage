@@ -9,8 +9,8 @@
             <packager_username>admin</packager_username>
             <packager_name/>
             <packager_email/>
-            <TYPO3_version>11.5.16</TYPO3_version>
-            <created>Wednesday 28. September 2022</created>
+            <TYPO3_version>14.3.0</TYPO3_version>
+            <created>Thursday 30. April 2026</created>
         </meta>
         <static_tables index="relStaticTables" type="array">
             <tablename index="0">_ALL</tablename>
@@ -230,7 +230,6 @@
                 <field index="TSconfig" type="NULL"/>
                 <field index="is_siteroot" type="integer">1</field>
                 <field index="php_tree_stop" type="integer">0</field>
-                <field index="url"/>
                 <field index="shortcut" type="integer">0</field>
                 <field index="shortcut_mode" type="integer">0</field>
                 <field index="subtitle"/>
@@ -313,7 +312,7 @@
                 <field index="uploads_type" type="integer">0</field>
                 <field index="assets" type="integer">0</field>
                 <field index="image" type="integer">0</field>
-                <field index="imagewidth" type="integer">0</field>
+                <field index="imagewidth" type="NULL"/>
                 <field index="imageorient" type="integer">0</field>
                 <field index="imagecols" type="integer">2</field>
                 <field index="imageborder" type="integer">0</field>
@@ -340,7 +339,7 @@
                 <field index="target"/>
                 <field index="date" type="integer">0</field>
                 <field index="recursive" type="integer">0</field>
-                <field index="imageheight" type="integer">0</field>
+                <field index="imageheight" type="NULL"/>
                 <field index="pi_flexform" type="NULL"/>
                 <field index="accessibility_title"/>
                 <field index="accessibility_bypass" type="integer">0</field>
@@ -394,7 +393,6 @@
                 <field index="TSconfig" type="NULL"/>
                 <field index="is_siteroot" type="integer">0</field>
                 <field index="php_tree_stop" type="integer">0</field>
-                <field index="url"/>
                 <field index="shortcut" type="integer">0</field>
                 <field index="shortcut_mode" type="integer">0</field>
                 <field index="subtitle"/>
@@ -479,7 +477,6 @@
                 <field index="TSconfig" type="NULL"/>
                 <field index="is_siteroot" type="integer">0</field>
                 <field index="php_tree_stop" type="integer">0</field>
-                <field index="url"/>
                 <field index="shortcut" type="integer">0</field>
                 <field index="shortcut_mode" type="integer">0</field>
                 <field index="subtitle"/>
@@ -562,7 +559,7 @@
                 <field index="uploads_type" type="integer">0</field>
                 <field index="assets" type="integer">0</field>
                 <field index="image" type="integer">0</field>
-                <field index="imagewidth" type="integer">0</field>
+                <field index="imagewidth" type="NULL"/>
                 <field index="imageorient" type="integer">0</field>
                 <field index="imagecols" type="integer">2</field>
                 <field index="imageborder" type="integer">0</field>
@@ -589,7 +586,7 @@
                 <field index="target"/>
                 <field index="date" type="integer">0</field>
                 <field index="recursive" type="integer">0</field>
-                <field index="imageheight" type="integer">0</field>
+                <field index="imageheight" type="NULL"/>
                 <field index="pi_flexform" type="NULL"/>
                 <field index="accessibility_title"/>
                 <field index="accessibility_bypass" type="integer">0</field>
@@ -643,7 +640,6 @@
                 <field index="TSconfig" type="NULL"/>
                 <field index="is_siteroot" type="integer">0</field>
                 <field index="php_tree_stop" type="integer">0</field>
-                <field index="url"/>
                 <field index="shortcut" type="integer">0</field>
                 <field index="shortcut_mode" type="integer">0</field>
                 <field index="subtitle"/>
@@ -726,7 +722,7 @@
                 <field index="uploads_type" type="integer">0</field>
                 <field index="assets" type="integer">0</field>
                 <field index="image" type="integer">0</field>
-                <field index="imagewidth" type="integer">0</field>
+                <field index="imagewidth" type="NULL"/>
                 <field index="imageorient" type="integer">0</field>
                 <field index="imagecols" type="integer">2</field>
                 <field index="imageborder" type="integer">0</field>
@@ -753,7 +749,7 @@
                 <field index="target"/>
                 <field index="date" type="integer">0</field>
                 <field index="recursive" type="integer">0</field>
-                <field index="imageheight" type="integer">0</field>
+                <field index="imageheight" type="NULL"/>
                 <field index="pi_flexform" type="NULL"/>
                 <field index="accessibility_title"/>
                 <field index="accessibility_bypass" type="integer">0</field>
@@ -807,7 +803,6 @@
                 <field index="TSconfig" type="NULL"/>
                 <field index="is_siteroot" type="integer">0</field>
                 <field index="php_tree_stop" type="integer">0</field>
-                <field index="url"/>
                 <field index="shortcut" type="integer">0</field>
                 <field index="shortcut_mode" type="integer">0</field>
                 <field index="subtitle"/>
@@ -890,7 +885,7 @@
                 <field index="uploads_type" type="integer">0</field>
                 <field index="assets" type="integer">0</field>
                 <field index="image" type="integer">0</field>
-                <field index="imagewidth" type="integer">0</field>
+                <field index="imagewidth" type="NULL"/>
                 <field index="imageorient" type="integer">0</field>
                 <field index="imagecols" type="integer">2</field>
                 <field index="imageborder" type="integer">0</field>
@@ -917,7 +912,7 @@
                 <field index="target"/>
                 <field index="date" type="integer">0</field>
                 <field index="recursive" type="integer">0</field>
-                <field index="imageheight" type="integer">0</field>
+                <field index="imageheight" type="NULL"/>
                 <field index="pi_flexform" type="NULL"/>
                 <field index="accessibility_title"/>
                 <field index="accessibility_bypass" type="integer">0</field>
@@ -971,7 +966,6 @@
                 <field index="TSconfig" type="NULL"/>
                 <field index="is_siteroot" type="integer">0</field>
                 <field index="php_tree_stop" type="integer">0</field>
-                <field index="url"/>
                 <field index="shortcut" type="integer">0</field>
                 <field index="shortcut_mode" type="integer">0</field>
                 <field index="subtitle"/>
@@ -1054,7 +1048,7 @@
                 <field index="uploads_type" type="integer">0</field>
                 <field index="assets" type="integer">0</field>
                 <field index="image" type="integer">0</field>
-                <field index="imagewidth" type="integer">0</field>
+                <field index="imagewidth" type="NULL"/>
                 <field index="imageorient" type="integer">0</field>
                 <field index="imagecols" type="integer">2</field>
                 <field index="imageborder" type="integer">0</field>
@@ -1081,7 +1075,7 @@
                 <field index="target"/>
                 <field index="date" type="integer">0</field>
                 <field index="recursive" type="integer">0</field>
-                <field index="imageheight" type="integer">0</field>
+                <field index="imageheight" type="NULL"/>
                 <field index="pi_flexform" type="NULL"/>
                 <field index="accessibility_title"/>
                 <field index="accessibility_bypass" type="integer">0</field>
@@ -1135,7 +1129,6 @@
                 <field index="TSconfig" type="NULL"/>
                 <field index="is_siteroot" type="integer">0</field>
                 <field index="php_tree_stop" type="integer">0</field>
-                <field index="url"/>
                 <field index="shortcut" type="integer">0</field>
                 <field index="shortcut_mode" type="integer">0</field>
                 <field index="subtitle"/>
@@ -1218,7 +1211,7 @@
                 <field index="uploads_type" type="integer">0</field>
                 <field index="assets" type="integer">0</field>
                 <field index="image" type="integer">0</field>
-                <field index="imagewidth" type="integer">0</field>
+                <field index="imagewidth" type="NULL"/>
                 <field index="imageorient" type="integer">0</field>
                 <field index="imagecols" type="integer">2</field>
                 <field index="imageborder" type="integer">0</field>
@@ -1245,7 +1238,7 @@
                 <field index="target"/>
                 <field index="date" type="integer">0</field>
                 <field index="recursive" type="integer">0</field>
-                <field index="imageheight" type="integer">0</field>
+                <field index="imageheight" type="NULL"/>
                 <field index="pi_flexform" type="NULL"/>
                 <field index="accessibility_title"/>
                 <field index="accessibility_bypass" type="integer">0</field>
