@@ -1,4 +1,4 @@
-# https://docs.typo3.org/m/typo3/reference-tsconfig/main/en-us/UserTsconfig/Auth.html
+# https://docs.typo3.org/m/typo3/reference-typoscript/main/en-us/UserTsconfig/Auth.html
 
 auth {
   # BE.redirectToURL =
