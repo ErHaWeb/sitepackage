@@ -37,7 +37,7 @@ use TYPO3\CMS\Core\Attribute\AsNonSchedulableCommand;
  */
 
 /**
- * https://docs.typo3.org/m/typo3/reference-coreapi/main/en-us/ApiOverview/CommandControllers/Tutorial.html#console-command-tutorial-registration-attribute
+ * https://docs.typo3.org/m/typo3/reference-coreapi/main/en-us/ApiOverview/CommandControllers/Tutorial.html#console-command-tutorial-create
  */
 #[AsCommand(
     name: 'sitepackage:dosomething',
