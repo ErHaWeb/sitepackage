@@ -16,7 +16,7 @@
 declare(strict_types=1);
 
 /**
- * https://docs.typo3.org/m/typo3/reference-coreapi/main/en-us/ApiOverview/CommandControllers/Tutorial.html
+ * https://docs.typo3.org/m/typo3/reference-coreapi/14.3/en-us/ApiOverview/CommandControllers/Tutorial.html
  */
 
 namespace VendorName\Sitepackage\Command;
@@ -37,7 +37,7 @@ use TYPO3\CMS\Core\Attribute\AsNonSchedulableCommand;
  */
 
 /**
- * https://docs.typo3.org/m/typo3/reference-coreapi/main/en-us/ApiOverview/CommandControllers/Tutorial.html#console-command-tutorial-registration-attribute
+ * https://docs.typo3.org/m/typo3/reference-coreapi/14.3/en-us/ApiOverview/CommandControllers/Tutorial.html#console-command-tutorial-registration-attribute
  */
 #[AsCommand(
     name: 'sitepackage:dosomething',

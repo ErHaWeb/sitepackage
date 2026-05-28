@@ -20,7 +20,7 @@ use TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider;
 /**
  * Registers custom Icons in the IconRegistry provided by EXT:sitepackage
  *
- * https://docs.typo3.org/m/typo3/reference-coreapi/main/en-us/ExtensionArchitecture/FileStructure/Configuration/Icons.html
+ * https://docs.typo3.org/m/typo3/reference-coreapi/14.3/en-us/ExtensionArchitecture/FileStructure/Configuration/Icons.html
  */
 
 return [

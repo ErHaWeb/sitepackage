@@ -1,4 +1,4 @@
-# https://docs.typo3.org/m/typo3/reference-typoscript/main/en-us/Setup/Config/Index.html
+# https://docs.typo3.org/m/typo3/reference-typoscript/14.3/en-us/TopLevelObjects/PageAndConfig.html#the-config-top-level-object
 
 config {
   # absRefPrefix =
